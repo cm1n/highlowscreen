@@ -120,9 +120,11 @@ c.innerHTML=`<h3>${m}</h3><div class="n"><b class="u">신고 ${h.length}</b> <sp
 c.onclick=()=>{st.mkt=(st.mkt===m?"전체":m);document.querySelectorAll(".chip.mkt").forEach(x=>
 x.classList.toggle("on",x.dataset.v===st.mkt));render()};el.appendChild(c)})}
 function fmt(v,d){return v==null||isNaN(v)?"-":Number(v).toLocaleString("en-US",{minimumFractionDigits:d,maximumFractionDigits:d})}
-function heat(v,min,max){if(v==null||isNaN(v)||max<=min)return"";const t=Math.max(0,Math.min(1,(v-min)/(max-min)));
-let r,g,b;if(t<0.5){const u=t/0.5;r=112+138*u;g=144+104*u;b=210+33*u}
-else{const u=(t-0.5)/0.5;r=250-24*u;g=248-128*u;b=243-133*u}
+function heat(v,min,max){if(v==null||isNaN(v))return"";
+const M=Math.max(Math.abs(min),Math.abs(max));if(!M)return"";
+const t=Math.max(-1,Math.min(1,v/M));let r,g,b;
+if(t<0){const u=-t;r=250-138*u;g=248-104*u;b=243-33*u}      // 0=아이보리 → 음수=파랑
+else{const u=t;r=250-24*u;g=248-128*u;b=243-133*u}          // 양수=빨강
 return`background:rgb(${r|0},${g|0},${b|0});color:#1c1710`}
 function refDate(){return st.date==="ALL"?TAG:st.date}
 function renderSector(){let r=SDATA.filter(x=>x.dt===refDate()&&(st.mkt==="전체"||x.m===st.mkt));
