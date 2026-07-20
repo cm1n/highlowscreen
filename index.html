@@ -157,8 +157,7 @@ const CLAB={"결론":"#3ad6ae","美":"#f0a35a","미국":"#f0a35a","日":"#e0637f
 "나쁜 섹터":"#5b8cff","이벤트":"#ffd166","체크":"#8a97b4"};
 function updCmt(){const t=CMTS[refDate()]||"";const el=document.getElementById("cmt");
 if(!t){el.style.display="none";return}
-el.innerHTML=t.split("
-").map(line=>{
+el.innerHTML=t.split("\n").map(line=>{
 const m=line.match(/^■\s*([^:：]+)[:：]\s*(.*)$/);
 if(!m)return`<div class="cline">${esc2(line)}</div>`;
 const lab=m[1].trim(),c=CLAB[lab]||"#3ad6ae";
