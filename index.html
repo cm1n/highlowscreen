@@ -3,71 +3,64 @@
 <title>신고·신저가 2026-07-20</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
-:root{--bg:#0b0b10;--card:#15151c;--card2:#1a1a23;--line:#282833;--tx:#ece9e2;--dim:#8f8f9c;
---up:#e2574d;--dn:#6f8fd2;--new:#d4b46a;--acc:#d4b46a;--acc2:#f0dcae}
+:root{--bg:#0f0f12;--card:#16161a;--card2:#16161a;--line:#232329;--tx:#e8e8ea;--dim:#86868f;
+--up:#e25c50;--dn:#6d8fd4;--new:#ededf0;--acc:#ededf0;--acc2:#ededf0}
 *{box-sizing:border-box}
-body{margin:0;color:var(--tx);padding:22px 26px 60px;
-font:14px/1.55 'Pretendard Variable',Pretendard,'Segoe UI','Malgun Gothic',sans-serif;
-background:radial-gradient(1100px 520px at 12% -12%,#1b1610 0%,transparent 60%),
-radial-gradient(900px 420px at 96% 0%,#14141f 0%,transparent 55%),var(--bg)}
-h1{font-size:21px;margin:0;font-weight:800;letter-spacing:-.3px}
-h1 .gr{background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+body{margin:0;color:var(--tx);padding:22px 26px 60px;background:var(--bg);
+font:14px/1.55 'Pretendard Variable',Pretendard,'Segoe UI','Malgun Gothic',sans-serif}
+h1{font-size:20px;margin:0;font-weight:700;letter-spacing:-.3px}
+h1 .gr{color:#fff}
 .sub{color:var(--dim);font-size:12.5px;margin-top:3px}
 header{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:14px}
 .actions{display:flex;gap:8px;align-items:center}
-.btn{background:linear-gradient(135deg,#e6cd8d,#b9924e);color:#241a06;font-weight:800;padding:9px 16px;
-border-radius:10px;text-decoration:none;font-size:13px;border:none;cursor:pointer;
-box-shadow:0 4px 16px rgba(212,180,106,.22)}
-.btn:hover{filter:brightness(1.08)}
+.btn{background:#ededf0;color:#101013;font-weight:700;padding:9px 16px;
+border-radius:9px;text-decoration:none;font-size:13px;border:none;cursor:pointer}
+.btn:hover{background:#fff}
 select{background:var(--card);color:var(--tx);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font:inherit}
-#cmt{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);
-border-radius:14px;padding:12px 16px;margin-bottom:14px;font-size:13.5px;
-box-shadow:0 6px 22px rgba(0,0,0,.25)}
-.cline{display:flex;gap:9px;margin:5px 0;align-items:flex-start;line-height:1.55}
-.clab{flex:0 0 auto;font-size:11px;font-weight:800;padding:2.5px 9px;border-radius:999px;margin-top:2px;letter-spacing:.2px}
+#cmt{background:var(--card);border:1px solid var(--line);
+border-radius:12px;padding:13px 16px;margin-bottom:14px;font-size:13.5px}
+.cline{display:flex;gap:10px;margin:5.5px 0;align-items:flex-start;line-height:1.55}
+.clab{flex:0 0 auto;font-size:11px;font-weight:700;padding:2px 9px;border-radius:6px;margin-top:2px;letter-spacing:.3px}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin-bottom:14px}
-.card{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);
-border-radius:14px;padding:12px 15px;cursor:pointer;transition:.15s;box-shadow:0 3px 12px rgba(0,0,0,.18)}
-.card:hover{transform:translateY(-2px);border-color:#3c3c4a}
-.card.on{outline:2px solid var(--acc);outline-offset:-1px}
+.card{background:var(--card);border:1px solid var(--line);
+border-radius:12px;padding:12px 15px;cursor:pointer;transition:.15s}
+.card:hover{border-color:#3a3a42}
+.card.on{border-color:#8b8b95}
 .card h3{margin:0 0 6px;font-size:12.5px;color:var(--dim);font-weight:700;letter-spacing:.3px}
 .card .n{font-size:15px;font-weight:800}.card .n b.u{color:var(--up)}.card .n b.d{color:var(--dn)}
 .card .new{color:var(--new);font-size:11.5px;font-weight:600}
-.card .bar{height:5px;border-radius:99px;background:#262630;margin-top:9px;overflow:hidden}
-.card .bar i{display:block;height:100%;border-radius:99px;
-background:linear-gradient(90deg,#f0a08e,var(--up))}
+.card .bar{height:4px;border-radius:99px;background:#26262c;margin-top:10px;overflow:hidden}
+.card .bar i{display:block;height:100%;border-radius:99px;background:var(--up)}
 .controls{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
 .chip{background:var(--card);border:1px solid var(--line);color:var(--dim);padding:6.5px 13px;
 border-radius:999px;cursor:pointer;font-size:12.5px;user-select:none;transition:.12s;font-weight:600}
-.chip:hover{color:var(--tx);border-color:#3c3c4a}
-.chip.on{color:#241a06;border-color:transparent;background:linear-gradient(135deg,#e6cd8d,#bf9a55);font-weight:800}
+.chip:hover{color:var(--tx);border-color:#3a3a42}
+.chip.on{color:#101013;border-color:transparent;background:#ededf0;font-weight:700}
 input[type=search]{flex:1;min-width:170px;background:var(--card);border:1px solid var(--line);
 color:var(--tx);border-radius:999px;padding:8px 15px;outline:none;font:inherit}
 input[type=search]:focus{border-color:var(--acc)}
-table{width:100%;border-collapse:collapse;background:var(--card);border-radius:14px;overflow:hidden;
-box-shadow:0 6px 22px rgba(0,0,0,.22)}
-th{position:sticky;top:0;background:#1d1d27;color:var(--dim);font-size:11.5px;text-align:left;
-padding:10px 11px;cursor:pointer;white-space:nowrap;user-select:none;font-weight:700;letter-spacing:.3px}
-td{padding:8.5px 11px;border-top:1px solid #20202b;vertical-align:top;white-space:nowrap;font-size:13.5px}
-tbody tr:nth-child(even) td{background:rgba(255,255,255,.014)}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:12px;overflow:hidden;
+border:1px solid var(--line)}
+th{position:sticky;top:0;background:#19191e;color:var(--dim);font-size:11.5px;text-align:left;
+padding:10px 11px;cursor:pointer;white-space:nowrap;user-select:none;font-weight:600;letter-spacing:.4px}
+td{padding:8.5px 11px;border-top:1px solid #1e1e24;vertical-align:top;white-space:nowrap;font-size:13.5px}
 td.nm,td.why{white-space:normal;min-width:150px}
-tr:hover td{background:#232330}
-.tk{font-family:'Cascadia Code',Consolas,monospace;font-size:12.5px;color:var(--acc);cursor:pointer;white-space:nowrap;font-weight:600}
+tr:hover td{background:#1c1c22}
+.tk{font-family:'Cascadia Code',Consolas,monospace;font-size:12.5px;color:#b9bfca;cursor:pointer;white-space:nowrap;font-weight:600}
+.tk:hover{color:#fff}
 .up{color:var(--up)}.dn{color:var(--dn)}
-.bN{background:linear-gradient(135deg,#e6cd8d,#c3a05c);color:#2a2005;font-size:10.5px;font-weight:800;padding:2.5px 8px;border-radius:999px;
-box-shadow:0 0 10px rgba(212,180,106,.28)}
-.bO{background:#26262f;color:var(--dim);font-size:10.5px;padding:2.5px 8px;border-radius:999px}
-.b52{background:#2d2440;color:#b9a4e8;font-size:10.5px;padding:2px 6px;border-radius:6px;margin-left:4px;font-weight:700}
-.why{color:#c2bfb6;font-size:12.5px}.why .py{color:var(--dim)}
+.bN{background:#ededf0;color:#101013;font-size:10.5px;font-weight:800;padding:2.5px 8px;border-radius:6px}
+.bO{background:#232329;color:var(--dim);font-size:10.5px;padding:2.5px 8px;border-radius:6px}
+.b52{background:#232329;color:#a9a1c9;font-size:10.5px;padding:2px 6px;border-radius:5px;margin-left:4px;font-weight:700}
+.why{color:#b8b8c0;font-size:12.5px}.why .py{color:var(--dim)}
 .num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 footer{color:var(--dim);font-size:11.5px;margin-top:14px}
-#toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#e6cd8d,#bf9a55);
-color:#241a06;font-weight:800;padding:10px 20px;border-radius:999px;opacity:0;transition:.25s;pointer-events:none;
-box-shadow:0 8px 24px rgba(212,180,106,.32)}
+#toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#ededf0;
+color:#101013;font-weight:700;padding:10px 20px;border-radius:999px;opacity:0;transition:.25s;pointer-events:none}
 #cnt{color:var(--dim);font-size:12px;margin-left:auto}
 </style></head><body>
 <header>
- <div><h1>📊 <span class="gr">신고·신저가 스캔</span> <span style="color:var(--dim);font-weight:500;font-size:15px">2026-07-20</span></h1>
+ <div><h1><span class="gr">신고·신저가 스캔</span> <span style="color:var(--dim);font-weight:500;font-size:14px">2026-07-20</span></h1>
  <div class="sub">기준일 미국 2026-07-17 / 일본 2026-07-17 / 홍콩 2026-07-17 / 중국A 2026-07-17 · 시총 $10B+ · 60일/52주</div></div>
  <div class="actions">
   <select id="dateSel"></select>
@@ -153,16 +146,16 @@ r.map(x=>`<tr><td>${x.m}</td><td class="tk" onclick="cp('${x.t}')">${x.t}</td><t
 x.v.map((v,i)=>`<td class="num" style="${heat(v,mm[i][0],mm[i][1])}">${v==null?"-":fmt(v,1)+"%"}</td>`).join("")+
 "</tr>").join("")+'</tbody></table><footer>※ 컬럼별 상대 히트맵(파랑=약세·빨강=강세) · 수정주가 기준 · 시장 내 1D 내림차순</footer>'}
 const esc2=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
-const CLAB={"결론":"#d4b46a","美":"#d99562","미국":"#d99562","日":"#c9758b","일본":"#c9758b",
-"홍콩":"#9a86d4","中":"#c9b568","중국":"#c9b568","中·홍콩":"#c9b568","좋은 섹터":"#e2574d",
-"나쁜 섹터":"#6f8fd2","이벤트":"#d4b46a","체크":"#8f8f9c"};
+const CLAB={"결론":"#ffffff","美":"#cfae95","미국":"#cfae95","日":"#c9a3af","일본":"#c9a3af",
+"홍콩":"#aaa2cc","中":"#c2bb9a","중국":"#c2bb9a","中·홍콩":"#c2bb9a","좋은 섹터":"#e25c50",
+"나쁜 섹터":"#6d8fd4","이벤트":"#b8b8c0","체크":"#86868f"};
 function updCmt(){const t=CMTS[refDate()]||"";const el=document.getElementById("cmt");
 if(!t){el.style.display="none";return}
 el.innerHTML=t.split("\n").map(line=>{
 const m=line.match(/^■\s*([^:：]+)[:：]\s*(.*)$/);
 if(!m)return`<div class="cline">${esc2(line)}</div>`;
 const lab=m[1].trim(),c=CLAB[lab]||"#3ad6ae";
-return`<div class="cline"><span class="clab" style="background:${c}1f;color:${c};border:1px solid ${c}55">${esc2(lab)}</span><span>${esc2(m[2])}</span></div>`}).join("");
+return`<div class="cline"><span class="clab" style="color:${c};border:1px solid #2c2c33">${esc2(lab)}</span><span>${esc2(m[2])}</span></div>`}).join("");
 el.style.display=""}
 function render(){cards();updCmt();
 document.getElementById("vStock").style.display=st.view==="종목"?"":"none";
