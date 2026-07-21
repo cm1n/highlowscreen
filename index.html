@@ -52,7 +52,8 @@ input[type=search]:focus{border-color:#4a4a55}
 .view{border-radius:12px}
 .anim{animation:fin .18s ease}
 @keyframes fin{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
-table{width:100%;border-collapse:collapse;background:var(--card);border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+table{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border-radius:12px;border:1px solid var(--line)}
+thead tr th:first-child{border-top-left-radius:12px}thead tr th:last-child{border-top-right-radius:12px}
 th{position:sticky;top:var(--tbh);z-index:20;background:#19191e;color:var(--dim);font-size:11.5px;text-align:left;
 padding:10px 11px;cursor:pointer;white-space:nowrap;user-select:none;font-weight:600;letter-spacing:.4px}
 th:hover{color:#c9c9cf}
