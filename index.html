@@ -100,6 +100,8 @@ td{font-size:12.5px;padding:7.5px 8px}
   <a class="btn" id="xlsxBtn" href="신고신저가_20260723.xlsx" download>⬇ 엑셀 반출</a>
  </div>
 </header>
+<div id="datewarn" style="display:none;background:#3a1414;border:1px solid #7a2a2a;color:#ff9b9b;
+border-radius:10px;padding:10px 14px;margin-bottom:12px;font-size:13px;font-weight:600"></div>
 <div id="cmt" style="display:none"></div>
 <div class="cards" id="cards"></div>
 <div class="toolbar"><div class="controls">
@@ -273,5 +275,9 @@ document.getElementById("w52Only").onclick=e=>{st.w52=!st.w52;e.target.classList
 document.getElementById("q").oninput=e=>{st.q=e.target.value;render()};
 document.querySelectorAll("#vStock th").forEach(h=>h.onclick=()=>{const k=h.dataset.k;
 if(st.k===k)st.dir*=-1;else{st.k=k;st.dir=k==="chg"||k==="mc"||k==="c"||k==="pe"||k==="pb"?-1:1}render()});
+(()=>{const ft=document.querySelector("footer")?.textContent||"";
+const i=ft.indexOf("⚠️");if(i<0)return;
+const w=document.getElementById("datewarn");
+w.textContent="⚠️ "+ft.slice(i+2).split("  —  ")[0].trim();w.style.display=""})();
 render();
 </script></body></html>
