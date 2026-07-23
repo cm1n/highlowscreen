@@ -96,10 +96,20 @@ td{font-size:12.5px;padding:7.5px 8px}
  <div><h1><span class="gr">신고·신저가 스캔</span> <span style="color:var(--dim);font-weight:500;font-size:14px">2026-07-23</span></h1>
  <div class="sub">기준일 미국 2026-07-22 / 일본 2026-07-22 / 홍콩 2026-07-22 / 중국A 2026-07-22 · 시총 $10B+ · 60일/52주</div></div>
  <div class="actions">
+  <span class="chip" id="helpBtn" style="cursor:pointer">ⓘ 도움말</span>
   <select id="dateSel"></select>
   <a class="btn" id="xlsxBtn" href="신고신저가_20260723.xlsx" download>⬇ 엑셀 반출</a>
  </div>
 </header>
+<div id="help" style="display:none;background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:13px 17px;margin-bottom:12px;font-size:13px;line-height:1.85">
+ <b style="color:var(--acc)">📖 사용법</b>
+ <div>· <b>섹터동향</b> 탭에서 섹터를 클릭하면 그 섹터의 <b>신고·신저 종목</b>이 종목 탭에 뜹니다. (필터칩 ✕로 해제)</div>
+ <div>· <b>지수</b> 탭 = 한·미·일·중·홍콩 주요지수 등락, <b>섹터ETF</b> 탭 = 섹터별 상대강도 히트맵.</div>
+ <div>· 티커 클릭 → 블룸버그 티커 복사 · 표 머리글 클릭 → 정렬 · 검색창 → 티커·종목·섹터·이유 검색.</div>
+ <div>· 상단 필터: 시장 / 신고·신저 / NEW만(당일 신규 진입) / 52주만. 우상단 날짜로 과거 스캔·전체기간 조회.</div>
+ <div>· 💬 코멘트는 개조식 국가별 요약(당일 미작성 시 최근 코멘트 자동 표시). 헤더의 시장별 기준일로 데이터 날짜 확인.</div>
+</div>
 <div id="datewarn" style="display:none;background:#3a1414;border:1px solid #7a2a2a;color:#ff9b9b;
 border-radius:10px;padding:10px 14px;margin-bottom:12px;font-size:13px;font-weight:600"></div>
 <div id="cmt" style="display:none"></div>
@@ -307,6 +317,8 @@ document.querySelectorAll(".chip.mkt").forEach(x=>x.classList.toggle("on",x===c)
 document.querySelectorAll(".chip.gb").forEach(c=>c.onclick=()=>{st.gb=c.dataset.v;
 document.querySelectorAll(".chip.gb").forEach(x=>x.classList.toggle("on",x===c));render()});
 document.getElementById("secpill").onclick=()=>{st.sec=null;render()};
+document.getElementById("helpBtn").onclick=e=>{const h=document.getElementById("help");
+const show=h.style.display==="none";h.style.display=show?"":"none";e.target.classList.toggle("on",show)};
 document.getElementById("newOnly").onclick=e=>{st.nw=!st.nw;e.target.classList.toggle("on",st.nw);render()};
 document.getElementById("w52Only").onclick=e=>{st.w52=!st.w52;e.target.classList.toggle("on",st.w52);render()};
 document.getElementById("q").oninput=e=>{st.q=e.target.value;render()};
