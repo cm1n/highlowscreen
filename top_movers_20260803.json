@@ -1,0 +1,218 @@
+{
+ "data_dates": {
+  "미국": "2026-07-31",
+  "일본": "2026-07-31",
+  "홍콩": "2026-07-31",
+  "중국A": "2026-07-31"
+ },
+ "note": "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달.",
+ "movers": [
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "DXCM US Equity",
+   "종목명": "DexCom, Inc.",
+   "등락률(%)": 11.95,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "GH US Equity",
+   "종목명": "Guardant Health, Inc.",
+   "등락률(%)": 6.33,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "LPLA US Equity",
+   "종목명": "LPL Financial Holdings Inc.",
+   "등락률(%)": 4.28,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "MSFT US Equity",
+   "종목명": "Microsoft Corporation",
+   "등락률(%)": 3.02,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "MTD US Equity",
+   "종목명": "Mettler-Toledo International, Inc.",
+   "등락률(%)": 2.59,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "ARXS US Equity",
+   "종목명": "Arxis, Inc.",
+   "등락률(%)": 10.86,
+   "event": "급변"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "RBLX US Equity",
+   "종목명": "Roblox Corporation",
+   "등락률(%)": -26.85,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "RDDT US Equity",
+   "종목명": "Reddit, Inc.",
+   "등락률(%)": -20.99,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "MTZ US Equity",
+   "종목명": "MasTec, Inc.",
+   "등락률(%)": -18.91,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "TU US Equity",
+   "종목명": "Telus Corporation",
+   "등락률(%)": -11.23,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "COIN US Equity",
+   "종목명": "Coinbase Global, Inc.",
+   "등락률(%)": -10.59,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "OLD",
+   "티커": "CRH US Equity",
+   "종목명": "CRH PLC",
+   "등락률(%)": -1.03,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "2914 JP Equity",
+   "종목명": "Japan Tobacco Inc.",
+   "등락률(%)": 7.05,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "9107 JP Equity",
+   "종목명": "Kawasaki Kisen Kaisha, Ltd.",
+   "등락률(%)": -0.4,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "4661 JP Equity",
+   "종목명": "Oriental Land Co., Ltd.",
+   "등락률(%)": 8.46,
+   "event": "급변"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "3308 HK Equity",
+   "종목명": "Zhongji Innolight Co., Ltd. Class H",
+   "등락률(%)": 7.08,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "2888 HK Equity",
+   "종목명": "Standard Chartered PLC",
+   "등락률(%)": 2.86,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "5 HK Equity",
+   "종목명": "HSBC Holdings Plc",
+   "등락률(%)": 2.25,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "9987 HK Equity",
+   "종목명": "Yum China Holdings, Inc.",
+   "등락률(%)": 1.91,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "945 HK Equity",
+   "종목명": "Manulife Financial Corporation",
+   "등락률(%)": 0.87,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "688111 CH Equity",
+   "종목명": "Beijing Kingsoft Office Software. Inc. Class A",
+   "등락률(%)": 6.9,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "688825 CH Equity",
+   "종목명": "CXMT CORPORATION",
+   "등락률(%)": 2.08,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "600018 CH Equity",
+   "종목명": "Shanghai International Port (Group) Co., Ltd. Class A",
+   "등락률(%)": 0.38,
+   "event": "신규"
+  }
+ ]
+}

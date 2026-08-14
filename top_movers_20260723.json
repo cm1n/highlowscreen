@@ -1,0 +1,203 @@
+{
+ "data_dates": {
+  "미국": "2026-07-22",
+  "일본": "2026-07-22",
+  "홍콩": "2026-07-22",
+  "중국A": "2026-07-22"
+ },
+ "note": "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달.",
+ "movers": [
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "ARWR US Equity",
+   "종목명": "Arrowhead Pharmaceuticals, Inc.",
+   "등락률(%)": 19.03
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "WAB US Equity",
+   "종목명": "Westinghouse Air Brake Technologies Corporation",
+   "등락률(%)": 10.04
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "PAG US Equity",
+   "종목명": "Penske Automotive Group, Inc.",
+   "등락률(%)": 9.93
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "VG US Equity",
+   "종목명": "Venture Global, Inc.",
+   "등락률(%)": 5.41
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "PCAR US Equity",
+   "종목명": "PACCAR Inc.",
+   "등락률(%)": 3.85
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "SPCX US Equity",
+   "종목명": "Space Exploration Technologies Corp",
+   "등락률(%)": -6.7
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "TEL US Equity",
+   "종목명": "TE Connectivity plc",
+   "등락률(%)": -4.18
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "APP US Equity",
+   "종목명": "Applovin Corporation",
+   "등락률(%)": -3.78
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "WSO US Equity",
+   "종목명": "Watsco, Inc.",
+   "등락률(%)": -2.94
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "ISRG US Equity",
+   "종목명": "Intuitive Surgical, Inc.",
+   "등락률(%)": -2.68
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "7182 JP Equity",
+   "종목명": "Japan Post Bank Co., Ltd.",
+   "등락률(%)": 1.88
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "8316 JP Equity",
+   "종목명": "Sumitomo Mitsui Financial Group, Inc.",
+   "등락률(%)": 1.74
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "8309 JP Equity",
+   "종목명": "Sumitomo Mitsui Trust Group, Inc.",
+   "등락률(%)": 1.63
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "8725 JP Equity",
+   "종목명": "MS&AD Insurance Group Holdings, Inc.",
+   "등락률(%)": 1.29
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "8591 JP Equity",
+   "종목명": "ORIX Corporation",
+   "등락률(%)": 1.23
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "293 HK Equity",
+   "종목명": "Cathay Pacific Airways Limited",
+   "등락률(%)": 2.57
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "6823 HK Equity",
+   "종목명": "HKT Trust and HKT Ltd",
+   "등락률(%)": 1.92
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "6160 HK Equity",
+   "종목명": "BeOne Medicines Ltd.",
+   "등락률(%)": 1.81
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "5 HK Equity",
+   "종목명": "HSBC Holdings Plc",
+   "등락률(%)": 1.53
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "301165 CH Equity",
+   "종목명": "Ruijie Networks Co., Ltd. Class A",
+   "등락률(%)": 13.66
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "688702 CH Equity",
+   "종목명": "Suzhou Centec Communications Co., Ltd. Class A",
+   "등락률(%)": 8.89
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "601168 CH Equity",
+   "종목명": "Western Mining Co., Ltd. Class A",
+   "등락률(%)": 7.76
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "000977 CH Equity",
+   "종목명": "IEIT SYSTEMS Co., Ltd.Class A",
+   "등락률(%)": 2.04
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "688347 CH Equity",
+   "종목명": "Hua Hong Grace Semiconductor Limited Class A",
+   "등락률(%)": -1.94
+  }
+ ]
+}

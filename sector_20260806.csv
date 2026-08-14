@@ -1,0 +1,75 @@
+﻿시장,섹터,유니버스종목수,신고가,신저가,순강도(신고-신저),판정,PER(12MF중앙값),12MF표본수,PER(TTM중앙값),PBR(중앙값)
+미국,Finance,165,32,2,30,강세,15.4,160,18.5,2.3
+미국,Technology Services,92,20,1,19,강세,22.6,84,32.8,6.8
+미국,Electronic Technology,98,11,1,10,강세,28.6,92,44.6,8.2
+미국,Health Technology,68,10,1,9,강세,19.3,56,30.5,5.4
+미국,Producer Manufacturing,55,9,1,8,강세,24.7,55,34.0,6.0
+미국,Retail Trade,32,5,0,5,강세,20.8,32,25.2,8.0
+미국,Commercial Services,20,4,0,4,강세,20.6,20,31.4,5.6
+미국,Consumer Durables,19,4,0,4,강세,15.9,18,21.7,3.1
+미국,Distribution Services,16,4,0,4,강세,19.8,16,27.1,4.6
+미국,Non-Energy Minerals,29,4,0,4,강세,17.6,29,21.9,2.9
+미국,Process Industries,24,4,0,4,강세,16.1,23,27.2,2.0
+미국,Consumer Non-Durables,36,3,0,3,강세,16.9,34,22.9,3.3
+미국,Transportation,26,3,0,3,강세,21.6,25,29.3,4.3
+미국,Consumer Services,39,5,3,2,강세,22.2,38,27.7,4.6
+미국,Health Services,16,1,2,-1,약세,15.7,16,18.3,3.0
+미국,Industrial Services,34,1,2,-1,약세,23.7,33,26.3,5.2
+미국,Utilities,39,0,5,-5,약세,18.0,38,21.5,2.2
+미국,Communications,11,0,0,0,-,13.8,9,9.9,1.9
+미국,Energy Minerals,22,0,0,0,-,9.9,22,14.8,1.9
+미국,Miscellaneous,2,0,0,0,-,,2,182.0,9.3
+일본,Electronic Technology,12,1,0,1,강세,37.4,7,34.3,3.9
+일본,Non-Energy Minerals,4,1,0,1,강세,,4,17.7,3.0
+일본,Industrial Services,3,0,1,-1,약세,,1,12.6,1.7
+일본,Producer Manufacturing,22,0,1,-1,약세,25.2,13,29.8,3.7
+일본,Commercial Services,1,0,0,0,-,,1,24.0,2.0
+일본,Communications,4,0,0,0,-,,3,13.8,2.0
+일본,Consumer Durables,12,0,0,0,-,14.3,10,19.9,1.5
+일본,Consumer Non-Durables,8,0,0,0,-,,1,25.5,2.7
+일본,Consumer Services,2,0,0,0,-,,1,34.6,4.5
+일본,Distribution Services,5,0,0,0,-,,3,18.7,1.8
+일본,Energy Minerals,2,0,0,0,-,,1,12.0,0.9
+일본,Finance,26,0,0,0,-,13.9,26,15.1,1.4
+일본,Health Technology,10,0,0,0,-,21.0,6,19.6,2.1
+일본,Process Industries,8,0,0,0,-,15.9,7,16.6,1.6
+일본,Retail Trade,6,0,0,0,-,,1,28.5,3.4
+일본,Technology Services,9,0,0,0,-,,2,24.2,3.8
+일본,Transportation,5,0,0,0,-,,3,11.4,0.8
+일본,Utilities,5,0,0,0,-,,1,11.5,1.1
+홍콩,Health Technology,10,2,0,2,강세,34.1,10,33.8,5.3
+홍콩,Transportation,13,2,0,2,강세,11.1,7,13.5,1.6
+홍콩,Consumer Durables,13,1,0,1,강세,19.0,6,12.7,2.5
+홍콩,Consumer Non-Durables,9,1,0,1,강세,12.6,6,16.1,2.9
+홍콩,Finance,47,1,0,1,강세,10.9,27,7.8,0.7
+홍콩,Technology Services,8,1,0,1,강세,16.0,6,17.4,3.4
+홍콩,Commercial Services,1,0,0,0,-,,1,10.4,2.1
+홍콩,Communications,5,0,0,0,-,,2,12.1,0.8
+홍콩,Consumer Services,6,0,0,0,-,14.9,6,16.1,5.6
+홍콩,Distribution Services,3,0,0,0,-,,2,12.8,3.9
+홍콩,Electronic Technology,17,0,0,0,-,24.4,13,74.8,5.1
+홍콩,Energy Minerals,6,0,0,0,-,,4,11.3,1.1
+홍콩,Industrial Services,3,0,0,0,-,,1,3.8,0.2
+홍콩,Non-Energy Minerals,8,0,0,0,-,9.4,6,16.5,3.6
+홍콩,Process Industries,3,0,0,0,-,,1,24.5,1.7
+홍콩,Producer Manufacturing,13,0,0,0,-,14.7,8,25.0,2.8
+홍콩,Retail Trade,6,0,0,0,-,11.9,5,21.6,1.8
+홍콩,Utilities,9,0,0,0,-,,4,14.3,1.2
+중국A,Health Technology,10,1,0,1,강세,26.9,8,43.2,5.4
+중국A,Non-Energy Minerals,19,1,0,1,강세,,4,18.7,3.1
+중국A,Electronic Technology,61,0,1,-1,약세,36.2,37,68.0,10.8
+중국A,Commercial Services,1,0,0,0,-,,0,,15.7
+중국A,Communications,4,0,0,0,-,,0,16.8,1.3
+중국A,Consumer Durables,11,0,0,0,-,,2,16.4,2.8
+중국A,Consumer Non-Durables,8,0,0,0,-,,0,18.6,3.6
+중국A,Distribution Services,4,0,0,0,-,,0,18.1,2.7
+중국A,Energy Minerals,7,0,0,0,-,,3,14.3,1.8
+중국A,Finance,42,0,0,0,-,6.1,9,6.5,0.8
+중국A,Health Services,1,0,0,0,-,,1,24.4,3.6
+중국A,Industrial Services,7,0,0,0,-,,0,7.4,0.4
+중국A,Process Industries,18,0,0,0,-,,1,27.7,3.1
+중국A,Producer Manufacturing,43,0,0,0,-,31.2,18,32.2,4.7
+중국A,Retail Trade,1,0,0,0,-,,0,,2.0
+중국A,Technology Services,12,0,0,0,-,62.8,8,62.2,8.2
+중국A,Transportation,10,0,0,0,-,,3,17.7,1.9
+중국A,Utilities,14,0,0,0,-,,1,20.9,1.7

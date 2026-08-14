@@ -1,0 +1,218 @@
+{
+ "data_dates": {
+  "미국": "2026-07-14",
+  "홍콩": "2026-07-15",
+  "중국A": "2026-07-15"
+ },
+ "note": "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달.",
+ "movers": [
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "CRWD US",
+   "종목명": "CrowdStrike Holdings, Inc.",
+   "등락률(%)": 12.14
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "OKTA US",
+   "종목명": "Okta, Inc.",
+   "등락률(%)": 10.81
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "GS US",
+   "종목명": "Goldman Sachs Group, Inc. (The)",
+   "등락률(%)": 9.0
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "NET US",
+   "종목명": "Cloudflare, Inc.",
+   "등락률(%)": 4.53
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "FTNT US",
+   "종목명": "Fortinet, Inc.",
+   "등락률(%)": 3.87
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "HCA US",
+   "종목명": "HCA Healthcare, Inc.",
+   "등락률(%)": -6.95
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "ISRG US",
+   "종목명": "Intuitive Surgical, Inc.",
+   "등락률(%)": -6.78
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "GMED US",
+   "종목명": "Globus Medical, Inc.",
+   "등락률(%)": -4.93
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "CRWV US",
+   "종목명": "CoreWeave, Inc.",
+   "등락률(%)": -4.05
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "CSGP US",
+   "종목명": "CoStar Group, Inc.",
+   "등락률(%)": -3.79
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "1801 HK",
+   "종목명": "Innovent Biologics, Inc.",
+   "등락률(%)": 7.66
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "6990 HK",
+   "종목명": "Sichuan Kelun-Biotech Biopharmaceutical Co., Ltd. Class H",
+   "등락률(%)": 6.88
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "2359 HK",
+   "종목명": "WuXi AppTec Co., Ltd. Class H",
+   "등락률(%)": 4.68
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "2269 HK",
+   "종목명": "Wuxi Biologics (Cayman) Inc.",
+   "등락률(%)": 3.77
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "5 HK",
+   "종목명": "HSBC Holdings Plc",
+   "등락률(%)": 1.51
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "1772 HK",
+   "종목명": "Ganfeng Lithium Group Co., Ltd. Class H",
+   "등락률(%)": -4.6
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "601995 CH",
+   "종목명": "China International Capital Corp. Ltd. Class A",
+   "등락률(%)": 8.18
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "603501 CH",
+   "종목명": "OmniVision Integrated Circuits Group, Inc. Class A",
+   "등락률(%)": 4.68
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "601628 CH",
+   "종목명": "China Life Insurance Co. Ltd. Class A",
+   "등락률(%)": 4.39
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "603259 CH",
+   "종목명": "WuXi AppTec Co., Ltd. Class A",
+   "등락률(%)": 3.13
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "002156 CH",
+   "종목명": "TongFu Microelectronics Co., Ltd. Class A",
+   "등락률(%)": 1.08
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "001399 CH",
+   "종목명": "HKC Corporation Limited Class A",
+   "등락률(%)": -9.77
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "600023 CH",
+   "종목명": "Zhejiang Zheneng Electric Power Co., Ltd. Class A",
+   "등락률(%)": -8.59
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "601231 CH",
+   "종목명": "Universal Scientific Industrial (Shanghai) Co., Ltd. Class A",
+   "등락률(%)": -5.61
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "000338 CH",
+   "종목명": "Weichai Power Co., Ltd. Class A",
+   "등락률(%)": -4.34
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "301638 CH",
+   "종목명": "CSG Digital Power Grid Research Institute Co., Ltd. Class A",
+   "등락률(%)": -2.16
+  }
+ ]
+}

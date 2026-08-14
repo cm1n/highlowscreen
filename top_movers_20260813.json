@@ -1,0 +1,236 @@
+{
+ "data_dates": {
+  "미국": "2026-08-13",
+  "일본": "2026-08-13",
+  "홍콩": "2026-08-13",
+  "중국A": "2026-08-13"
+ },
+ "note": "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달.",
+ "movers": [
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "EAT US Equity",
+   "종목명": "Brinker International, Inc.",
+   "등락률(%)": 11.07,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "PRAX US Equity",
+   "종목명": "Praxis Precision Medicines, Inc.",
+   "등락률(%)": 4.22,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "MOG/A US Equity",
+   "종목명": "Moog Inc.",
+   "등락률(%)": 2.84,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "THC US Equity",
+   "종목명": "Tenet Healthcare Corporation",
+   "등락률(%)": 2.83,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "GKOS US Equity",
+   "종목명": "Glaukos Corporation",
+   "등락률(%)": 2.54,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "DRI US Equity",
+   "종목명": "Darden Restaurants, Inc.",
+   "등락률(%)": 4.01,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "TPL US Equity",
+   "종목명": "Texas Pacific Land Corporation",
+   "등락률(%)": -6.08,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "EBAY US Equity",
+   "종목명": "eBay Inc.",
+   "등락률(%)": -3.49,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "DECK US Equity",
+   "종목명": "Deckers Outdoor Corporation",
+   "등락률(%)": -2.81,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "ROL US Equity",
+   "종목명": "Rollins, Inc.",
+   "등락률(%)": -1.32,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "WMG US Equity",
+   "종목명": "Warner Music Group Corp.",
+   "등락률(%)": -1.16,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "8308 JP Equity",
+   "종목명": "Resona Holdings, Inc.",
+   "등락률(%)": 4.37,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "6857 JP Equity",
+   "종목명": "Advantest Corp.",
+   "등락률(%)": 4.02,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "7011 JP Equity",
+   "종목명": "Mitsubishi Heavy Industries, Ltd.",
+   "등락률(%)": 3.96,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "8331 JP Equity",
+   "종목명": "Chiba Bank, Ltd.",
+   "등락률(%)": 3.46,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "8309 JP Equity",
+   "종목명": "Sumitomo Mitsui Trust Group, Inc.",
+   "등락률(%)": 2.82,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "6951 HK Equity",
+   "종목명": "Chaozhou Three-Circle (Group) Co., Ltd. Class H",
+   "등락률(%)": 9.0,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "27 HK Equity",
+   "종목명": "Galaxy Entertainment Group Limited",
+   "등락률(%)": 2.16,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "1093 HK Equity",
+   "종목명": "CSPC Pharmaceutical Group Limited",
+   "등락률(%)": 2.02,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "2 HK Equity",
+   "종목명": "CLP Holdings Limited",
+   "등락률(%)": 0.96,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "992 HK Equity",
+   "종목명": "Lenovo Group Limited",
+   "등락률(%)": 20.18,
+   "event": "급변"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "1186 HK Equity",
+   "종목명": "China Railway Construction Corporation Limited Class H",
+   "등락률(%)": -1.2,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "9866 HK Equity",
+   "종목명": "NIO Inc. Class A",
+   "등락률(%)": -1.01,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "301165 CH Equity",
+   "종목명": "Ruijie Networks Co., Ltd. Class A",
+   "등락률(%)": 13.52,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "603228 CH Equity",
+   "종목명": "Shenzhen Kinwong Electronic Co., Ltd. Class A",
+   "등락률(%)": -1.03,
+   "event": "신규"
+  }
+ ]
+}

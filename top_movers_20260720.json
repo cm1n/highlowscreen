@@ -1,0 +1,267 @@
+{
+ "data_dates": {
+  "미국": "2026-07-17",
+  "일본": "2026-07-17",
+  "홍콩": "2026-07-17",
+  "중국A": "2026-07-17"
+ },
+ "note": "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달.",
+ "movers": [
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "TRV US Equity",
+   "종목명": "The Travelers Companies, Inc.",
+   "등락률(%)": 9.22
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "ADM US Equity",
+   "종목명": "Archer-Daniels-Midland Company",
+   "등락률(%)": 3.49
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "VLO US Equity",
+   "종목명": "Valero Energy Corporation",
+   "등락률(%)": 3.13
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "PSX US Equity",
+   "종목명": "Phillips 66",
+   "등락률(%)": 2.75
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "SUN US Equity",
+   "종목명": "Sunoco LP",
+   "등락률(%)": 2.68
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "NFLX US Equity",
+   "종목명": "Netflix, Inc.",
+   "등락률(%)": -7.26
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "AA US Equity",
+   "종목명": "Alcoa Corporation",
+   "등락률(%)": -6.13
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "ALNY US Equity",
+   "종목명": "Alnylam Pharmaceuticals, Inc.",
+   "등락률(%)": -5.54
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "IREN US Equity",
+   "종목명": "IREN Limited",
+   "등락률(%)": -3.47
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "MTZ US Equity",
+   "종목명": "MasTec, Inc.",
+   "등락률(%)": -3.29
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "3382 JP Equity",
+   "종목명": "Seven & I Holdings Co., Ltd.",
+   "등락률(%)": 3.64
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "7832 JP Equity",
+   "종목명": "Bandai Namco Holdings Inc.",
+   "등락률(%)": 1.97
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "9433 JP Equity",
+   "종목명": "KDDI Corporation",
+   "등락률(%)": 0.84
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "5108 JP Equity",
+   "종목명": "Bridgestone Corporation",
+   "등락률(%)": 0.65
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "1928 JP Equity",
+   "종목명": "Sekisui House, Ltd.",
+   "등락률(%)": -0.25
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "5706 JP Equity",
+   "종목명": "Mitsui Kinzoku Co., Ltd.",
+   "등락률(%)": -7.13
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "5713 JP Equity",
+   "종목명": "Sumitomo Metal Mining Co., Ltd.",
+   "등락률(%)": -6.62
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "5802 JP Equity",
+   "종목명": "Sumitomo Electric Industries, Ltd.",
+   "등락률(%)": -6.19
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "5801 JP Equity",
+   "종목명": "Furukawa Electric Co., Ltd.",
+   "등락률(%)": -6.1
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "6383 JP Equity",
+   "종목명": "Daifuku Co., Ltd.",
+   "등락률(%)": -5.29
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "6082 HK Equity",
+   "종목명": "Shanghai Biren Technology Co., Ltd. Class H",
+   "등락률(%)": -14.96
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "6869 HK Equity",
+   "종목명": "Yangtze Optical Fibre and Cable Joint Stock Ltd Co Class H",
+   "등락률(%)": -11.17
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "2475 HK Equity",
+   "종목명": "Luxshare Precision Industry Co., Ltd. Class H",
+   "등락률(%)": -10.92
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "2476 HK Equity",
+   "종목명": "Victory Giant Technology (HuiZhou) Co., Ltd. Class H",
+   "등락률(%)": -10.71
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "6951 HK Equity",
+   "종목명": "Chaozhou Three-Circle (Group) Co., Ltd. Class H",
+   "등락률(%)": -7.65
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "600436 CH Equity",
+   "종목명": "Zhangzhou Pientzehuang Pharmaceutical Co., Ltd. Class A",
+   "등락률(%)": 3.88
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "600886 CH Equity",
+   "종목명": "SDIC Power Holdings Co., Ltd. Class A",
+   "등락률(%)": 1.86
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "688525 CH Equity",
+   "종목명": "Biwin Storage Technology Co., Ltd. Class A",
+   "등락률(%)": -15.78
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "300394 CH Equity",
+   "종목명": "Suzhou TFC Optical Communication Co., Ltd. Class A",
+   "등락률(%)": -13.42
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "300757 CH Equity",
+   "종목명": "Robotechnik Intelligent Technology Co., Ltd. Class A",
+   "등락률(%)": -12.61
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "300136 CH Equity",
+   "종목명": "Shenzhen Sunway Communication Co., Ltd. Class A",
+   "등락률(%)": -12.07
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "002600 CH Equity",
+   "종목명": "Lingyi iTech (Guangdong) Company Class A",
+   "등락률(%)": -9.52
+  }
+ ]
+}

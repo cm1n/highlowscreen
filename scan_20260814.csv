@@ -1,0 +1,144 @@
+﻿구분,NEW/OLD,티커,종목명,섹터,종가,등락률(%),시총($B),PER(12MF),PER(TTM),PBR,60일,52주,이유,시장
+신저가,NEW,TPR US Equity,"Tapestry, Inc.",Retail Trade,128.39,-16.49,25.9,16.3,41.2,38.1,O,,태피스트리(코치·케이트스페이드 핸드백): 4Q 서프라이즈에도 FY27 매출 가이던스 부진에 급락,미국
+신저가,NEW,HUT US Equity,Hut 8 Corp.,Technology Services,82.95,-8.62,10.2,,,7.1,O,,"허트8(비트코인 채굴·데이터센터): 2분기 순손실 전환, 75억달러 확장 파이낸싱 부담",미국
+신저가,NEW,NBIX US Equity,"Neurocrine Biosciences, Inc.",Health Technology,150.82,-3.62,15.3,17.8,22.1,4.1,O,,뉴로크린(신경정신질환 신약 개발): 프래더윌리 치료제 Vykat 사망사례 안전성 우려 보도,미국
+신저가,NEW,AS US Equity,"Amer Sports, Inc.",Consumer Durables,33.12,0.27,19.2,24.4,41.0,2.8,O,,아머스포츠(아크테릭스·살로몬 아웃도어): 8/18 실적 앞두고 내부자 매도·매출 우려로 신저가권,미국
+신저가,OLD,RRX US Equity,Regal Rexnord Corporation,Producer Manufacturing,170.58,-1.34,11.4,14.6,35.1,1.6,O,,,미국
+신저가,OLD,ROL US Equity,"Rollins, Inc.",Commercial Services,36.22,-0.82,17.4,29.9,32.9,12.2,O,O,(전일) 롤린스(해충방제 서비스): 2분기 EPS 0.32달러로 컨센 하회·경영진 교체 우려로 52주 신저가,미국
+신저가,OLD,RBA US Equity,"RB Global, Inc.",Technology Services,86.41,-0.06,16.0,18.5,38.1,2.9,O,O,,미국
+신저가,OLD,TPL US Equity,Texas Pacific Land Corporation,Miscellaneous,347.04,1.25,23.9,38.1,44.2,14.3,O,,(전일) 텍사스퍼시픽랜드(퍼미안분지 토지·로열티 보유): 특별한 뉴스 없음(에너지 섹터 수급 흐름 추정),미국
+신고가,NEW,WDAY US Equity,"Workday, Inc.",Technology Services,206.45,17.78,51.0,18.6,64.4,7.7,O,,"워크데이(기업용 HR·재무 SaaS): 실버레이크 인수협상 로이터 보도, 변동성 정지 후 급등",미국
+신고가,NEW,DOCU US Equity,"DocuSign, Inc.",Technology Services,64.09,10.31,12.2,13.8,41.6,6.8,O,,도큐사인(전자서명·계약관리 SaaS): 개별 뉴스 없이 소프트웨어 업종 전반 랠리에 동반 급등,미국
+신고가,NEW,RBRK US Equity,"Rubrik, Inc.",Technology Services,105.09,8.64,21.6,354.1,,,O,O,"루브릭(데이터 백업·랜섬웨어 복구 SW): 보안·SW 랠리, BTIG 목표가 109달러 상향 여진",미국
+신고가,NEW,GPN US Equity,Global Payments Inc.,Finance,94.83,7.12,25.1,6.4,29.8,1.1,O,O,글로벌페이먼츠(가맹점 결제처리): 모간스탠리·울프리서치 목표가·투자의견 상향에 신고가,미국
+신고가,NEW,HPQ US Equity,HP Inc.,Technology Services,31.3,6.9,28.6,11.4,11.6,,O,O,"HP(PC·프린터 제조): 레노버 어닝서프라이즈 낙수, 골드만 Buy 신규·모간스탠리 상향",미국
+신고가,NEW,SAIL US Equity,"SailPoint, Inc.",Technology Services,19.99,6.73,11.3,58.5,,1.7,O,,,미국
+신고가,NEW,PS US Equity,Pershing Square Inc.,Finance,41.4,6.7,16.6,50.3,,19.8,O,,,미국
+신고가,NEW,NET US Equity,"Cloudflare, Inc.",Technology Services,330.83,6.22,117.8,224.3,,72.7,O,O,,미국
+신고가,NEW,GWRE US Equity,"Guidewire Software, Inc.",Technology Services,182.62,5.51,15.2,47.6,98.4,11.5,O,,,미국
+신고가,NEW,SHOP US Equity,Shopify Inc.,Commercial Services,158.53,5.4,204.0,75.3,109.2,16.1,O,,,미국
+신고가,NEW,NTNX US Equity,"Nutanix, Inc.",Technology Services,67.95,5.1,18.4,31.9,71.2,,O,,,미국
+신고가,NEW,ARES US Equity,Ares Management Corporation,Finance,149.45,4.99,33.5,23.0,68.1,13.5,O,,,미국
+신고가,NEW,COMP US Equity,"Compass, Inc.",Finance,13.35,4.87,10.2,200.2,250.5,3.4,O,,,미국
+신고가,NEW,PLTR US Equity,Palantir Technologies Inc.,Technology Services,179.01,4.66,430.2,94.0,153.0,44.0,O,,,미국
+신고가,NEW,IOT US Equity,Samsara Inc.,Technology Services,41.14,4.58,24.0,52.9,423.7,15.9,O,,,미국
+신고가,NEW,PAYX US Equity,"Paychex, Inc.",Technology Services,125.4,4.18,44.6,21.0,25.6,11.9,O,,,미국
+신고가,NEW,PTC US Equity,PTC Inc.,Technology Services,153.89,3.99,16.7,18.3,14.9,4.9,O,,,미국
+신고가,NEW,DAR US Equity,Darling Ingredients Inc.,Consumer Non-Durables,65.74,3.64,10.4,10.8,17.7,2.0,O,,,미국
+신고가,NEW,APO US Equity,"Apollo Global Management, Inc. (New)",Finance,143.58,3.59,84.8,14.7,54.3,4.2,O,,,미국
+신고가,NEW,ADSK US Equity,"Autodesk, Inc.",Technology Services,257.96,3.39,54.4,20.0,37.7,17.1,O,,,미국
+신고가,NEW,OMC US Equity,Omnicom Group Inc.,Commercial Services,88.36,3.33,24.2,8.5,75.7,2.8,O,O,,미국
+신고가,NEW,MKC US Equity,"McCormick & Company, Incorporated",Consumer Non-Durables,54.45,2.79,14.6,17.6,9.1,2.1,O,,,미국
+신고가,NEW,SSNC US Equity,"SS&C Technologies Holdings, Inc.",Technology Services,82.04,2.37,19.3,11.0,23.6,2.9,O,,,미국
+신고가,NEW,PYPL US Equity,"PayPal Holdings, Inc.",Commercial Services,60.59,2.35,51.8,10.9,11.4,2.6,O,,,미국
+신고가,NEW,GEHC US Equity,GE HealthCare Technologies Inc.,Health Technology,73.79,2.09,33.3,14.2,17.0,3.0,O,,,미국
+신고가,NEW,DELL US Equity,Dell Technologies Inc.,Electronic Technology,494.51,2.07,320.6,26.2,39.3,,O,O,,미국
+신고가,NEW,NDAQ US Equity,"Nasdaq, Inc.",Finance,97.59,2.02,54.6,22.3,28.4,4.6,O,,,미국
+신고가,NEW,MRK US Equity,"Merck & Company, Inc.",Health Technology,135.55,1.98,334.4,15.7,108.3,8.0,O,O,,미국
+신고가,NEW,CTSH US Equity,Cognizant Technology Solutions Corporation,Technology Services,59.29,1.87,26.7,9.8,12.7,1.9,O,,,미국
+신고가,NEW,RGA US Equity,"Reinsurance Group of America, Incorporated",Finance,250.38,1.75,16.4,8.9,11.0,1.2,O,O,,미국
+신고가,NEW,ARCC US Equity,Ares Capital Corporation,Finance,20.19,1.61,14.5,10.5,15.0,1.0,O,,,미국
+신고가,NEW,LDOS US Equity,"Leidos Holdings, Inc.",Technology Services,142.61,1.59,17.9,11.7,13.3,3.4,O,,,미국
+신고가,NEW,ROKU US Equity,"Roku, Inc.",Technology Services,154.08,1.51,22.9,47.8,65.8,8.1,O,O,,미국
+신고가,NEW,AIT US Equity,"Applied Industrial Technologies, Inc.",Distribution Services,357.62,1.51,13.2,30.5,33.8,7.1,O,O,,미국
+신고가,NEW,FIVE US Equity,"Five Below, Inc.",Retail Trade,241.71,1.5,13.4,26.9,30.5,5.8,O,,,미국
+신고가,NEW,CP US Equity,Canadian Pacific Kansas City Limited,Transportation,93.92,1.33,82.6,23.9,31.0,2.5,O,O,,미국
+신고가,NEW,ARMK US Equity,Aramark,Consumer Services,61.11,1.26,16.1,23.0,42.6,4.7,O,O,,미국
+신고가,NEW,CM US Equity,Canadian Imperial Bank of Commerce,Finance,122.4,1.24,113.4,16.3,16.5,2.6,O,O,,미국
+신고가,NEW,REGN US Equity,"Regeneron Pharmaceuticals, Inc.",Health Technology,805.97,1.0,83.0,13.3,19.9,2.6,O,,,미국
+신고가,NEW,AMP US Equity,"Ameriprise Financial, Inc.",Finance,570.68,0.99,50.4,11.7,13.8,7.9,O,O,,미국
+신고가,NEW,UNM US Equity,Unum Group,Finance,92.7,0.99,14.7,10.4,21.6,1.4,O,O,,미국
+신고가,NEW,TGT US Equity,Target Corporation,Retail Trade,155.51,0.98,70.6,17.9,20.5,4.3,O,O,,미국
+신고가,NEW,UMBF US Equity,UMB Financial Corporation,Finance,150.88,0.96,11.5,11.4,12.6,1.5,O,O,,미국
+신고가,NEW,SF US Equity,Stifel Financial Corporation,Finance,85.68,0.87,12.9,12.2,15.3,2.4,O,,,미국
+신고가,NEW,SYF US Equity,Synchrony Financial,Finance,80.08,0.84,26.1,8.4,8.2,1.7,O,,,미국
+신고가,NEW,EWBC US Equity,"East West Bancorp, Inc.",Finance,135.96,0.67,18.6,12.5,13.1,2.0,O,O,,미국
+신고가,NEW,COF US Equity,Capital One Financial Corporation,Finance,223.83,0.62,137.3,10.3,78.9,1.2,O,,,미국
+신고가,NEW,BPOP US Equity,"Popular, Inc.",Finance,177.03,0.48,11.3,10.8,12.0,1.8,O,O,,미국
+신고가,NEW,LYV US Equity,"Live Nation Entertainment, Inc.",Consumer Services,186.06,0.39,43.8,154.6,,526.5,O,O,,미국
+신고가,NEW,BNS US Equity,Bank Nova Scotia Halifax Pfd 3,Finance,90.65,0.35,111.7,14.6,17.0,2.0,O,O,,미국
+신고가,NEW,BMO US Equity,Bank Of Montreal,Finance,184.16,0.32,130.1,16.8,19.2,2.3,O,O,,미국
+신고가,NEW,HEI/A US Equity,Heico Corporation,Electronic Technology,272.49,0.1,43.7,42.6,48.7,8.0,O,,,미국
+신고가,NEW,SBUX US Equity,Starbucks Corporation,Consumer Services,108.55,0.06,123.7,36.2,62.6,,O,O,,미국
+신고가,NEW,MTB US Equity,M&T Bank Corporation,Finance,253.25,-0.12,36.6,12.7,13.4,1.4,O,O,,미국
+신고가,NEW,FCNCA US Equity,"First Citizens BancShares, Inc.",Finance,2268.09,-0.14,25.9,12.1,12.1,1.3,O,O,,미국
+신고가,NEW,COO US Equity,"The Cooper Companies, Inc.",Health Technology,76.6,-0.17,14.9,16.2,64.7,1.8,O,,,미국
+신고가,NEW,LH US Equity,Labcorp Holdings Inc.,Health Services,322.59,-0.28,26.2,17.0,26.7,3.0,O,O,,미국
+신고가,NEW,DB US Equity,Deutsche Bank AG,Finance,38.38,-0.34,71.9,8.9,10.2,0.9,O,,,미국
+신고가,NEW,NTRS US Equity,Northern Trust Corporation,Finance,190.48,-0.44,34.8,16.0,16.4,2.8,O,O,,미국
+신고가,NEW,TMO US Equity,Thermo Fisher Scientific Inc,Health Technology,595.89,-1.18,220.3,22.7,32.1,4.2,O,,,미국
+신고가,OLD,TPG US Equity,TPG Inc.,Finance,55.21,8.51,21.2,17.3,83.3,7.4,O,,"TPG(대체투자 운용사): 개별 뉴스 없음, 워크데이 인수설발 PE 딜 훈풍 추정",미국
+신고가,OLD,MDB US Equity,"MongoDB, Inc.",Technology Services,472.29,7.87,38.0,74.0,,13.0,O,O,"몽고DB(NoSQL 데이터베이스 SaaS): RBC·오펜하이머 목표가 대폭 상향, Atlas 성장 기대",미국
+신고가,OLD,TEAM US Equity,Atlassian Corporation,Technology Services,165.98,6.92,42.1,30.1,,,O,,"(전일) 아틀라시안(협업SW Jira·Confluence): 2분기 매출 28%↑·클라우드 31% 가속, Rovo AI 견인",미국
+신고가,OLD,P US Equity,"Everpure, Inc.",Electronic Technology,117.35,5.34,39.0,46.0,178.4,27.0,O,O,"(전일) 에버퓨어(올플래시 데이터 스토리지): 서스퀘하나 투자의견 상향, AI·클라우드 플래시 수요 부각",미국
+신고가,OLD,VEEV US Equity,Veeva Systems Inc.,Technology Services,252.64,4.61,41.0,27.3,45.0,5.6,O,,,미국
+신고가,OLD,KKR US Equity,KKR & Co. Inc.,Finance,115.3,3.97,103.5,17.2,36.8,3.6,O,,,미국
+신고가,OLD,VLO US Equity,Valero Energy Corporation,Energy Minerals,342.92,3.85,98.7,8.5,14.2,3.9,O,O,,미국
+신고가,OLD,CPAY US Equity,"Corpay, Inc.",Commercial Services,425.24,3.8,27.9,14.6,25.8,7.9,O,O,,미국
+신고가,OLD,OWL US Equity,Blue Owl Capital Inc.,Finance,12.66,3.6,19.7,13.7,160.1,4.3,O,,,미국
+신고가,OLD,PSX US Equity,Phillips 66,Energy Minerals,232.61,3.12,92.8,8.6,13.2,2.9,O,O,,미국
+신고가,OLD,U US Equity,Unity Software Inc.,Technology Services,45.79,2.83,20.2,85.4,,6.6,O,,,미국
+신고가,OLD,BAM US Equity,Brookfield Asset Management Inc,Finance,55.86,2.5,91.5,27.8,33.1,12.2,O,,,미국
+신고가,OLD,MPC US Equity,Marathon Petroleum Corporation,Energy Minerals,356.37,2.33,100.1,7.6,12.3,5.3,O,O,,미국
+신고가,OLD,PANW US Equity,"Palo Alto Networks, Inc.",Technology Services,396.0,2.32,322.7,101.1,325.7,11.6,O,O,(전일) 팔로알토네트웍스(기업 보안SW): 오펜하이머·바클레이스 목표가 상향+AI에이전트 해킹 보도로 보안주 랠리,미국
+신고가,OLD,MICC US Equity,The Magnum Ice Cream Company N.V.,Consumer Non-Durables,20.09,2.14,12.3,,60.4,10.0,O,O,"매그넘아이스크림(유니레버서 분사한 아이스크림): 개별 뉴스 없음, JPM 상향 여진·방어주 수급",미국
+신고가,OLD,BX US Equity,Blackstone Inc.,Finance,149.32,1.99,185.4,23.2,33.5,20.6,O,,,미국
+신고가,OLD,BLK US Equity,"BlackRock, Inc.",Finance,1182.84,1.89,192.2,19.8,29.4,3.3,O,,,미국
+신고가,OLD,GKOS US Equity,Glaukos Corporation,Health Technology,189.45,1.51,11.2,1239.9,,16.3,O,O,"(전일) 글라우코스(녹내장·각막질환 의료기기): 2분기 매출 급증·2026년 가이던스 상향, 목표주가 잇단 상향",미국
+신고가,OLD,NTAP US Equity,"NetApp, Inc.",Electronic Technology,204.99,1.46,40.2,22.9,32.2,29.7,O,O,,미국
+신고가,OLD,DXCM US Equity,"DexCom, Inc.",Health Technology,91.48,0.75,34.5,32.5,36.1,13.2,O,O,,미국
+신고가,OLD,SCHW US Equity,Charles Schwab Corporation (The),Finance,110.06,0.66,190.3,15.2,20.0,4.3,O,O,,미국
+신고가,OLD,SSB US Equity,SouthState Bank Corporation,Finance,110.91,0.5,10.8,11.3,11.6,1.2,O,O,,미국
+신고가,OLD,WBD US Equity,"Warner Bros. Discovery, Inc. - Series A",Consumer Services,27.75,0.36,69.7,,,2.1,O,,,미국
+신고가,OLD,RMD US Equity,ResMed Inc.,Health Technology,226.74,0.33,32.9,18.7,21.7,,O,,,미국
+신고가,OLD,ABT US Equity,Abbott Laboratories,Health Technology,111.27,0.32,192.5,19.2,36.0,3.8,O,,,미국
+신고가,OLD,PKG US Equity,Packaging Corporation of America,Process Industries,257.05,0.29,22.9,21.9,33.4,4.9,O,O,,미국
+신고가,OLD,USB US Equity,U.S. Bancorp,Finance,65.17,0.23,101.5,12.0,13.0,1.7,O,O,,미국
+신고가,OLD,THC US Equity,Tenet Healthcare Corporation,Health Services,267.05,0.1,21.5,13.0,10.3,4.6,O,O,"(전일) 테넷헬스케어(병원·외래수술센터 운영): 2분기 서프라이즈·가이던스 상향 여파로 강세 지속, 신고가",미국
+신고가,OLD,JHX US Equity,James Hardie Industries plc.,Non-Energy Minerals,30.89,0.1,17.9,22.0,124.4,2.7,O,O,"(전일) 제임스하디(파이버시멘트 건축자재): FY27 1분기 EBITDA 가이던스 상회, AZEK 통합 기대",미국
+신고가,OLD,FWONK US Equity,Liberty Media Corporation - Series C Liberty Formula One,Technology Services,103.69,0.08,25.8,48.0,64.1,3.4,O,,,미국
+신고가,OLD,FWONA US Equity,Liberty Media Corporation - Series A Liberty Formula One,Technology Services,94.7,0.05,25.7,44.4,58.5,3.1,O,,,미국
+신고가,OLD,MDT US Equity,Medtronic plc.,Health Technology,90.58,-0.2,115.9,15.2,24.3,2.3,O,,,미국
+신고가,OLD,RVTY US Equity,"Revvity, Inc.",Health Technology,117.5,-0.32,13.1,20.8,55.8,1.8,O,O,,미국
+신고가,OLD,MOG/A US Equity,Moog Inc.,Electronic Technology,427.16,-0.39,13.6,37.4,36.3,6.2,O,O,(전일) 무그(항공우주·방산 정밀제어시스템): 3분기 실적 호조·FY26 매출 가이던스 44억달러로 상향,미국
+신고가,OLD,LPLA US Equity,LPL Financial Holdings Inc.,Finance,374.96,-0.46,29.5,13.9,29.9,5.2,O,,,미국
+신고가,OLD,JPM US Equity,JP Morgan Chase & Co.,Finance,363.11,-0.57,965.2,15.1,15.6,2.7,O,O,,미국
+신고가,OLD,WAT US Equity,Waters Corporation,Health Technology,413.51,-0.63,40.6,26.9,52.6,2.7,O,O,,미국
+신고가,OLD,TSCO US Equity,Tractor Supply Company,Retail Trade,36.17,-0.71,18.8,18.3,18.9,7.2,O,,,미국
+신고가,OLD,LECO US Equity,"Lincoln Electric Holdings, Inc.",Producer Manufacturing,284.63,-0.82,15.5,23.7,28.5,10.0,O,,,미국
+신고가,OLD,BDX US Equity,"Becton, Dickinson and Company",Health Technology,181.97,-0.88,49.6,13.7,54.9,2.0,O,,,미국
+신고가,OLD,AME US Equity,"AMETEK, Inc.",Producer Manufacturing,256.22,-0.89,58.7,29.5,37.5,5.2,O,O,,미국
+신고가,OLD,ET US Equity,Energy Transfer LP,Industrial Services,20.76,-0.91,71.5,12.8,14.2,2.2,O,O,,미국
+신고가,OLD,BAC US Equity,Bank of America Corporation,Finance,64.09,-1.11,448.2,13.0,14.7,1.6,O,O,,미국
+신고가,OLD,CACI US Equity,"CACI International, Inc.",Technology Services,670.0,-1.48,14.8,20.4,27.7,3.3,O,,,미국
+신고가,OLD,DRI US Equity,"Darden Restaurants, Inc.",Consumer Services,223.5,-1.84,25.5,19.8,21.5,11.5,O,O,"(전일) 다든레스토랑츠(올리브가든 등 외식체인): 연속 강세 지속(신규 촉매 미확인, 외식업종 동반 강세 추정)",미국
+신고가,OLD,CQP US Equity,"Cheniere Energy Partners, LP",Utilities,67.3,-2.28,32.6,15.0,12.1,8.8,O,,,미국
+신고가,OLD,EAT US Equity,"Brinker International, Inc.",Consumer Services,238.61,-2.96,10.2,18.1,21.9,,O,O,(전일) 브링커인터내셔널(칠리스 등 캐주얼다이닝 체인): 4분기 매출 서프라이즈·FY27 가이던스 상회로 급등,미국
+신고가,OLD,TXRH US Equity,"Texas Roadhouse, Inc.",Consumer Services,207.01,-3.39,13.6,28.7,33.1,8.7,O,O,,미국
+신고가,OLD,PRAX US Equity,"Praxis Precision Medicines, Inc.",Health Technology,368.46,-4.63,10.3,,,7.7,O,O,"(전일) 프락시스정밀의학(신경질환 치료제 바이오텍): RBC·베어드 목표주가 상향, 2분기 실적 호조 지속",미국
+신고가,OLD,8308 JP Equity,"Resona Holdings, Inc.",Finance,2446.5,4.37,33.8,16.4,20.6,1.8,O,O,(전일) 리소나홀딩스(대형 은행지주): 정부의 조기 금리인상 지지 보도로 은행주 일제 급등,일본
+신고가,OLD,6857 JP Equity,Advantest Corp.,Electronic Technology,35940.0,4.02,151.1,39.9,57.0,25.0,O,O,(전일) 어드반테스트(반도체 테스터 장비): AI 반도체 테스터 수요 급증·실적 상향으로 급등,일본
+신고가,OLD,7011 JP Equity,"Mitsubishi Heavy Industries, Ltd.",Producer Manufacturing,4256.0,3.96,86.3,,35.9,4.5,O,,(전일) 미쓰비시중공업(중공업·방위산업): 방위비 증액 기대와 1분기 실적 호조 지속으로 상승,일본
+신고가,OLD,8331 JP Equity,"Chiba Bank, Ltd.",Finance,2842.0,3.46,11.8,16.5,19.4,1.5,O,O,(전일) 지바은행(지방은행): 정부의 조기 금리인상 지지 보도로 은행주 일제 급등,일본
+신고가,OLD,8309 JP Equity,"Sumitomo Mitsui Trust Group, Inc.",Finance,1753.0,2.82,29.9,13.4,13.3,1.3,O,O,(전일) 스미토모미쓰이트러스트그룹(신탁은행 지주): 정부의 조기 금리인상 지지 보도로 은행주 일제 급등,일본
+신고가,OLD,5831 JP Equity,"Shizuoka Financial Group, Inc.",Finance,3480.0,2.29,11.6,15.5,18.5,1.4,O,O,,일본
+신고가,OLD,9104 JP Equity,"Mitsui O.S.K.Lines,Ltd.",Transportation,6279.0,1.83,14.0,9.2,9.8,0.7,O,,,일본
+신고가,OLD,9435 JP Equity,"Hikari Tsushin, Inc.",Utilities,40430.0,1.46,10.7,,11.1,1.4,O,,,일본
+신고가,OLD,4543 JP Equity,Terumo Corporation,Health Technology,2620.5,0.85,24.1,,23.5,2.3,O,,"(전일) 테루모(의료기기·수액세트): FY27.3 영업이익 2245억→2575억엔 상향, 1Q 순이익 68%↑",일본
+신고가,OLD,6098 JP Equity,"Recruit Holdings Co., Ltd.",Technology Services,16790.0,0.78,141.8,32.3,41.1,13.2,O,O,"(전일) 리크루트(구인 플랫폼 인디드·HR): FY27.3 영업이익 7870억→9450억엔 상향, 1Q 영업이익 66%↑",일본
+신고가,OLD,6501 JP Equity,"Hitachi, Ltd.",Producer Manufacturing,5702.0,0.58,160.8,,32.2,3.9,O,,,일본
+신고가,OLD,4689 JP Equity,LY Corporation,Technology Services,499.5,-0.04,21.1,,17.0,1.1,O,,(전일) LY코퍼레이션(야후재팬·라인): 1분기 사상 최대 실적 + 1500억엔 자사주매입,일본
+신고가,OLD,4188 JP Equity,Mitsubishi Chemical Group Corporation,Process Industries,1227.0,-1.56,10.6,17.1,33.5,0.9,O,O,,일본
+신저가,OLD,1186 HK Equity,China Railway Construction Corporation Limited Class H,Industrial Services,4.51,-1.2,11.6,,3.0,0.2,O,O,(전일) 중국철도건설(대형 인프라·철도 시공): 특별한 뉴스 없음(국유 건설섹터 수급 부진 추정),홍콩
+신저가,OLD,9866 HK Equity,NIO Inc. Class A,Consumer Durables,35.32,-1.01,10.6,,,16.1,O,,(전일) 니오(중국 프리미엄 전기차): 특별한 뉴스 없음(전기차 섹터 수급 약세 추정),홍콩
+신고가,OLD,992 HK Equity,Lenovo Group Limited,Electronic Technology,34.9,20.18,45.9,18.1,32.2,7.2,O,O,"레노버(PC·서버 제조): FY26/27 1분기 매출 43% 급증·컨센 20% 상회, AI 매출 60% 증가",홍콩
+신고가,OLD,6951 HK Equity,"Chaozhou Three-Circle (Group) Co., Ltd. Class H",Electronic Technology,130.8,9.0,37.4,,,9.8,O,O,"차오저우싼환(전자세라믹·MLCC 부품): 신규 촉매 미확인, MLCC 공급부족·가격인상 테마 지속 추정",홍콩
+신고가,OLD,3759 HK Equity,"Pharmaron Beijing Co., Ltd. Class H",Health Technology,30.4,4.83,11.6,20.7,29.1,3.0,O,O,(전일) 캉룽화청(신약 위탁연구 CRO): CXO 섹터 랠리 지속·실적 호조로 목표주가 상향 잇따름(개별 신규 촉매는 미확인),홍콩
+신고가,OLD,2359 HK Equity,"WuXi AppTec Co., Ltd. Class H",Health Technology,203.2,2.16,69.7,23.9,24.6,,O,O,"(전일) 우시앱텍(신약 위탁연구 CRO): 상반기 순이익 29% 증가 서프라이즈, CXO 급등 주도",홍콩
+신고가,OLD,27 HK Equity,Galaxy Entertainment Group Limited,Consumer Services,34.94,2.16,19.1,,14.3,,O,,(전일) 갤럭시엔터테인먼트(마카오 카지노·리조트): 8월 마카오 카지노 매출 호조 전망에 외국계 매수의견 강화,홍콩
+신고가,OLD,1093 HK Equity,CSPC Pharmaceutical Group Limited,Health Technology,8.85,2.02,12.7,12.9,24.1,2.7,O,,"(전일) 스야오그룹(CSPC, 항생제·비타민C·혁신신약 제약사): 특별한 뉴스 없음(8/20 중간실적 앞둔 제약 수급 추정)",홍콩
+신고가,OLD,19 HK Equity,Swire Pacific Limited Class A,Consumer Non-Durables,103.9,0.97,15.8,,16.0,0.5,O,O,,홍콩
+신고가,OLD,2 HK Equity,CLP Holdings Limited,Utilities,78.65,0.96,25.1,,18.3,1.8,O,O,"(전일) CLP홀딩스(홍콩 최대 전력회사, 발전·송배전): 특별한 뉴스 없음(유틸리티 방어주 수급 흐름 추정)",홍콩
+신고가,OLD,301165 CH Equity,"Ruijie Networks Co., Ltd. Class A",Technology Services,143.3,13.52,20.8,94.3,224.2,31.1,O,O,루이제네트워크(데이터센터용 네트워크 스위치): 알리바바클라우드 슈퍼노드 출시로 스위치 수요 기대,중국A
+신고가,OLD,300759 CH Equity,"Pharmaron Beijing Co., Ltd. Class A",Health Technology,49.8,3.97,11.6,39.1,52.3,5.6,O,O,(전일) 캉룽화청A(신약 위탁개발 CXO): 상반기 중국 기술수출 2배 급증·수주잔고 25%↑,중국A
+신고가,OLD,603228 CH Equity,"Shenzhen Kinwong Electronic Co., Ltd. Class A",Electronic Technology,97.2,-1.03,14.4,,81.0,7.1,O,O,"(전일) 진왕전자(PCB 제조): AI서버·광모듈용 PCB 수요로 연일 급등 후 차익실현 매물, 신고가는 장중 터치",중국A

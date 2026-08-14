@@ -1,0 +1,290 @@
+{
+ "data_dates": {
+  "미국": "2026-08-10",
+  "일본": "2026-08-10",
+  "홍콩": "2026-08-11",
+  "중국A": "2026-08-11"
+ },
+ "note": "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달.",
+ "movers": [
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "P US Equity",
+   "종목명": "Everpure, Inc.",
+   "등락률(%)": 8.81,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "PANW US Equity",
+   "종목명": "Palo Alto Networks, Inc.",
+   "등락률(%)": 5.82,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "VRTX US Equity",
+   "종목명": "Vertex Pharmaceuticals Incorporated",
+   "등락률(%)": 5.61,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "CRWD US Equity",
+   "종목명": "CrowdStrike Holdings, Inc.",
+   "등락률(%)": 5.01,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "NTAP US Equity",
+   "종목명": "NetApp, Inc.",
+   "등락률(%)": 4.85,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "BSP US Equity",
+   "종목명": "Bending Spoons S.p.A.",
+   "등락률(%)": 15.7,
+   "event": "급변"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "RBRK US Equity",
+   "종목명": "Rubrik, Inc.",
+   "등락률(%)": 8.7,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "BMRN US Equity",
+   "종목명": "BioMarin Pharmaceutical Inc.",
+   "등락률(%)": 7.95,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "MO US Equity",
+   "종목명": "Altria Group, Inc.",
+   "등락률(%)": -4.11,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "GLPI US Equity",
+   "종목명": "Gaming and Leisure Properties, Inc.",
+   "등락률(%)": -3.01,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "EVR US Equity",
+   "종목명": "Evercore Inc.",
+   "등락률(%)": -2.61,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "AEP US Equity",
+   "종목명": "American Electric Power Company, Inc.",
+   "등락률(%)": -2.3,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "DTE US Equity",
+   "종목명": "DTE Energy Company",
+   "등락률(%)": -2.21,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "6098 JP Equity",
+   "종목명": "Recruit Holdings Co., Ltd.",
+   "등락률(%)": 22.79,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "7550 JP Equity",
+   "종목명": "Zensho Holdings Co., Ltd.",
+   "등락률(%)": 10.69,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "4543 JP Equity",
+   "종목명": "Terumo Corporation",
+   "등락률(%)": 8.53,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "7272 JP Equity",
+   "종목명": "Yamaha Motor Co., Ltd.",
+   "등락률(%)": 4.31,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "7974 JP Equity",
+   "종목명": "Nintendo Co., Ltd.",
+   "등락률(%)": 2.76,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "7733 JP Equity",
+   "종목명": "Olympus Corp.",
+   "등락률(%)": 10.1,
+   "event": "급변"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "9843 JP Equity",
+   "종목명": "Nitori Holdings Co. Ltd.",
+   "등락률(%)": 9.73,
+   "event": "급변"
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "9531 JP Equity",
+   "종목명": "TOKYO GAS Co., Ltd.",
+   "등락률(%)": -0.85,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "1698 HK Equity",
+   "종목명": "Tencent Music Entertainment Group Class A",
+   "등락률(%)": 1.76,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "1308 HK Equity",
+   "종목명": "SITC International Holdings Co., Ltd.",
+   "등락률(%)": 0.6,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "3690 HK Equity",
+   "종목명": "Meituan Class B",
+   "등락률(%)": -0.11,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "6693 HK Equity",
+   "종목명": "Chifeng Jilong Gold Mining Group Limited Class H",
+   "등락률(%)": -1.88,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "2099 HK Equity",
+   "종목명": "China Gold International Resources Corp. Ltd.",
+   "등락률(%)": -2.36,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "3759 HK Equity",
+   "종목명": "Pharmaron Beijing Co., Ltd. Class H",
+   "등락률(%)": 9.25,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "601919 CH Equity",
+   "종목명": "COSCO SHIPPING Holdings Co., Ltd. Class A",
+   "등락률(%)": -0.26,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "000975 CH Equity",
+   "종목명": "Shanjin International Gold Co., Ltd. Class A",
+   "등락률(%)": -0.7,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "600489 CH Equity",
+   "종목명": "Zhongjin Gold Corp., Ltd. Class A",
+   "등락률(%)": -1.5,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "600988 CH Equity",
+   "종목명": "Chifeng Jilong Gold Mining Group Limited Class A",
+   "등락률(%)": -2.58,
+   "event": "신규"
+  }
+ ]
+}

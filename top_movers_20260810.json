@@ -1,0 +1,335 @@
+{
+ "data_dates": {
+  "미국": "2026-08-07",
+  "일본": "2026-08-07",
+  "홍콩": "2026-08-07",
+  "중국A": "2026-08-07"
+ },
+ "note": "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달.",
+ "movers": [
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "TEAM US Equity",
+   "종목명": "Atlassian Corporation",
+   "등락률(%)": 35.31,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "TWLO US Equity",
+   "종목명": "Twilio Inc.",
+   "등락률(%)": 24.89,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "NTRA US Equity",
+   "종목명": "Natera, Inc.",
+   "등락률(%)": 21.37,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "ABNB US Equity",
+   "종목명": "Airbnb, Inc.",
+   "등락률(%)": 17.43,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "CART US Equity",
+   "종목명": "Maplebear Inc.",
+   "등락률(%)": 11.41,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "HALO US Equity",
+   "종목명": "Halozyme Therapeutics, Inc.",
+   "등락률(%)": 20.24,
+   "event": "급변"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "JHX US Equity",
+   "종목명": "James Hardie Industries plc.",
+   "등락률(%)": 7.96,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "AMRZ US Equity",
+   "종목명": "Amrize Ltd",
+   "등락률(%)": -8.94,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "EMA US Equity",
+   "종목명": "Emera Incorporated",
+   "등락률(%)": -1.49,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "WEC US Equity",
+   "종목명": "WEC Energy Group, Inc.",
+   "등락률(%)": -0.31,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "XEL US Equity",
+   "종목명": "Xcel Energy Inc.",
+   "등락률(%)": 1.43,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "8136 JP Equity",
+   "종목명": "Sanrio Co. Ltd.",
+   "등락률(%)": 6.52,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "5108 JP Equity",
+   "종목명": "Bridgestone Corporation",
+   "등락률(%)": 5.26,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "4578 JP Equity",
+   "종목명": "Otsuka Holdings Co., Ltd.",
+   "등락률(%)": 4.4,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "7267 JP Equity",
+   "종목명": "Honda Motor Co., Ltd.",
+   "등락률(%)": 2.9,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "4689 JP Equity",
+   "종목명": "LY Corporation",
+   "등락률(%)": 2.89,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "7832 JP Equity",
+   "종목명": "Bandai Namco Holdings Inc.",
+   "등락률(%)": 10.5,
+   "event": "급변"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "3402 JP Equity",
+   "종목명": "Toray Industries, Inc.",
+   "등락률(%)": 4.27,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "5401 JP Equity",
+   "종목명": "NIPPON STEEL CORP.",
+   "등락률(%)": 2.05,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "1802 JP Equity",
+   "종목명": "Obayashi Corporation",
+   "등락률(%)": -4.2,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "1812 JP Equity",
+   "종목명": "Kajima Corporation",
+   "등락률(%)": -1.48,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "3759 HK Equity",
+   "종목명": "Pharmaron Beijing Co., Ltd. Class H",
+   "등락률(%)": 12.07,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "992 HK Equity",
+   "종목명": "Lenovo Group Limited",
+   "등락률(%)": 8.33,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "2359 HK Equity",
+   "종목명": "WuXi AppTec Co., Ltd. Class H",
+   "등락률(%)": 7.01,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "6160 HK Equity",
+   "종목명": "BeOne Medicines Ltd.",
+   "등락률(%)": 5.26,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "87 HK Equity",
+   "종목명": "Swire Pacific Limited Class B",
+   "등락률(%)": 3.52,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "2269 HK Equity",
+   "종목명": "Wuxi Biologics (Cayman) Inc.",
+   "등락률(%)": 10.83,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "288 HK Equity",
+   "종목명": "WH Group Ltd. (HK)",
+   "등락률(%)": -3.1,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "9866 HK Equity",
+   "종목명": "NIO Inc. Class A",
+   "등락률(%)": 0.38,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "9868 HK Equity",
+   "종목명": "XPeng, Inc. Class A",
+   "등락률(%)": 1.3,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "300759 CH Equity",
+   "종목명": "Pharmaron Beijing Co., Ltd. Class A",
+   "등락률(%)": 14.34,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "603228 CH Equity",
+   "종목명": "Shenzhen Kinwong Electronic Co., Ltd. Class A",
+   "등락률(%)": 10.0,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "688002 CH Equity",
+   "종목명": "Raytron Technology Co., Ltd. Class A",
+   "등락률(%)": 9.34,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "603259 CH Equity",
+   "종목명": "WuXi AppTec Co., Ltd. Class A",
+   "등락률(%)": 8.49,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "688235 CH Equity",
+   "종목명": "BeOne Medicines Ltd. Class A",
+   "등락률(%)": 11.28,
+   "event": "급변"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "601168 CH Equity",
+   "종목명": "Western Mining Co., Ltd. Class A",
+   "등락률(%)": 8.41,
+   "event": "급변"
+  }
+ ]
+}

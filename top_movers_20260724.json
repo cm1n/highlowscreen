@@ -1,0 +1,299 @@
+{
+ "data_dates": {
+  "미국": "2026-07-23",
+  "일본": "2026-07-24",
+  "홍콩": "2026-07-24",
+  "중국A": "2026-07-24"
+ },
+ "note": "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달.",
+ "movers": [
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "MEDP US Equity",
+   "종목명": "Medpace Holdings, Inc.",
+   "등락률(%)": 14.71,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "LMT US Equity",
+   "종목명": "Lockheed Martin Corporation",
+   "등락률(%)": 10.54,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "ALLE US Equity",
+   "종목명": "Allegion plc",
+   "등락률(%)": 10.45,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "URI US Equity",
+   "종목명": "United Rentals, Inc.",
+   "등락률(%)": 10.11,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "TMO US Equity",
+   "종목명": "Thermo Fisher Scientific Inc",
+   "등락률(%)": 8.71,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "PCAR US Equity",
+   "종목명": "PACCAR Inc.",
+   "등락률(%)": -0.27,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "TSLA US Equity",
+   "종목명": "Tesla, Inc.",
+   "등락률(%)": -14.52,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "ROL US Equity",
+   "종목명": "Rollins, Inc.",
+   "등락률(%)": -9.27,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "DOV US Equity",
+   "종목명": "Dover Corporation",
+   "등락률(%)": -7.8,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "GOOGL US Equity",
+   "종목명": "Alphabet Inc.",
+   "등락률(%)": -7.13,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "GOOG US Equity",
+   "종목명": "Alphabet Inc.",
+   "등락률(%)": -6.89,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "3382 JP Equity",
+   "종목명": "Seven & I Holdings Co., Ltd.",
+   "등락률(%)": 3.17,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "4502 JP Equity",
+   "종목명": "Takeda Pharmaceutical Co. Ltd.",
+   "등락률(%)": 2.6,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "9101 JP Equity",
+   "종목명": "Nippon Yusen Kabushiki Kaisha",
+   "등락률(%)": 2.22,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "8766 JP Equity",
+   "종목명": "Tokio Marine Holdings, Inc.",
+   "등락률(%)": 1.99,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "9433 JP Equity",
+   "종목명": "KDDI Corporation",
+   "등락률(%)": 1.81,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "7181 JP Equity",
+   "종목명": "JAPAN POST INSURANCE Co., Ltd.",
+   "등락률(%)": 1.14,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "6146 JP Equity",
+   "종목명": "Disco Corporation",
+   "등락률(%)": -12.27,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "2388 HK Equity",
+   "종목명": "BOC Hong Kong (Holdings) Limited",
+   "등락률(%)": 5.98,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "19 HK Equity",
+   "종목명": "Swire Pacific Limited Class A",
+   "등락률(%)": 1.18,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "1919 HK Equity",
+   "종목명": "COSCO SHIPPING Holdings Co., Ltd. Class H",
+   "등락률(%)": -0.64,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "293 HK Equity",
+   "종목명": "Cathay Pacific Airways Limited",
+   "등락률(%)": -0.43,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "6869 HK Equity",
+   "종목명": "Yangtze Optical Fibre and Cable Joint Stock Ltd Co Class H",
+   "등락률(%)": -3.74,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "9866 HK Equity",
+   "종목명": "NIO Inc. Class A",
+   "등락률(%)": -2.81,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "601919 CH Equity",
+   "종목명": "COSCO SHIPPING Holdings Co., Ltd. Class A",
+   "등락률(%)": 0.33,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "603296 CH Equity",
+   "종목명": "Huaqin Co., Ltd. Class A",
+   "등락률(%)": -0.78,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "001965 CH Equity",
+   "종목명": "China Merchants Expressway Network & Technology Holdings Co., Ltd. Class A",
+   "등락률(%)": -0.88,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "001309 CH Equity",
+   "종목명": "Shenzhen Techwinsemi Technology Co., Ltd. Class A",
+   "등락률(%)": -8.07,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "601869 CH Equity",
+   "종목명": "Yangtze Optical Fibre & Cable Joint Stock Ltd. Co. Class A",
+   "등락률(%)": -6.87,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "002050 CH Equity",
+   "종목명": "Zhejiang Sanhua Intelligent Controls Co., Ltd. Class A",
+   "등락률(%)": -5.75,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "601689 CH Equity",
+   "종목명": "Ningbo Tuopu Group Co., Ltd. Class A",
+   "등락률(%)": -5.29,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "600930 CH Equity",
+   "종목명": "Huadian New Energy Group Corporation Limited Class A",
+   "등락률(%)": -4.81,
+   "event": "신규"
+  }
+ ]
+}

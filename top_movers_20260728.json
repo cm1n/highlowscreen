@@ -1,0 +1,263 @@
+{
+ "data_dates": {
+  "미국": "2026-07-27",
+  "일본": "2026-07-27",
+  "홍콩": "2026-07-27",
+  "중국A": "2026-07-27"
+ },
+ "note": "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달.",
+ "movers": [
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "EXPE US Equity",
+   "종목명": "Expedia Group, Inc.",
+   "등락률(%)": 7.09,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "GM US Equity",
+   "종목명": "General Motors Company",
+   "등락률(%)": 5.32,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "SIRI US Equity",
+   "종목명": "SiriusXM Holdings Inc.",
+   "등락률(%)": 4.77,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "TXRH US Equity",
+   "종목명": "Texas Roadhouse, Inc.",
+   "등락률(%)": 4.02,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "GPN US Equity",
+   "종목명": "Global Payments Inc.",
+   "등락률(%)": 3.88,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "THC US Equity",
+   "종목명": "Tenet Healthcare Corporation",
+   "등락률(%)": 4.36,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "SJM US Equity",
+   "종목명": "The J.M. Smucker Company",
+   "등락률(%)": 2.31,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "BMY US Equity",
+   "종목명": "Bristol-Myers Squibb Company",
+   "등락률(%)": 0.76,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "TTMI US Equity",
+   "종목명": "TTM Technologies, Inc.",
+   "등락률(%)": -5.86,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "SITM US Equity",
+   "종목명": "SiTime Corporation",
+   "등락률(%)": -5.73,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "HAL US Equity",
+   "종목명": "Halliburton Company",
+   "등락률(%)": -3.69,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "ENTG US Equity",
+   "종목명": "Entegris, Inc.",
+   "등락률(%)": -2.15,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "NVMI US Equity",
+   "종목명": "Nova Ltd.",
+   "등락률(%)": -2.08,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "7832 JP Equity",
+   "종목명": "Bandai Namco Holdings Inc.",
+   "등락률(%)": 7.49,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "4684 JP Equity",
+   "종목명": "OBIC Co., Ltd.",
+   "등락률(%)": 6.99,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "4901 JP Equity",
+   "종목명": "FUJIFILM Holdings Corp",
+   "등락률(%)": 5.65,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "4661 JP Equity",
+   "종목명": "Oriental Land Co., Ltd.",
+   "등락률(%)": 5.55,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "6902 JP Equity",
+   "종목명": "DENSO CORPORATION",
+   "등락률(%)": 4.0,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "4063 JP Equity",
+   "종목명": "Shin-Etsu Chemical Co., Ltd.",
+   "등락률(%)": -8.3,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "4519 JP Equity",
+   "종목명": "Chugai Pharmaceutical Co., Ltd.",
+   "등락률(%)": -7.66,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "3690 HK Equity",
+   "종목명": "Meituan Class B",
+   "등락률(%)": 3.0,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "1398 HK Equity",
+   "종목명": "Industrial and Commercial Bank of China Limited Class H",
+   "등락률(%)": 1.39,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "316 HK Equity",
+   "종목명": "Orient Overseas (International) Limited",
+   "등락률(%)": 0.95,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "5 HK Equity",
+   "종목명": "HSBC Holdings Plc",
+   "등락률(%)": 0.87,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "3200 HK Equity",
+   "종목명": "Shenzhen Han's CNC Technology Co., Ltd. Class H",
+   "등락률(%)": 4.39,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "002415 CH Equity",
+   "종목명": "Hangzhou Hikvision Digital Technology Co., Ltd Class A",
+   "등락률(%)": 4.23,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "688795 CH Equity",
+   "종목명": "Moore Threads Technology Co. Ltd. Class A",
+   "등락률(%)": 0.97,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "688818 CH Equity",
+   "종목명": "CETC LANTIAN TECHNOLOGY CO LTD",
+   "등락률(%)": 2.85,
+   "event": "신규"
+  }
+ ]
+}

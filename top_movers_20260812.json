@@ -1,0 +1,155 @@
+{
+ "data_dates": {
+  "미국": "2026-08-11",
+  "일본": "2026-08-10",
+  "홍콩": "2026-08-11",
+  "중국A": "2026-08-11"
+ },
+ "note": "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달.",
+ "movers": [
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "ARMK US Equity",
+   "종목명": "Aramark",
+   "등락률(%)": 8.54,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "KKR US Equity",
+   "종목명": "KKR & Co. Inc.",
+   "등락률(%)": 6.88,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "MELI US Equity",
+   "종목명": "MercadoLibre, Inc.",
+   "등락률(%)": 6.34,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "OWL US Equity",
+   "종목명": "Blue Owl Capital Inc.",
+   "등락률(%)": 5.75,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "MPC US Equity",
+   "종목명": "Marathon Petroleum Corporation",
+   "등락률(%)": 5.03,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "P US Equity",
+   "종목명": "Everpure, Inc.",
+   "등락률(%)": 11.64,
+   "event": "급변"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "WAT US Equity",
+   "종목명": "Waters Corporation",
+   "등락률(%)": 0.78,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "ONON US Equity",
+   "종목명": "On Holding AG",
+   "등락률(%)": -20.29,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "APP US Equity",
+   "종목명": "Applovin Corporation",
+   "등락률(%)": -5.99,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "RBA US Equity",
+   "종목명": "RB Global, Inc.",
+   "등락률(%)": -4.47,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "FICO US Equity",
+   "종목명": "Fair Isaac Corporation",
+   "등락률(%)": -1.1,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "YUM US Equity",
+   "종목명": "Yum! Brands, Inc.",
+   "등락률(%)": -0.4,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "6098 JP Equity",
+   "종목명": "Recruit Holdings Co., Ltd.",
+   "등락률(%)": 22.79,
+   "event": "급변"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "7550 JP Equity",
+   "종목명": "Zensho Holdings Co., Ltd.",
+   "등락률(%)": 10.69,
+   "event": "급변"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "7733 JP Equity",
+   "종목명": "Olympus Corp.",
+   "등락률(%)": 10.1,
+   "event": "급변"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "600988 CH Equity",
+   "종목명": "Chifeng Jilong Gold Mining Group Limited Class A",
+   "등락률(%)": -7.84,
+   "event": "급변"
+  }
+ ]
+}

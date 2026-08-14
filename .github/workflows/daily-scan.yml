@@ -1,0 +1,85 @@
+name: 신고신저가 데일리 스캔
+
+# 07:30 KST = 22:30 UTC (전일). GitHub cron은 UTC 기준이라 하루 앞 시각으로 적는다.
+# 스케줄은 기본 브랜치에서만 돌고, public 리포는 60일간 활동이 없으면 자동 비활성화된다
+# (이 워크플로우가 매일 커밋을 만들므로 활동은 계속 유지된다).
+on:
+  schedule:
+    - cron: "30 22 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: daily-scan
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      # 러너는 UTC라 그대로 두면 파일명이 하루 밀린다(22:30 UTC = 익일 07:30 KST).
+      # 로컬 실행분과 같은 날짜 규칙을 쓰도록 KST로 고정.
+      TZ: Asia/Seoul
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 의존성 설치
+        run: pip install -r requirements.txt
+
+      # 1단계. 산출물은 리포 루트에 쌓인다(index.html·xlsx·scan/sector/etf/index CSV·top_movers).
+      # 전일 scan_*.csv가 같은 폴더에 있어야 NEW/OLD 태깅과 이유 승계가 동작하므로
+      # out-dir을 리포 루트로 두고 결과를 커밋해 다음 실행이 이어받게 한다.
+      - name: 1단계 — 스캔
+        run: python tools/high_low_scan.py --out-dir .
+
+      # 2~3단계. 뉴스 검색·이유 JSON·시황 코멘트·섹터ETF 코멘트를 생성한다.
+      # claude_code_oauth_token으로 인증하면 API 종량과금이 아니라 구독 quota를 쓴다.
+      # github_token을 명시적으로 넘기는 이유: 생략하면 Claude GitHub App OIDC 교환을 타는데
+      # cron 트리거에서 401로 실패하는 알려진 이슈가 있다(claude-code-action#814).
+      - name: 2~3단계 — 이유 검색 및 코멘트
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: "/daily-comment"
+          claude_args: |
+            --model claude-opus-5
+            --max-turns 80
+            --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Task"
+
+      # 4단계. 이유를 xlsx·대시보드·scan CSV에 병합(익일 승계에 필요).
+      # publish_pages는 ~/Documents/GitHub/highlow-pages가 없는 러너에서 자동으로 no-op이라
+      # 여기서는 아래 커밋 스텝이 발행을 대신한다.
+      - name: 4단계 — 이유 병합
+        run: |
+          set -e
+          D=$(date +%Y%m%d)
+          if [ -f "reasons_${D}.json" ]; then
+            # --out-dir을 반드시 넘긴다. 생략하면 기본값 ~/Desktop/신고신저가를 보고
+            # 러너에서 빈 폴더를 만든 뒤 scan CSV를 못 찾아 조용히 실패한다.
+            python tools/high_low_scan.py --out-dir . --merge-reasons "reasons_${D}.json"
+          else
+            echo "::warning::reasons_${D}.json 없음 — 코멘트 단계가 실패했을 수 있어 병합을 건너뜀"
+          fi
+
+      - name: 발행
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "update $(date +%Y-%m-%d)"
+            git push
+          fi

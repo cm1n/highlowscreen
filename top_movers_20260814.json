@@ -1,0 +1,146 @@
+{
+ "data_dates": {
+  "미국": "2026-08-13",
+  "일본": "2026-08-13",
+  "홍콩": "2026-08-13",
+  "중국A": "2026-08-13"
+ },
+ "note": "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달.",
+ "movers": [
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "WDAY US Equity",
+   "종목명": "Workday, Inc.",
+   "등락률(%)": 17.78,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "DOCU US Equity",
+   "종목명": "DocuSign, Inc.",
+   "등락률(%)": 10.31,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "RBRK US Equity",
+   "종목명": "Rubrik, Inc.",
+   "등락률(%)": 8.64,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "GPN US Equity",
+   "종목명": "Global Payments Inc.",
+   "등락률(%)": 7.12,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "HPQ US Equity",
+   "종목명": "HP Inc.",
+   "등락률(%)": 6.9,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "TPG US Equity",
+   "종목명": "TPG Inc.",
+   "등락률(%)": 8.51,
+   "event": "급변"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "MDB US Equity",
+   "종목명": "MongoDB, Inc.",
+   "등락률(%)": 7.87,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "MICC US Equity",
+   "종목명": "The Magnum Ice Cream Company N.V.",
+   "등락률(%)": 2.14,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "TPR US Equity",
+   "종목명": "Tapestry, Inc.",
+   "등락률(%)": -16.49,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "HUT US Equity",
+   "종목명": "Hut 8 Corp.",
+   "등락률(%)": -8.62,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "NBIX US Equity",
+   "종목명": "Neurocrine Biosciences, Inc.",
+   "등락률(%)": -3.62,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "AS US Equity",
+   "종목명": "Amer Sports, Inc.",
+   "등락률(%)": 0.27,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "992 HK Equity",
+   "종목명": "Lenovo Group Limited",
+   "등락률(%)": 20.18,
+   "event": "급변"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "6951 HK Equity",
+   "종목명": "Chaozhou Three-Circle (Group) Co., Ltd. Class H",
+   "등락률(%)": 9.0,
+   "event": "급변"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "301165 CH Equity",
+   "종목명": "Ruijie Networks Co., Ltd. Class A",
+   "등락률(%)": 13.52,
+   "event": "급변"
+  }
+ ]
+}

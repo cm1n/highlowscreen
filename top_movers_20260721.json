@@ -1,0 +1,227 @@
+{
+ "data_dates": {
+  "미국": "2026-07-20",
+  "일본": "2026-07-21",
+  "홍콩": "2026-07-21",
+  "중국A": "2026-07-21"
+ },
+ "note": "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달.",
+ "movers": [
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "PAA US Equity",
+   "종목명": "Plains All American Pipeline, L.P.",
+   "등락률(%)": 1.84
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "AES US Equity",
+   "종목명": "The AES Corporation",
+   "등락률(%)": 0.2
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "CLH US Equity",
+   "종목명": "Clean Harbors, Inc.",
+   "등락률(%)": -0.12
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "BTSG US Equity",
+   "종목명": "BrightSpring Health Services, Inc.",
+   "등락률(%)": -0.27
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "FWONA US Equity",
+   "종목명": "Liberty Media Corporation - Series A Liberty Formula One",
+   "등락률(%)": -2.89
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "QXO US Equity",
+   "종목명": "QXO, Inc.",
+   "등락률(%)": -5.97
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "HONA US Equity",
+   "종목명": "Honeywell Aerospace Inc.",
+   "등락률(%)": -4.33
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "WBD US Equity",
+   "종목명": "Warner Bros. Discovery, Inc. - Series A",
+   "등락률(%)": -3.76
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "LECO US Equity",
+   "종목명": "Lincoln Electric Holdings, Inc.",
+   "등락률(%)": -2.89
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "AZN US Equity",
+   "종목명": "AstraZeneca PLC",
+   "등락률(%)": -2.59
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "8630 JP Equity",
+   "종목명": "Sompo Holdings,Inc.",
+   "등락률(%)": 4.15
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "5401 JP Equity",
+   "종목명": "NIPPON STEEL CORP.",
+   "등락률(%)": 1.76
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "4502 JP Equity",
+   "종목명": "Takeda Pharmaceutical Co. Ltd.",
+   "등락률(%)": 1.39
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "7751 JP Equity",
+   "종목명": "Canon Inc.",
+   "등락률(%)": 0.69
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "4568 JP Equity",
+   "종목명": "Daiichi Sankyo Company, Limited",
+   "등락률(%)": 0.56
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "1308 HK Equity",
+   "종목명": "SITC International Holdings Co., Ltd.",
+   "등락률(%)": 1.16
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "300 HK Equity",
+   "종목명": "Midea Group Co. Ltd. Class H",
+   "등락률(%)": 1.01
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "000938 CH Equity",
+   "종목명": "Unisplendour Co., Ltd. Class A",
+   "등락률(%)": 10.0
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "600690 CH Equity",
+   "종목명": "Haier Smart Home Co., Ltd. Class A",
+   "등락률(%)": 1.35
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "600025 CH Equity",
+   "종목명": "Huaneng Lancang River Hydropower Co Ltd Class A",
+   "등락률(%)": -0.3
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "600018 CH Equity",
+   "종목명": "Shanghai International Port (Group) Co., Ltd. Class A",
+   "등락률(%)": -0.38
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "000651 CH Equity",
+   "종목명": "Gree Electric Appliances, Inc. of Zhuhai Class A",
+   "등락률(%)": -0.94
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "001309 CH Equity",
+   "종목명": "Shenzhen Techwinsemi Technology Co., Ltd. Class A",
+   "등락률(%)": 1.06
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "002466 CH Equity",
+   "종목명": "Tianqi Lithium Corp. Class A",
+   "등락률(%)": 2.32
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "000063 CH Equity",
+   "종목명": "ZTE Corporation Class A",
+   "등락률(%)": 2.4
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "300857 CH Equity",
+   "종목명": "Sharetronic Data Technology Co. Ltd. Class A",
+   "등락률(%)": 3.1
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "600522 CH Equity",
+   "종목명": "Jiangsu Zhongtian Technology Co., Ltd. Class A",
+   "등락률(%)": 3.66
+  }
+ ]
+}

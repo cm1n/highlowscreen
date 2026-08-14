@@ -1,0 +1,61 @@
+﻿구분,NEW/OLD,티커,종목명,섹터,종가,등락률(%),시총($B),PER(TTM),PBR,60일,52주,이유,시장
+신저가,NEW,SPCX US Equity,Space Exploration Technologies Corp,Communications,115.26,-6.7,1529.2,,43.6,O,O,"(스페이스X 주식 프록시): 8/6 락업 만료 임박·고평가(P/S 64배) 부담, 지분 희석 우려로 하락",미국
+신저가,NEW,TEL US Equity,TE Connectivity plc,Electronic Technology,200.28,-4.18,58.5,,4.4,O,O,(산업용 커넥터·센서): Q3 실적 상회에도 Astrodyne TDI $14억 인수 발표 후 유기성장 둔화 우려,미국
+신저가,NEW,APP US Equity,Applovin Corporation,Technology Services,412.48,-3.78,138.6,36.4,58.7,O,,"(모바일 광고 플랫폼·AXON AI): AXON 셀프서브 전환 마진 희석 우려·CEO 지분매각, 광고 경쟁 심화",미국
+신저가,NEW,WSO US Equity,"Watsco, Inc.",Producer Manufacturing,362.0,-2.94,14.8,30.1,4.8,O,,"(HVAC 유통): Q2 실적(7/29) 앞두고 2026 HVAC 수요 부진 신호 재부각, 섹터 약세 수급",미국
+신저가,NEW,ISRG US Equity,"Intuitive Surgical, Inc.",Health Technology,340.69,-2.68,120.7,39.0,6.6,O,O,(로봇수술 시스템·다빈치): Q2 매출 상회에도 2026 시술건수 성장 가이던스 하향(국제 선택수술 둔화),미국
+신저가,NEW,ALNY US Equity,"Alnylam Pharmaceuticals, Inc.",Health Technology,266.99,-1.61,35.6,63.4,33.1,O,O,,미국
+신저가,NEW,BN US Equity,Brookfield Corporation,Finance,41.81,-0.81,93.4,84.3,2.2,O,,,미국
+신저가,OLD,MCD US Equity,McDonald's Corporation,Consumer Services,263.57,-0.13,187.3,21.7,,O,O,,미국
+신고가,NEW,ARWR US Equity,"Arrowhead Pharmaceuticals, Inc.",Health Technology,88.7,19.03,12.5,,20.3,O,O,"(RNAi 신약개발): 플로자시란 고중성지방혈증 3상(SHASTA-3/4) 성공, 중성지방 79~81% 감소",미국
+신고가,NEW,WAB US Equity,Westinghouse Air Brake Technologies Corporation,Producer Manufacturing,290.0,10.04,49.2,,,O,O,"(철도·화물 운송장비): Q2 매출 $31.8억(+17.5%)·EPS $2.76 상회, 수주잔고 $309억(+41.7%)에 가이던스 상향",미국
+신고가,NEW,PAG US Equity,"Penske Automotive Group, Inc.",Retail Trade,214.57,9.93,14.1,16.0,2.5,O,O,"(복합 자동차딜러·상용차): Q2 실적 상회·연간 가이던스 상향, BofA·바클레이즈 등 목표가 일제 상향",미국
+신고가,NEW,VG US Equity,"Venture Global, Inc.",Industrial Services,14.82,5.41,36.8,15.5,5.1,O,,"(미국 LNG 수출): CP2 LNG 2단계 FID·$86억 PF 완료, 2026 EBITDA 가이던스 $82~85억 재확인",미국
+신고가,NEW,PCAR US Equity,PACCAR Inc.,Producer Manufacturing,131.11,3.85,69.0,27.9,3.5,O,,"(대형트럭 제조·켄워스·피터빌트): 6월 Class8 트럭 수주 전년비 +230% 급증, 수요 회복 기대",미국
+신고가,NEW,PCG US Equity,Pacific Gas & Electric Co.,Utilities,18.11,3.54,39.9,14.2,1.3,O,,,미국
+신고가,NEW,PM US Equity,Philip Morris International Inc,Consumer Non-Durables,194.3,3.33,302.8,,,O,O,,미국
+신고가,NEW,EIX US Equity,Edison International,Utilities,80.38,2.83,30.9,8.7,1.8,O,O,,미국
+신고가,NEW,SF US Equity,Stifel Financial Corporation,Finance,79.31,2.19,12.2,,2.3,O,,,미국
+신고가,NEW,SJM US Equity,The J.M. Smucker Company,Consumer Non-Durables,118.05,1.99,12.6,,2.3,O,,,미국
+신고가,NEW,CTVA US Equity,"Corteva, Inc.",Process Industries,88.53,1.83,59.2,52.0,2.4,O,O,,미국
+신고가,NEW,BIP US Equity,Brookfield Infrastructure Partners LP Limited Partnership,Utilities,40.25,1.72,18.6,54.9,4.0,O,O,,미국
+신고가,NEW,SUN US Equity,Sunoco LP,Distribution Services,75.95,1.28,15.6,19.2,1.5,O,O,,미국
+신고가,NEW,BPOP US Equity,"Popular, Inc.",Finance,173.89,0.94,11.2,12.8,1.8,O,O,,미국
+신고가,NEW,TRV US Equity,"The Travelers Companies, Inc.",Finance,372.08,0.66,77.6,10.0,2.3,O,O,,미국
+신고가,NEW,EOG US Equity,"EOG Resources, Inc.",Energy Minerals,144.0,0.39,76.7,14.2,2.5,O,,,미국
+신고가,NEW,PRU US Equity,"Prudential Financial, Inc.",Finance,118.85,0.22,41.2,12.2,1.3,O,O,,미국
+신고가,NEW,OHI US Equity,"Omega Healthcare Investors, Inc.",Finance,50.61,0.02,15.1,24.5,2.9,O,O,,미국
+신고가,NEW,TIGO US Equity,Millicom International Cellular S.A.,Communications,97.86,-0.76,16.4,13.3,5.2,O,O,,미국
+신고가,NEW,DOC US Equity,"Healthpeak Properties, Inc.",Finance,22.19,-1.81,15.7,69.6,2.0,O,O,,미국
+신고가,OLD,ADM US Equity,Archer-Daniels-Midland Company,Process Industries,87.32,1.3,42.1,39.1,1.8,O,O,(전일) General Mills·월마트 재생농업 제휴 발표+BMO 목표가 상향,미국
+신고가,OLD,AES US Equity,The AES Corporation,Utilities,14.86,0.27,10.6,7.7,2.4,O,,"(전일) AES(글로벌 발전·재생에너지 유틸리티): 7/15 분기배당 선언+재생에너지 확장, 7/30 실적 기대",미국
+신고가,OLD,APGE US Equity,"Apogee Therapeutics, Inc.",Health Technology,134.08,-0.09,10.1,,8.0,O,O,,미국
+신고가,OLD,PSX US Equity,Phillips 66,Energy Minerals,211.41,-0.41,84.8,20.8,3.0,O,O,"(전일) 정제 업황 호조, Raymond James TP $235 상향·정유 동반 강세",미국
+신고가,OLD,VTR US Equity,"Ventas, Inc.",Finance,97.18,-0.45,48.4,176.0,3.6,O,O,,미국
+신고가,OLD,AHR US Equity,"American Healthcare REIT, Inc.",Finance,57.08,-0.9,11.9,98.9,3.1,O,O,,미국
+신고가,OLD,DINO US Equity,HF Sinclair Corporation,Energy Minerals,90.86,-0.91,16.4,13.7,1.7,O,O,,미국
+신고가,OLD,CHRW US Equity,"C.H. Robinson Worldwide, Inc.",Transportation,207.35,-0.99,24.4,42.0,14.4,O,O,,미국
+신고가,OLD,VLO US Equity,Valero Energy Corporation,Energy Minerals,310.92,-1.23,92.3,22.6,3.9,O,O,"(전일) 정제마진 강세 지속, 애널리스트 목표가 상향 랠리",미국
+신고가,OLD,MPC US Equity,Marathon Petroleum Corporation,Energy Minerals,315.82,-1.23,92.2,20.6,5.5,O,O,,미국
+신고가,OLD,CVS US Equity,CVS Health Corporation,Retail Trade,108.08,-2.28,137.9,47.5,1.8,O,O,,미국
+신고가,OLD,CTRE US Equity,"CareTrust REIT, Inc.",Finance,42.38,-2.35,10.0,27.1,2.3,O,O,,미국
+신고가,NEW,7182 JP Equity,"Japan Post Bank Co., Ltd.",Finance,3411.0,1.88,73.4,23.2,1.3,O,O,(우편계열 은행): 일본 장기금리 약 29년래 고수준(~2.8%) 이자마진 확대 기대로 금융섹터 매수 유입,일본
+신고가,NEW,8316 JP Equity,"Sumitomo Mitsui Financial Group, Inc.",Finance,7072.0,1.74,162.7,17.2,1.7,O,O,"(3대 메가뱅크): 도카이도쿄 목표가 5830→8140엔 대폭 상향, 일은 추가 금리인상 기대에 평가 상승",일본
+신고가,NEW,8309 JP Equity,"Sumitomo Mitsui Trust Group, Inc.",Finance,6844.0,1.63,28.7,15.2,1.3,O,O,"(신탁·자산운용 은행): 장기금리 상승(~2.8%, 29년래 고)에 자금수익 개선 기대로 은행섹터 동반 상승",일본
+신고가,NEW,8725 JP Equity,"MS&AD Insurance Group Holdings, Inc.",Finance,4801.0,1.29,42.7,9.1,1.5,O,O,"(손해보험 지주): 장기금리 상승에 보험자산 운용이익 개선 기대, 금융섹터 강세에 동반 신고가",일본
+신고가,NEW,8591 JP Equity,ORIX Corporation,Finance,6582.0,1.23,41.6,16.5,1.6,O,O,(종합금융·리스 지주): FY3/2026 순이익 +27% 최고 실적 호조에 금리상승 환경 겹쳐 매수세 지속,일본
+신고가,OLD,7181 JP Equity,"JAPAN POST INSURANCE Co., Ltd.",Finance,1728.0,2.49,11.1,11.3,0.5,O,,,일본
+신고가,OLD,6178 JP Equity,"JAPAN POST HOLDINGS Co., Ltd.",Finance,2453.5,1.45,41.6,18.8,0.7,O,O,,일본
+신고가,OLD,7751 JP Equity,Canon Inc.,Electronic Technology,4536.0,0.8,26.6,13.1,1.1,O,,(전일) 캐논(카메라·사무기기·반도체 노광): 광범위 자율반등+7/27 결산 앞둔 매수,일본
+신고가,OLD,5401 JP Equity,NIPPON STEEL CORP.,Non-Energy Minerals,599.0,0.07,19.6,182.6,0.6,O,,(전일) 닛폰스틸(일본 최대 철강): US스틸 철강가 호조·FY27 이익 1000억엔 기여 기대로 자율반등,일본
+신고가,NEW,293 HK Equity,Cathay Pacific Airways Limited,Transportation,13.59,2.57,10.3,8.4,1.5,O,,"(홍콩 국적 항공사): 캐세이퍼시픽, 상반기 순이익 60~65억 홍콩달러(전년비 최대 +76%) 예고, 여객·화물 호조",홍콩
+신고가,NEW,6823 HK Equity,HKT Trust and HKT Ltd,Communications,12.71,1.92,12.1,18.2,2.6,O,,"(홍콩 통신사): HKT, 특별한 뉴스 없음(방어주 성격·AI 데이터센터 인프라 테마 수급 추정)",홍콩
+신고가,NEW,6160 HK Equity,BeOne Medicines Ltd.,Health Technology,196.5,1.81,37.0,73.2,7.6,O,,"(글로벌 항암제 개발): 비원메디슨, 특별한 뉴스 없음(브루킨사·소노로토클락스 파이프라인 모멘텀 지속 추정)",홍콩
+신고가,NEW,5 HK Equity,HSBC Holdings Plc,Finance,158.9,1.53,346.9,17.0,2.0,O,O,"(글로벌 대형 은행): HSBC, JP모건 투자의견 중립 상향·목표가 1380펜스, 항성은행 완전자회사화 시너지 기대",홍콩
+신고가,OLD,1308 HK Equity,"SITC International Holdings Co., Ltd.",Transportation,37.88,3.22,12.7,10.7,5.3,O,O,(전일) SITC(아시아 역내 컨테이너 해운): 컨테이너 운임 4년래 고점·중동 리스크로 역내 운임 반등 수혜,홍콩
+신고가,NEW,301165 CH Equity,"Ruijie Networks Co., Ltd. Class A",Technology Services,126.0,13.66,18.2,197.1,27.3,O,O,(기업용 네트워크 스위치·라우터): H1 귀속순이익 33~66% 증가 예고·AI 데이터센터 스위치 수주잔고 최고로 상한가,중국A
+신고가,NEW,688702 CH Equity,"Suzhou Centec Communications Co., Ltd. Class A",Technology Services,430.15,8.89,14.4,,79.0,O,O,"(이더넷 스위치 칩): 중전계 관계사 연간 거래한도 6억→22억 위안 대폭 상향, 국산 AI연산 스위치칩 수요 급증",중국A
+신고가,NEW,601168 CH Equity,"Western Mining Co., Ltd. Class A",Non-Energy Minerals,36.5,7.76,11.9,19.7,4.4,O,,(구리·아연·몰리브덴 광산): H1 귀속순이익 114~130% 증가 예고(구리·귀금속 급등)·유색금속 섹터 동반 강세,중국A
+신고가,NEW,000977 CH Equity,"IEIT SYSTEMS Co., Ltd.Class A",Electronic Technology,90.47,2.04,19.2,52.0,6.0,O,O,(AI 서버·고성능컴퓨팅·인스퍼): H1 귀속순이익 226~288% 급증 예고 이후 AI연산 섹터 수급 지속 유입,중국A
+신고가,NEW,688347 CH Equity,Hua Hong Grace Semiconductor Limited Class A,Electronic Technology,390.06,-1.94,52.6,1413.5,15.0,O,O,"(성숙공정 파운드리·화훙): 반도체 섹터 강세·골드만삭스 목표가 대폭 상향으로 장중 신고가, 종가는 소폭 하락",중국A
+신고가,OLD,000938 CH Equity,"Unisplendour Co., Ltd. Class A",Electronic Technology,44.9,8.3,17.5,60.4,8.3,O,O,상반기 순이익 최대 +123% 실적예고·AI서버 수주·紫光 지분정합 완료로 연속 상한가,중국A

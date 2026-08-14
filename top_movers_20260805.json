@@ -1,0 +1,209 @@
+{
+ "data_dates": {
+  "미국": "2026-08-04",
+  "일본": "2026-08-05",
+  "홍콩": "2026-08-04",
+  "중국A": "2026-08-04"
+ },
+ "note": "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달.",
+ "movers": [
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "W US Equity",
+   "종목명": "Wayfair Inc.",
+   "등락률(%)": 30.08,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "PLTR US Equity",
+   "종목명": "Palantir Technologies Inc.",
+   "등락률(%)": 29.45,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "IT US Equity",
+   "종목명": "Gartner, Inc.",
+   "등락률(%)": 22.61,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "DELL US Equity",
+   "종목명": "Dell Technologies Inc.",
+   "등락률(%)": 8.92,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "TRI US Equity",
+   "종목명": "Thomson Reuters Corp",
+   "등락률(%)": 7.42,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "ZBRA US Equity",
+   "종목명": "Zebra Technologies Corporation",
+   "등락률(%)": 26.47,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "ARXS US Equity",
+   "종목명": "Arxis, Inc.",
+   "등락률(%)": 8.04,
+   "event": "급변"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "SSB US Equity",
+   "종목명": "SouthState Bank Corporation",
+   "등락률(%)": 1.46,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "APTV US Equity",
+   "종목명": "Aptiv PLC",
+   "등락률(%)": -16.62,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "NRG US Equity",
+   "종목명": "NRG Energy, Inc.",
+   "등락률(%)": -15.48,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "ULS US Equity",
+   "종목명": "UL Solutions Inc.",
+   "등락률(%)": -13.96,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "CMI US Equity",
+   "종목명": "Cummins Inc.",
+   "등락률(%)": -1.99,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "ENB US Equity",
+   "종목명": "Enbridge Inc",
+   "등락률(%)": -1.28,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "6861 JP Equity",
+   "종목명": "Keyence Corporation",
+   "등락률(%)": 1.44,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "3308 HK Equity",
+   "종목명": "Zhongji Innolight Co., Ltd. Class H",
+   "등락률(%)": 17.0,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "2359 HK Equity",
+   "종목명": "WuXi AppTec Co., Ltd. Class H",
+   "등락률(%)": 11.17,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "2269 HK Equity",
+   "종목명": "Wuxi Biologics (Cayman) Inc.",
+   "등락률(%)": 4.28,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "1 HK Equity",
+   "종목명": "CK Hutchison Holdings Ltd",
+   "등락률(%)": 1.37,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "700 HK Equity",
+   "종목명": "Tencent Holdings Ltd",
+   "등락률(%)": -0.57,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "603259 CH Equity",
+   "종목명": "WuXi AppTec Co., Ltd. Class A",
+   "등락률(%)": 10.0,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "OLD",
+   "티커": "603256 CH Equity",
+   "종목명": "Grace Fabric Technology Co., Ltd. Class A",
+   "등락률(%)": 8.87,
+   "event": "급변"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "OLD",
+   "티커": "002008 CH Equity",
+   "종목명": "Han's Laser Technology Industry Group Co., Ltd. Class A",
+   "등락률(%)": 8.67,
+   "event": "급변"
+  }
+ ]
+}

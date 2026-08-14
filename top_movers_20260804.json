@@ -1,0 +1,290 @@
+{
+ "data_dates": {
+  "미국": "2026-08-03",
+  "일본": "2026-08-03",
+  "홍콩": "2026-08-03",
+  "중국A": "2026-08-03"
+ },
+ "note": "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달.",
+ "movers": [
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "OWL US Equity",
+   "종목명": "Blue Owl Capital Inc.",
+   "등락률(%)": 8.35,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "ETN US Equity",
+   "종목명": "Eaton Corporation, PLC",
+   "등락률(%)": 5.55,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "CNH US Equity",
+   "종목명": "CNH Industrial N.V.",
+   "등락률(%)": 5.37,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "IR US Equity",
+   "종목명": "Ingersoll Rand Inc.",
+   "등락률(%)": 5.28,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "U US Equity",
+   "종목명": "Unity Software Inc.",
+   "등락률(%)": 5.27,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "MAR US Equity",
+   "종목명": "Marriott International",
+   "등락률(%)": -6.97,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "FICO US Equity",
+   "종목명": "Fair Isaac Corporation",
+   "등락률(%)": -6.9,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "AZN US Equity",
+   "종목명": "AstraZeneca PLC",
+   "등락률(%)": -6.88,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "AXSM US Equity",
+   "종목명": "Axsome Therapeutics, Inc.",
+   "등락률(%)": -3.19,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "TXN US Equity",
+   "종목명": "Texas Instruments Incorporated",
+   "등락률(%)": -2.43,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "6954 JP Equity",
+   "종목명": "Fanuc Corporation",
+   "등락률(%)": -14.31,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "5802 JP Equity",
+   "종목명": "Sumitomo Electric Industries, Ltd.",
+   "등락률(%)": -5.56,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "8802 JP Equity",
+   "종목명": "Mitsubishi Estate Company, Limited",
+   "등락률(%)": -4.96,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "7259 JP Equity",
+   "종목명": "Aisin Corporation",
+   "등락률(%)": -3.62,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "4519 JP Equity",
+   "종목명": "Chugai Pharmaceutical Co., Ltd.",
+   "등락률(%)": -3.53,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "1519 HK Equity",
+   "종목명": "J&T Global Express Limited",
+   "등락률(%)": 2.78,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "1913 HK Equity",
+   "종목명": "Prada S.p.A.",
+   "등락률(%)": 0.74,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "300 HK Equity",
+   "종목명": "Midea Group Co. Ltd. Class H",
+   "등락률(%)": -1.61,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "981 HK Equity",
+   "종목명": "Semiconductor Manufacturing International Corp.",
+   "등락률(%)": -1.66,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "2249 HK Equity",
+   "종목명": "Nexchip Semiconductor Corp. Class H",
+   "등락률(%)": -1.12,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "1888 HK Equity",
+   "종목명": "Kingboard Laminates Holdings Limited",
+   "등락률(%)": 1.97,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "601166 CH Equity",
+   "종목명": "Industrial Bank Co., Ltd. Class A",
+   "등락률(%)": 1.06,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "002415 CH Equity",
+   "종목명": "Hangzhou Hikvision Digital Technology Co., Ltd Class A",
+   "등락률(%)": 0.8,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "601919 CH Equity",
+   "종목명": "COSCO SHIPPING Holdings Co., Ltd. Class A",
+   "등락률(%)": 0.58,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "002311 CH Equity",
+   "종목명": "Guangdong Haid Group Co., Limited Class A",
+   "등락률(%)": -0.89,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "000538 CH Equity",
+   "종목명": "Yunnan Baiyao Group Co. Ltd. Class A",
+   "등락률(%)": -1.08,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "603256 CH Equity",
+   "종목명": "Grace Fabric Technology Co., Ltd. Class A",
+   "등락률(%)": -10.0,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "002156 CH Equity",
+   "종목명": "TongFu Microelectronics Co., Ltd. Class A",
+   "등락률(%)": -9.5,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "300475 CH Equity",
+   "종목명": "Shannon Semiconductor Technology Co., Ltd. Class A",
+   "등락률(%)": -8.07,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "688729 CH Equity",
+   "종목명": "Beijing E-Town Semiconductor Technology Co., Ltd. Class A",
+   "등락률(%)": -7.81,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "002475 CH Equity",
+   "종목명": "Luxshare Precision Industry Co., Ltd. Class A",
+   "등락률(%)": -6.56,
+   "event": "신규"
+  }
+ ]
+}

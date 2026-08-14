@@ -1,0 +1,389 @@
+{
+ "data_dates": {
+  "미국": "2026-07-30",
+  "일본": "2026-07-30",
+  "홍콩": "2026-07-30",
+  "중국A": "2026-07-30"
+ },
+ "note": "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달.",
+ "movers": [
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "CORT US Equity",
+   "종목명": "Corcept Therapeutics Incorporated",
+   "등락률(%)": 27.29,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "ARXS US Equity",
+   "종목명": "Arxis, Inc.",
+   "등락률(%)": 15.33,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "CMG US Equity",
+   "종목명": "Chipotle Mexican Grill, Inc.",
+   "등락률(%)": 12.5,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "REGN US Equity",
+   "종목명": "Regeneron Pharmaceuticals, Inc.",
+   "등락률(%)": 6.17,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "ILMN US Equity",
+   "종목명": "Illumina, Inc.",
+   "등락률(%)": 5.27,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "BAX US Equity",
+   "종목명": "Baxter International Inc.",
+   "등락률(%)": 7.99,
+   "event": "급변"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "JLL US Equity",
+   "종목명": "Jones Lang LaSalle Incorporated",
+   "등락률(%)": 6.39,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "ALNY US Equity",
+   "종목명": "Alnylam Pharmaceuticals, Inc.",
+   "등락률(%)": -28.31,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "CHRW US Equity",
+   "종목명": "C.H. Robinson Worldwide, Inc.",
+   "등락률(%)": -15.44,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "MO US Equity",
+   "종목명": "Altria Group, Inc.",
+   "등락률(%)": -9.32,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "LHX US Equity",
+   "종목명": "L3Harris Technologies, Inc.",
+   "등락률(%)": -8.61,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "META US Equity",
+   "종목명": "Meta Platforms, Inc.",
+   "등락률(%)": -7.95,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "OLD",
+   "티커": "WSO/B US Equity",
+   "종목명": "Watsco, Inc.",
+   "등락률(%)": -12.61,
+   "event": "급변"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "OLD",
+   "티커": "MAIR US Equity",
+   "종목명": "Madison Air Solutions Corporation",
+   "등락률(%)": -7.9,
+   "event": "급변"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "7550 JP Equity",
+   "종목명": "Zensho Holdings Co., Ltd.",
+   "등락률(%)": -1.21,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "2801 JP Equity",
+   "종목명": "Kikkoman Corporation",
+   "등락률(%)": -1.63,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "6701 JP Equity",
+   "종목명": "NEC Corporation",
+   "등락률(%)": 8.43,
+   "event": "급변"
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "9502 JP Equity",
+   "종목명": "Chubu Electric Power Company,Incorporated",
+   "등락률(%)": -3.91,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "5016 JP Equity",
+   "종목명": "JX Advanced Metals Corporation",
+   "등락률(%)": 0.27,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "285A JP Equity",
+   "종목명": "Kioxia Holdings Corporation",
+   "등락률(%)": 2.92,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "1988 HK Equity",
+   "종목명": "China Minsheng Banking Corp., Ltd. Class H",
+   "등락률(%)": 1.38,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "1997 HK Equity",
+   "종목명": "Wharf Real Estate Investment Company Limited",
+   "등락률(%)": 0.69,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "1288 HK Equity",
+   "종목명": "Agricultural Bank of China Limited Class H",
+   "등락률(%)": 3.01,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "9903 HK Equity",
+   "종목명": "Shanghai Iluvatar CoreX Semiconductor Co., Ltd. Class H",
+   "등락률(%)": -14.71,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "2249 HK Equity",
+   "종목명": "Nexchip Semiconductor Corp. Class H",
+   "등락률(%)": -5.22,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "6951 HK Equity",
+   "종목명": "Chaozhou Three-Circle (Group) Co., Ltd. Class H",
+   "등락률(%)": 0.82,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "OLD",
+   "티커": "3200 HK Equity",
+   "종목명": "Shenzhen Han's CNC Technology Co., Ltd. Class H",
+   "등락률(%)": -10.99,
+   "event": "급변"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "OLD",
+   "티커": "6869 HK Equity",
+   "종목명": "Yangtze Optical Fibre and Cable Joint Stock Ltd Co Class H",
+   "등락률(%)": -10.51,
+   "event": "급변"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "OLD",
+   "티커": "981 HK Equity",
+   "종목명": "Semiconductor Manufacturing International Corp.",
+   "등락률(%)": -7.74,
+   "event": "급변"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "600000 CH Equity",
+   "종목명": "Shanghai Pudong Development Bank Co., Ltd. Class A",
+   "등락률(%)": 4.63,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "601328 CH Equity",
+   "종목명": "Bank of Communications Co., Ltd. Class A",
+   "등락률(%)": 3.24,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "000001 CH Equity",
+   "종목명": "Ping An Bank Co. Ltd. Class A",
+   "등락률(%)": 2.93,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "601166 CH Equity",
+   "종목명": "Industrial Bank Co., Ltd. Class A",
+   "등락률(%)": 2.74,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "600886 CH Equity",
+   "종목명": "SDIC Power Holdings Co., Ltd. Class A",
+   "등락률(%)": 1.45,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "688498 CH Equity",
+   "종목명": "Yuanjie Semiconductor Technology Co., Ltd. Class A",
+   "등락률(%)": -17.2,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "300757 CH Equity",
+   "종목명": "Robotechnik Intelligent Technology Co., Ltd. Class A",
+   "등락률(%)": -12.56,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "300502 CH Equity",
+   "종목명": "Eoptolink Technology Inc., Ltd. Class A",
+   "등락률(%)": -11.89,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "300308 CH Equity",
+   "종목명": "Zhongji Innolight Co., Ltd. Class A",
+   "등락률(%)": -9.15,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "001399 CH Equity",
+   "종목명": "HKC Corporation Limited Class A",
+   "등락률(%)": -9.0,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "OLD",
+   "티커": "300394 CH Equity",
+   "종목명": "Suzhou TFC Optical Communication Co., Ltd. Class A",
+   "등락률(%)": -12.08,
+   "event": "급변"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "OLD",
+   "티커": "688521 CH Equity",
+   "종목명": "VeriSilicon Microelectronics (Shanghai) Co., Ltd. Class A",
+   "등락률(%)": -11.36,
+   "event": "급변"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "OLD",
+   "티커": "688183 CH Equity",
+   "종목명": "Shengyi Electronics Co., Ltd. Class A",
+   "등락률(%)": -11.31,
+   "event": "급변"
+  }
+ ]
+}

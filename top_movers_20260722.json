@@ -1,0 +1,123 @@
+{
+ "data_dates": {
+  "미국": "2026-07-21",
+  "일본": "2026-07-21",
+  "홍콩": "2026-07-21",
+  "중국A": "2026-07-21"
+ },
+ "note": "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달.",
+ "movers": [
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "MMM US Equity",
+   "종목명": "3M Company",
+   "등락률(%)": 7.32
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "CORT US Equity",
+   "종목명": "Corcept Therapeutics Incorporated",
+   "등락률(%)": 4.46
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "JAZZ US Equity",
+   "종목명": "Jazz Pharmaceuticals plc",
+   "등락률(%)": 4.42
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "VTRS US Equity",
+   "종목명": "Viatris Inc.",
+   "등락률(%)": 3.53
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "CCK US Equity",
+   "종목명": "Crown Holdings, Inc.",
+   "등락률(%)": 2.98
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "HAL US Equity",
+   "종목명": "Halliburton Company",
+   "등락률(%)": -5.47
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "BA US Equity",
+   "종목명": "Boeing Company (The)",
+   "등락률(%)": -2.23
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "NOC US Equity",
+   "종목명": "Northrop Grumman Corporation",
+   "등락률(%)": -2.23
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "MCD US Equity",
+   "종목명": "McDonald's Corporation",
+   "등락률(%)": -1.39
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "TU US Equity",
+   "종목명": "Telus Corporation",
+   "등락률(%)": -0.97
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "7181 JP Equity",
+   "종목명": "JAPAN POST INSURANCE Co., Ltd.",
+   "등락률(%)": 4.69
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "6178 JP Equity",
+   "종목명": "JAPAN POST HOLDINGS Co., Ltd.",
+   "등락률(%)": 3.84
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "6098 JP Equity",
+   "종목명": "Recruit Holdings Co., Ltd.",
+   "등락률(%)": 0.78
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "001965 CH Equity",
+   "종목명": "China Merchants Expressway Network & Technology Holdings Co., Ltd. Class A",
+   "등락률(%)": 1.08
+  }
+ ]
+}

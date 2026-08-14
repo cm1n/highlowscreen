@@ -1,0 +1,108 @@
+﻿구분,NEW/OLD,티커,종목명,섹터,종가,등락률(%),시총($B),60일,52주,이유,시장
+신저가,NEW,HCA US Equity,"HCA Healthcare, Inc.",Health Services,363.6,-6.95,80.7,O,,"건보 익스체인지 손실 확대로 2026 이익 가이던스 하향, 급락",미국
+신저가,NEW,ISRG US Equity,"Intuitive Surgical, Inc.",Health Technology,379.5,-6.78,134.4,O,O,"HCA發 수술량 둔화 우려·목표가 인하($585→$520), 7/16 실적 앞 매도",미국
+신저가,NEW,GMED US Equity,"Globus Medical, Inc.",Health Technology,75.82,-4.93,10.3,O,,RBC 목표가 인하($120→$115)·HCA 수술량 둔화에 메드테크 동반 약세,미국
+신저가,NEW,CRWV US Equity,"CoreWeave, Inc.",Technology Services,79.94,-4.05,43.6,O,,"메타 자체 클라우드 진출 경쟁 우려 지속, AI 컴퓨트주 약세 연장",미국
+신저가,NEW,CSGP US Equity,"CoStar Group, Inc.",Technology Services,27.68,-3.79,11.3,O,O,"CFO 돌연 교체·Baird 중립 하향, 순예약 부진 우려 부각",미국
+신저가,NEW,AZN US Equity,AstraZeneca PLC,Health Technology,164.5,-2.93,255.1,O,,,미국
+신저가,NEW,ORCL US Equity,Oracle Corporation,Technology Services,127.94,-2.74,368.5,O,O,,미국
+신저가,NEW,LVS US Equity,Las Vegas Sands Corp.,Consumer Services,44.78,-2.44,29.7,O,O,,미국
+신저가,NEW,INIO US Equity,INNIO N.V.,Producer Manufacturing,30.81,-2.44,23.1,O,O,,미국
+신저가,NEW,SPCX US Equity,Space Exploration Technologies Corp,Communications,136.08,-2.2,1805.4,O,O,,미국
+신저가,NEW,SNPS US Equity,"Synopsys, Inc.",Technology Services,425.9,-1.83,81.6,O,,,미국
+신저가,NEW,UTHR US Equity,United Therapeutics Corporation,Health Technology,526.66,-1.66,22.4,O,,,미국
+신저가,NEW,IREN US Equity,IREN Limited,Technology Services,38.59,-1.0,13.8,O,,,미국
+신저가,NEW,CRCL US Equity,"Circle Internet Group, Inc.",Technology Services,63.22,0.35,15.7,O,,,미국
+신저가,NEW,TKO US Equity,"TKO Group Holdings, Inc.",Consumer Services,184.56,1.99,35.3,O,,,미국
+신저가,NEW,BSP US Equity,Bending Spoons S.p.A.,Technology Services,32.5,2.27,20.2,O,O,,미국
+신고가,NEW,CRWD US Equity,"CrowdStrike Holdings, Inc.",Technology Services,210.73,12.14,214.6,O,O,CPI 둔화·러시아 사이버위협 경보·UBS 등 목표가 상향에 보안주 급등,미국
+신고가,NEW,OKTA US Equity,"Okta, Inc.",Technology Services,154.62,10.81,26.9,O,O,"스코샤뱅크 Outperform 상향($165)·AI 신원보안 수요 기대, 보안주 랠리",미국
+신고가,NEW,GS US Equity,"Goldman Sachs Group, Inc. (The)",Finance,1140.0,9.0,336.3,O,O,"2Q EPS $20.98 사상최대, 주식트레이딩·IB 호조로 컨센 45% 상회",미국
+신고가,NEW,NET US Equity,"Cloudflare, Inc.",Technology Services,281.75,4.53,100.1,O,O,"OpenAI 리서치 파일럿 등 AI 수혜 기대·목표가 상향, 보안주 랠리 동반",미국
+신고가,NEW,FTNT US Equity,"Fortinet, Inc.",Technology Services,166.83,3.87,122.2,O,O,IBM '고객 사이버보안 우려' 발언·CPI 둔화發 보안 섹터 동반 강세,미국
+신고가,NEW,UBS US Equity,UBS Group AG Registered,Finance,53.82,3.64,163.0,O,O,,미국
+신고가,NEW,STT US Equity,State Street Corporation,Finance,183.65,3.08,50.8,O,O,,미국
+신고가,NEW,MS US Equity,Morgan Stanley,Finance,227.67,2.98,359.1,O,O,,미국
+신고가,NEW,BBY US Equity,"Best Buy Co., Inc.",Retail Trade,83.98,2.85,17.7,O,,,미국
+신고가,NEW,TIGO US Equity,Millicom International Cellular S.A.,Communications,98.16,2.53,16.4,O,O,,미국
+신고가,NEW,JPM US Equity,JP Morgan Chase & Co.,Finance,342.89,2.5,918.8,O,O,,미국
+신고가,NEW,MPC US Equity,Marathon Petroleum Corporation,Energy Minerals,303.4,2.2,88.6,O,O,,미국
+신고가,NEW,BNY US Equity,The Bank of New York Mellon Corporation,Finance,154.5,2.14,106.0,O,O,,미국
+신고가,NEW,VLO US Equity,Valero Energy Corporation,Energy Minerals,301.43,1.91,89.5,O,O,,미국
+신고가,NEW,BAC US Equity,Bank of America Corporation,Finance,60.62,1.88,430.2,O,O,,미국
+신고가,NEW,TD US Equity,Toronto Dominion Bank (The),Finance,122.88,1.87,207.6,O,O,,미국
+신고가,NEW,DINO US Equity,HF Sinclair Corporation,Energy Minerals,83.11,1.73,15.0,O,O,,미국
+신고가,NEW,RY US Equity,Royal Bank Of Canada,Finance,214.04,1.59,297.5,O,O,,미국
+신고가,NEW,PSX US Equity,Phillips 66,Energy Minerals,201.45,1.59,80.8,O,O,,미국
+신고가,NEW,CHRW US Equity,"C.H. Robinson Worldwide, Inc.",Transportation,199.61,1.58,23.5,O,,,미국
+신고가,NEW,EXPD US Equity,"Expeditors International of Washington, Inc.",Transportation,178.22,1.55,23.3,O,O,,미국
+신고가,NEW,NTRS US Equity,Northern Trust Corporation,Finance,186.64,1.38,34.5,O,O,,미국
+신고가,NEW,FWONK US Equity,Liberty Media Corporation - Series C Liberty Formula One,Technology Services,100.87,1.23,25.1,O,,,미국
+신고가,NEW,BMO US Equity,Bank Of Montreal,Finance,180.86,1.21,127.7,O,O,,미국
+신고가,NEW,BNS US Equity,Bank Nova Scotia Halifax Pfd 3,Finance,88.99,1.12,109.7,O,O,,미국
+신고가,NEW,OGE US Equity,OGE Energy Corp,Utilities,49.5,1.04,10.2,O,O,,미국
+신고가,NEW,CM US Equity,Canadian Imperial Bank of Commerce,Finance,118.57,1.02,109.9,O,O,,미국
+신고가,NEW,MFC US Equity,Manulife Financial Corporation,Finance,41.69,0.97,69.6,O,O,,미국
+신고가,NEW,UHAL US Equity,U-Haul Holding Company,Finance,68.71,0.88,12.0,O,O,,미국
+신고가,NEW,EMA US Equity,Emera Incorporated,Utilities,54.15,0.86,16.6,O,O,,미국
+신고가,NEW,EIX US Equity,Edison International,Utilities,76.58,0.8,29.5,O,O,,미국
+신고가,NEW,TRGP US Equity,"Targa Resources, Inc.",Utilities,281.6,0.79,60.4,O,O,,미국
+신고가,NEW,D US Equity,"Dominion Energy, Inc.",Utilities,71.3,0.71,62.7,O,O,,미국
+신고가,NEW,UHAL/B US Equity,U-Haul Holding Company Series N Non-Voting,Finance,60.17,0.7,12.0,O,O,,미국
+신고가,NEW,UPS US Equity,"United Parcel Service, Inc.",Transportation,113.67,0.69,96.6,O,,,미국
+신고가,NEW,PBA US Equity,Pembina Pipeline Corp.,Industrial Services,49.99,0.68,29.1,O,O,,미국
+신고가,NEW,CNC US Equity,Centene Corporation,Health Services,68.72,0.63,33.9,O,O,,미국
+신고가,NEW,CSX US Equity,CSX Corporation,Transportation,49.92,0.56,92.8,O,O,,미국
+신고가,NEW,FWONA US Equity,Liberty Media Corporation - Series A Liberty Formula One,Technology Services,92.14,0.55,25.1,O,,,미국
+신고가,NEW,PCG US Equity,Pacific Gas & Electric Co.,Utilities,17.44,0.4,38.4,O,,,미국
+신고가,NEW,ELV US Equity,"Elevance Health, Inc.",Health Services,426.79,0.38,92.7,O,O,,미국
+신고가,NEW,CTAS US Equity,Cintas Corporation,Commercial Services,184.33,0.32,73.7,O,,,미국
+신고가,NEW,CVS US Equity,CVS Health Corporation,Retail Trade,106.18,0.26,135.5,O,O,,미국
+신고가,NEW,AXP US Equity,American Express Company,Finance,355.06,0.18,242.3,O,,,미국
+신고가,NEW,APGE US Equity,"Apogee Therapeutics, Inc.",Health Technology,133.96,0.1,10.1,O,O,,미국
+신고가,NEW,AMP US Equity,"Ameriprise Financial, Inc.",Finance,518.6,0.07,46.6,O,,,미국
+신고가,NEW,GTLS US Equity,"Chart Industries, Inc.",Consumer Services,209.91,0.06,10.0,O,O,,미국
+신고가,NEW,CP US Equity,Canadian Pacific Kansas City Limited,Transportation,91.35,0.0,81.1,O,O,,미국
+신고가,NEW,TFC US Equity,Truist Financial Corporation,Finance,51.95,0.0,64.7,O,,,미국
+신고가,NEW,NSC US Equity,Norfolk Southern Corporation,Transportation,326.83,-0.23,73.4,O,O,,미국
+신고가,NEW,UNP US Equity,Union Pacific Corporation,Transportation,288.3,-0.29,171.2,O,O,,미국
+신고가,NEW,MTB US Equity,M&T Bank Corporation,Finance,241.85,-0.29,35.4,O,O,,미국
+신고가,NEW,PNC US Equity,"PNC Financial Services Group, Inc. (The)",Finance,251.88,-0.38,101.1,O,O,,미국
+신고가,NEW,CI US Equity,The Cigna Group,Health Services,303.35,-0.38,80.2,O,,,미국
+신고가,NEW,RF US Equity,Regions Financial Corporation,Finance,30.92,-0.48,26.4,O,,,미국
+신고가,NEW,MET US Equity,"MetLife, Inc.",Finance,92.54,-0.53,59.5,O,O,,미국
+신고가,NEW,MOH US Equity,Molina Healthcare Inc,Health Services,241.56,-0.54,12.9,O,O,,미국
+신고가,NEW,DHR US Equity,Danaher Corporation,Health Technology,199.05,-0.55,140.9,O,,,미국
+신고가,NEW,CMG US Equity,"Chipotle Mexican Grill, Inc.",Consumer Services,36.43,-0.55,46.7,O,,,미국
+신고가,NEW,PFG US Equity,Principal Financial Group Inc,Finance,112.92,-0.61,24.4,O,O,,미국
+신고가,NEW,MKC/V US Equity,"McCormick & Company, Incorporated",Consumer Non-Durables,52.81,-1.09,14.2,O,,,미국
+신고가,NEW,SEIC US Equity,SEI Investments Company,Finance,94.89,-1.34,11.4,O,O,,미국
+신고가,NEW,GWW US Equity,"W.W. Grainger, Inc.",Distribution Services,1371.07,-1.48,64.7,O,O,,미국
+신고가,NEW,RGA US Equity,"Reinsurance Group of America, Incorporated",Finance,234.04,-1.67,15.3,O,O,,미국
+신고가,NEW,WFC US Equity,Wells Fargo & Company,Finance,85.29,-2.71,261.0,O,,,미국
+신고가,NEW,FAST US Equity,Fastenal Company,Distribution Services,45.74,-2.78,52.5,O,,,미국
+신저가,NEW,1772 HK Equity,"Ganfeng Lithium Group Co., Ltd. Class H",Process Industries,39.8,-4.6,14.0,O,,탄산리튬 가격 3월래 최저(칠레 수출증가·CATL 광산 재가동 공급과잉 우려),홍콩
+신고가,NEW,1801 HK Equity,"Innovent Biologics, Inc.",Health Technology,96.95,7.66,20.0,O,,신판 기본약물목록에 혁신약 편입 등 정책 호재로 혁신약 섹터 급등 동반,홍콩
+신고가,NEW,6990 HK Equity,"Sichuan Kelun-Biotech Biopharmaceutical Co., Ltd. Class H",Health Technology,532.5,6.88,15.7,O,,혁신약 정책호재 섹터 랠리 + 머크 제휴 sac-TMT 글로벌 3상 성과 모멘텀,홍콩
+신고가,NEW,2359 HK Equity,"WuXi AppTec Co., Ltd. Class H",Health Technology,165.5,4.68,55.6,O,O,Q1 순익 +72% 호실적·가이던스 상향 기대 속 CXO 섹터 강세,홍콩
+신고가,NEW,2269 HK Equity,Wuxi Biologics (Cayman) Inc.,Health Technology,39.64,3.77,20.2,O,,특별한 개별 뉴스 없음(혁신약·CXO 섹터 랠리 동반 신고가 추정),홍콩
+신고가,NEW,5 HK Equity,HSBC Holdings Plc,Finance,154.9,1.51,342.8,O,O,"항셍지수 랠리 속 사상최고가, 매매단위 축소·30억달러 채권상환 호재",홍콩
+신고가,NEW,945 HK Equity,Manulife Financial Corporation,Finance,325.8,1.12,69.6,O,O,,홍콩
+신고가,NEW,2 HK Equity,CLP Holdings Limited,Utilities,77.0,0.0,24.8,O,O,,홍콩
+신고가,NEW,1377 HK Equity,"Guangdong Dtech Technology Co., Ltd. Class H",Producer Manufacturing,412.6,-6.86,25.6,O,O,,홍콩
+신저가,NEW,001399 CH Equity,HKC Corporation Limited Class A,Electronic Technology,27.07,-9.77,36.0,O,O,IPO 직후 급락 지속: 패널 업황·370억위안 부채·해금 부담(7/3~7 이상변동),중국A
+신저가,NEW,600023 CH Equity,"Zhejiang Zheneng Electric Power Co., Ltd. Class A",Utilities,5.0,-8.59,10.9,O,,7/14 반기 순익 -54~62% 예고(전력판가 하락+2Q 석탄가 상승),중국A
+신저가,NEW,601231 CH Equity,"Universal Scientific Industrial (Shanghai) Co., Ltd. Class A",Electronic Technology,27.28,-5.61,10.2,O,,대주주 환청과기 지분 2% 대종거래 감축(7/21 개시) 앞둔 수급 부담,중국A
+신저가,NEW,000338 CH Equity,"Weichai Power Co., Ltd. Class A",Producer Manufacturing,26.45,-4.34,36.0,O,,특별한 뉴스 없음(섹터/수급 흐름 추정),중국A
+신저가,NEW,301638 CH Equity,"CSG Digital Power Grid Research Institute Co., Ltd. Class A",Technology Services,21.31,-2.16,10.1,O,,특별한 뉴스 없음(신규상장주 수급/해금 부담 추정),중국A
+신저가,NEW,600029 CH Equity,China Southern Airlines Company Limited Class A,Transportation,5.05,0.2,12.1,O,O,,중국A
+신저가,NEW,601012 CH Equity,"LONGi Green Energy Technology Co., Ltd. Class A",Electronic Technology,12.0,2.3,13.2,O,O,,중국A
+신저가,NEW,600760 CH Equity,"AVIC Shenyang Aircraft Co., Ltd. Class A",Electronic Technology,39.79,2.39,16.3,O,O,,중국A
+신고가,NEW,601995 CH Equity,China International Capital Corp. Ltd. Class A,Finance,38.34,8.18,20.5,O,,반기 순익 +78~90% 예고(7/8)+동흥·신다증권 흡수합병 추진 기대,중국A
+신고가,NEW,603501 CH Equity,"OmniVision Integrated Circuits Group, Inc. Class A",Electronic Technology,111.12,4.68,19.4,O,,7/15 H주 인센티브·H주 상장 관련 임시주총 개최+반도체 강세,중국A
+신고가,NEW,601628 CH Equity,China Life Insurance Co. Ltd. Class A,Finance,40.42,4.39,146.5,O,,보험주 동반 급등: 저평가+신계약 개선·자산운용 이익 회복 기대,중국A
+신고가,NEW,603259 CH Equity,"WuXi AppTec Co., Ltd. Class A",Health Technology,131.5,3.13,55.7,O,O,"CXO 호황·1Q 순익 +27%(TIDES 급성장), 반기 호실적 기대 매수",중국A
+신고가,NEW,002156 CH Equity,"TongFu Microelectronics Co., Ltd. Class A",Electronic Technology,78.71,1.08,17.5,O,O,7/14 반기 순익 +288~337% 예고(AI·메모리 후공정 호조),중국A
+신고가,NEW,600018 CH Equity,"Shanghai International Port (Group) Co., Ltd. Class A",Transportation,5.24,0.96,17.8,O,,,중국A
+신고가,NEW,002384 CH Equity,"Suzhou Dongshan Precision Manufacturing Co., Ltd Class A",Electronic Technology,262.49,0.81,70.4,O,O,,중국A
+신고가,NEW,600900 CH Equity,"China Yangtze Power Co., Ltd. Class A",Utilities,28.68,0.46,103.4,O,,,중국A

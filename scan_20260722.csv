@@ -1,0 +1,106 @@
+﻿구분,NEW/OLD,티커,종목명,섹터,종가,등락률(%),시총($B),PER(TTM),PBR,60일,52주,이유,시장
+신저가,NEW,HAL US Equity,Halliburton Company,Industrial Services,33.19,-5.47,27.7,18.2,2.6,O,,,미국
+신저가,NEW,BA US Equity,Boeing Company (The),Electronic Technology,204.8,-2.23,161.4,105.3,27.0,O,,,미국
+신저가,NEW,NOC US Equity,Northrop Grumman Corporation,Electronic Technology,512.29,-2.23,72.8,16.0,4.3,O,O,,미국
+신저가,NEW,MCD US Equity,McDonald's Corporation,Consumer Services,263.91,-1.39,187.5,21.8,,O,O,,미국
+신저가,NEW,TU US Equity,Telus Corporation,Communications,10.18,-0.97,16.0,23.6,1.4,O,O,,미국
+신저가,NEW,TKO US Equity,"TKO Group Holdings, Inc.",Consumer Services,181.7,-0.6,34.7,66.7,4.0,O,,,미국
+신저가,NEW,LOW US Equity,"Lowe's Companies, Inc.",Retail Trade,203.51,-0.59,114.1,17.2,,O,O,,미국
+신저가,NEW,LMT US Equity,Lockheed Martin Corporation,Electronic Technology,507.09,-0.48,116.9,24.6,15.6,O,,,미국
+신저가,NEW,HII US Equity,"Huntington Ingalls Industries, Inc.",Electronic Technology,268.76,-0.47,10.6,17.5,2.1,O,,,미국
+신저가,NEW,ULS US Equity,UL Solutions Inc.,Commercial Services,85.49,-0.18,17.2,49.8,13.0,O,,,미국
+신저가,NEW,YUM US Equity,"Yum! Brands, Inc.",Consumer Services,147.17,-0.14,40.6,23.7,,O,,,미국
+신저가,NEW,NI US Equity,NiSource Inc,Utilities,45.37,0.0,21.8,22.6,2.3,O,,,미국
+신저가,NEW,ALB US Equity,Albemarle Corporation,Process Industries,118.62,0.36,14.0,,1.8,O,,,미국
+신저가,NEW,FTAI US Equity,FTAI Aviation Ltd.,Electronic Technology,210.25,5.28,21.6,41.8,50.0,O,,,미국
+신저가,OLD,CPRT US Equity,"Copart, Inc.",Retail Trade,27.17,-1.16,25.2,16.9,2.9,O,O,,미국
+신저가,OLD,HONA US Equity,Honeywell Aerospace Inc.,Electronic Technology,200.14,-1.15,63.4,,,O,O,"(전일) 하니웰 에어로스페이스(항공우주 부품 분사): UBS 중립(목표 $231) 개시로 기대 미달, -4%대 급락",미국
+신저가,OLD,LHX US Equity,"L3Harris Technologies, Inc.",Electronic Technology,277.71,-1.01,51.7,30.2,2.6,O,,,미국
+신저가,OLD,APG US Equity,APi Group Corporation,Industrial Services,39.09,-0.74,17.1,,4.9,O,,,미국
+신저가,OLD,WBD US Equity,"Warner Bros. Discovery, Inc. - Series A",Consumer Services,25.83,-0.12,64.8,,2.0,O,,(전일) 워너브라더스 디스커버리(미디어·스트리밍): 파라마운트·스카이댄스 $1100억 딜 8/3까지 법원 중단명령,미국
+신저가,OLD,LECO US Equity,"Lincoln Electric Holdings, Inc.",Producer Manufacturing,249.02,1.46,13.6,25.7,9.0,O,,"(전일) 링컨일렉트릭(산업용 용접장비): 수요 부진·고밸류 부담, 7/30 실적 앞 관망 신저가",미국
+신저가,OLD,QXO US Equity,"QXO, Inc.",Distribution Services,13.94,2.95,14.5,,1.1,O,O,(전일) QXO(건자재 유통): TopBuild $170억 인수완료 30% 희석+주택착공허가 2.4% 감소로 신저가,미국
+신고가,NEW,MMM US Equity,3M Company,Producer Manufacturing,170.76,7.32,89.1,32.9,27.3,O,,,미국
+신고가,NEW,CORT US Equity,Corcept Therapeutics Incorporated,Health Technology,95.65,4.46,10.3,273.3,16.1,O,O,,미국
+신고가,NEW,JAZZ US Equity,Jazz Pharmaceuticals plc,Health Technology,254.22,4.42,16.0,,3.5,O,O,,미국
+신고가,NEW,VTRS US Equity,Viatris Inc.,Health Technology,17.59,3.53,20.6,,1.4,O,O,,미국
+신고가,NEW,CCK US Equity,"Crown Holdings, Inc.",Process Industries,117.99,2.98,13.2,17.0,4.5,O,O,,미국
+신고가,NEW,CVS US Equity,CVS Health Corporation,Retail Trade,110.6,2.78,141.1,48.6,1.8,O,O,,미국
+신고가,NEW,CTRE US Equity,"CareTrust REIT, Inc.",Finance,43.4,2.24,10.3,27.8,2.4,O,O,,미국
+신고가,NEW,AHR US Equity,"American Healthcare REIT, Inc.",Finance,57.6,1.66,12.0,99.8,3.1,O,O,,미국
+신고가,NEW,VTR US Equity,"Ventas, Inc.",Finance,97.62,1.42,48.6,176.8,3.6,O,O,,미국
+신고가,NEW,HIG US Equity,"The Hartford Insurance Group, Inc.",Finance,141.98,1.05,38.9,10.0,2.1,O,,,미국
+신고가,NEW,WELL US Equity,Welltower Inc.,Finance,246.37,0.62,173.9,,4.0,O,O,,미국
+신고가,NEW,APGE US Equity,"Apogee Therapeutics, Inc.",Health Technology,134.2,0.04,10.1,,8.0,O,O,,미국
+신고가,NEW,MRSH US Equity,Marsh,Finance,181.59,-0.28,87.5,22.7,6.0,O,,,미국
+신고가,NEW,WRB US Equity,W.R. Berkley Corporation,Finance,72.16,-0.78,26.9,14.9,2.7,O,,,미국
+신고가,NEW,SCHW US Equity,Charles Schwab Corporation (The),Finance,99.96,-2.52,173.8,19.8,4.1,O,,,미국
+신고가,OLD,CHRW US Equity,"C.H. Robinson Worldwide, Inc.",Transportation,209.42,1.76,24.7,42.4,14.5,O,O,,미국
+신고가,OLD,PSX US Equity,Phillips 66,Energy Minerals,212.27,1.66,85.1,20.9,3.0,O,O,"(전일) 정제 업황 호조, Raymond James TP $235 상향·정유 동반 강세",미국
+신고가,OLD,DINO US Equity,HF Sinclair Corporation,Energy Minerals,91.69,1.42,16.5,13.8,1.7,O,O,,미국
+신고가,OLD,MPC US Equity,Marathon Petroleum Corporation,Energy Minerals,319.76,1.41,93.3,20.9,5.6,O,O,,미국
+신고가,OLD,ADM US Equity,Archer-Daniels-Midland Company,Process Industries,86.2,0.62,41.5,38.6,1.8,O,O,(전일) General Mills·월마트 재생농업 제휴 발표+BMO 목표가 상향,미국
+신고가,OLD,VLO US Equity,Valero Energy Corporation,Energy Minerals,314.8,0.48,93.5,22.9,3.9,O,O,"(전일) 정제마진 강세 지속, 애널리스트 목표가 상향 랠리",미국
+신고가,OLD,AES US Equity,The AES Corporation,Utilities,14.82,0.14,10.6,7.7,2.4,O,,"(전일) AES(글로벌 발전·재생에너지 유틸리티): 7/15 분기배당 선언+재생에너지 확장, 7/30 실적 기대",미국
+신고가,OLD,PAA US Equity,"Plains All American Pipeline, L.P.",Industrial Services,24.29,-0.08,17.1,18.2,2.3,O,O,(전일) 플레인스올아메리칸(원유·NGL 파이프라인 MLP): 바클레이즈 목표가 $21→$23 상향+트루이스트 매수 재확인,미국
+신고가,NEW,7181 JP Equity,"JAPAN POST INSURANCE Co., Ltd.",Finance,1686.0,4.69,10.6,11.0,0.4,O,,,일본
+신고가,NEW,6178 JP Equity,"JAPAN POST HOLDINGS Co., Ltd.",Finance,2418.5,3.84,40.1,18.5,0.7,O,O,,일본
+신고가,NEW,6098 JP Equity,"Recruit Holdings Co., Ltd.",Technology Services,12920.0,0.78,106.7,37.2,11.4,O,O,,일본
+신고가,OLD,8630 JP Equity,"Sompo Holdings,Inc.",Finance,6946.0,4.77,37.5,9.9,1.2,O,O,(전일) 손포홀딩스(손해보험 지주): 보험섹터 강세·690억엔 자사주매입 지속으로 수급 개선,일본
+신고가,OLD,5401 JP Equity,NIPPON STEEL CORP.,Non-Energy Minerals,598.6,2.22,19.2,182.4,0.6,O,,(전일) 닛폰스틸(일본 최대 철강): US스틸 철강가 호조·FY27 이익 1000억엔 기여 기대로 자율반등,일본
+신고가,OLD,4502 JP Equity,Takeda Pharmaceutical Co. Ltd.,Health Technology,5555.0,1.37,53.6,,1.2,O,,(전일) 다케다약품(일본 최대 제약): 7/2 인실리코 AI 신약발굴 딜(~$600M)+7/30 결산 앞둔 매수,일본
+신고가,OLD,5108 JP Equity,Bridgestone Corporation,Consumer Durables,3778.0,1.31,28.8,14.4,1.3,O,,"(전일) 디펜시브 소비재로 급락장서 상대적 견조, 60일 신고가",일본
+신고가,OLD,4568 JP Equity,"Daiichi Sankyo Company, Limited",Health Technology,2815.0,0.86,31.1,20.1,3.1,O,,"(전일) 다이이치산쿄(제약, ADC 항암 강자): 6/29 EU 다토포타마브 승인권고+I-DXd FDA 우선심사 모멘텀",일본
+신고가,OLD,7751 JP Equity,Canon Inc.,Electronic Technology,4500.0,0.76,26.4,13.0,1.1,O,,(전일) 캐논(카메라·사무기기·반도체 노광): 광범위 자율반등+7/27 결산 앞둔 매수,일본
+신고가,OLD,9433 JP Equity,KDDI Corporation,Communications,2881.5,0.47,63.3,15.7,2.2,O,O,(전일) 기계·비철 급락장서 고배당 디펜시브로 상대 자금 유입,일본
+신고가,OLD,2503 JP Equity,Kirin Holdings Co. Ltd.,Consumer Non-Durables,2921.5,0.43,14.4,15.7,1.8,O,O,,일본
+신고가,OLD,4661 JP Equity,"Oriental Land Co., Ltd.",Consumer Services,2735.0,0.2,27.4,36.8,4.1,O,,,일본
+신고가,OLD,9735 JP Equity,"Secom Co., Ltd.",Commercial Services,6735.0,-0.15,18.3,24.4,2.1,O,O,,일본
+신저가,OLD,6869 HK Equity,Yangtze Optical Fibre and Cable Joint Stock Ltd Co Class H,Electronic Technology,142.0,0.71,30.5,87.4,7.3,O,,"(전일) 노무라 경쟁심화 경고·광섬유 가격 둔화 우려, 고점 차익실현",홍콩
+신저가,OLD,1772 HK Equity,"Ganfeng Lithium Group Co., Ltd. Class H",Process Industries,36.7,1.66,12.3,41.9,1.5,O,,(전일) 탄산리튬 가격 3월래 최저(칠레 수출증가·CATL 광산 재가동 공급과잉 우려),홍콩
+신저가,OLD,9696 HK Equity,Tianqi Lithium Corp. Class H,Process Industries,32.0,3.63,10.2,21.6,1.0,O,O,(전일) 골드만 하반기 리튬 20%+ 공급과잉 전망 등 공급증가 우려,홍콩
+신저가,OLD,2476 HK Equity,"Victory Giant Technology (HuiZhou) Co., Ltd. Class H",Electronic Technology,227.6,7.16,26.6,,10.1,O,O,(전일) PCB·전자부품 섹터 급락(A주 동종 다수 하한가) 동반 하락,홍콩
+신고가,OLD,1308 HK Equity,"SITC International Holdings Co., Ltd.",Transportation,36.7,1.77,12.5,10.4,5.1,O,,(전일) SITC(아시아 역내 컨테이너 해운): 컨테이너 운임 4년래 고점·중동 리스크로 역내 운임 반등 수혜,홍콩
+신고가,OLD,300 HK Equity,Midea Group Co. Ltd. Class H,Consumer Durables,95.15,0.85,93.2,14.9,2.7,O,O,(전일) 메이디그룹(종합가전 세계 1위): 유럽 폭염 에어컨 수출 급증(서유럽 +70%)·자사주 매입 지지,홍콩
+신저가,OLD,001248 CH Equity,CHINA RES NEW ENGY HLDGS CO LTD,Finance,12.8,-1.39,25.0,,1.8,O,O,,중국A
+신저가,OLD,605117 CH Equity,"Ningbo Deye Technology Co., Ltd. Class A",Producer Manufacturing,81.27,2.36,14.9,28.3,8.9,O,,,중국A
+신저가,OLD,601698 CH Equity,China Satellite Communications Co. Ltd Class A,Communications,25.18,2.57,15.3,267.6,6.7,O,,"(전일) 1Q26 순이익 -62% 급감·주력자금 순유출, 고평가(PE 300배+) 부담 조정",중국A
+신저가,OLD,600118 CH Equity,"China Spacesat Co., Ltd. Class A",Electronic Technology,61.29,3.04,10.4,4286.0,11.5,O,,"(전일) 1Q 순손실 확대(-77% YoY), 상업우주 테마 고점 차익실현",중국A
+신저가,OLD,688818 CH Equity,CETC LANTIAN TECHNOLOGY CO LTD,Commercial Services,49.48,3.06,12.3,,15.7,O,O,(전일) 7/13 급락(-13%) 후 차익실현·주력자금 순유출 지속,중국A
+신저가,OLD,600673 CH Equity,Guangdong HEC Technology Holding Co. Ltd. Class A,Non-Energy Minerals,30.41,3.12,12.6,777.7,9.2,O,,,중국A
+신저가,OLD,300442 CH Equity,Range Intelligent Computing Technology Group Company Limited Class A,Technology Services,68.71,3.17,15.4,22.4,7.8,O,,,중국A
+신저가,OLD,002466 CH Equity,Tianqi Lithium Corp. Class A,Process Industries,43.69,3.31,10.2,33.1,1.6,O,,(전일) 톈치리튬(리튬 채굴·가공): 리튬가격 지속 하락·기관 확정매도로 신저가 후 반등,중국A
+신저가,OLD,000063 CH Equity,ZTE Corporation Class A,Electronic Technology,34.88,3.41,22.4,37.9,2.2,O,,(전일) ZTE 중싱통신(통신장비): 1분기 순이익 -47% YoY·5G사이클 조정으로 신저가 후 반등,중국A
+신저가,OLD,002460 CH Equity,"Ganfeng Lithium Group Co., Ltd. Class A",Process Industries,47.69,3.43,12.3,26.1,2.1,O,,(전일) 탄산리튬 가격 약세 지속·리튬 섹터 수급 부진,중국A
+신저가,OLD,001309 CH Equity,"Shenzhen Techwinsemi Technology Co., Ltd. Class A",Electronic Technology,508.0,5.2,16.0,,17.4,O,,"(전일) 더밍리(메모리 저장모듈): 2분기 순이익 전분기比 감소(-6~30%)+美 메모리주 급락 연동, 신저가 후 반등",중국A
+신저가,OLD,600487 CH Equity,"Hengtong Optic-Electric Co., Ltd. Class A",Producer Manufacturing,59.96,6.01,20.4,45.4,4.5,O,,,중국A
+신저가,OLD,600549 CH Equity,Xiamen Tungsten Co. Ltd. Class A,Non-Energy Minerals,50.18,6.43,11.0,26.3,4.4,O,,,중국A
+신저가,OLD,002080 CH Equity,"Sinoma Science & Technology Co., Ltd. Class A",Process Industries,53.63,6.66,12.5,45.8,4.4,O,,,중국A
+신저가,OLD,000988 CH Equity,"Huagong Tech Co., Ltd. Class A",Producer Manufacturing,113.15,6.89,31.3,66.3,9.6,O,,,중국A
+신저가,OLD,002600 CH Equity,Lingyi iTech (Guangdong) Company Class A,Electronic Technology,12.35,6.93,13.9,42.2,3.7,O,,"(전일) 1Q 순익 -30.7%·환차손 확대, 주력자금 순매도",중국A
+신저가,OLD,300476 CH Equity,"Victory Giant Technology (HuiZhou) Co., Ltd. Class A",Electronic Technology,240.27,7.21,32.5,44.6,12.0,O,,,중국A
+신저가,OLD,600522 CH Equity,"Jiangsu Zhongtian Technology Co., Ltd. Class A",Producer Manufacturing,34.63,7.48,16.0,36.9,3.1,O,,(전일) 중톈테크(광통신 케이블): 상반기 순이익 +50~60% 예증·7/17 자사주매입으로 하한가 후 낙폭회복,중국A
+신저가,OLD,000657 CH Equity,China Tungsten & Hightech Materials Co. Ltd. Class A,Non-Energy Minerals,60.44,7.85,18.9,69.6,12.9,O,,,중국A
+신저가,OLD,688183 CH Equity,"Shengyi Electronics Co., Ltd. Class A",Electronic Technology,110.23,8.05,12.6,54.8,14.8,O,,,중국A
+신저가,OLD,002837 CH Equity,"Shenzhen Envicool Technology Co., Ltd. Class A",Producer Manufacturing,59.99,8.17,10.4,157.4,22.0,O,,,중국A
+신저가,OLD,300394 CH Equity,"Suzhou TFC Optical Communication Co., Ltd. Class A",Electronic Technology,231.0,8.18,34.4,116.1,42.0,O,,"(전일) 반기 가이던스(+25~45%)가 기관 예상(68%) 하회, PE 106배 해소",중국A
+신저가,OLD,688521 CH Equity,"VeriSilicon Microelectronics (Shanghai) Co., Ltd. Class A",Electronic Technology,244.7,8.76,17.5,,40.9,O,,,중국A
+신저가,OLD,002353 CH Equity,"Yantai Jereh Oilfield Services Group Co., Ltd. Class A",Industrial Services,126.01,9.79,17.3,45.6,5.5,O,,,중국A
+신저가,OLD,001399 CH Equity,HKC Corporation Limited Class A,Electronic Technology,27.87,9.98,27.3,,5.2,O,O,(전일) IPO 직후 급락 지속: 패널 업황·370억위안 부채·해금 부담(7/3~7 이상변동),중국A
+신저가,OLD,002008 CH Equity,"Han's Laser Technology Industry Group Co., Ltd. Class A",Producer Manufacturing,100.89,10.0,13.8,,4.8,O,,,중국A
+신저가,OLD,688525 CH Equity,"Biwin Storage Technology Co., Ltd. Class A",Electronic Technology,270.97,11.05,17.0,33.1,15.0,O,,(전일) 반기 순익 +3200% 예고에도 대주주 감자 계획·고밸류 차익실현,중국A
+신저가,OLD,300857 CH Equity,Sharetronic Data Technology Co. Ltd. Class A,Technology Services,245.1,11.41,15.9,67.9,22.9,O,,(전일) 셰촹데이터(데이터 저장장치·IDC장비): 6월 80억위안 유상증자 계획 희석우려로 신저가 후 반등,중국A
+신저가,OLD,301308 CH Equity,"Shenzhen Longsys Electronics Co., Ltd. Class A",Electronic Technology,421.86,12.05,23.5,32.7,14.5,O,,,중국A
+신저가,OLD,300475 CH Equity,"Shannon Semiconductor Technology Co., Ltd. Class A",Producer Manufacturing,176.98,15.16,10.7,44.6,16.9,O,,,중국A
+신고가,NEW,001965 CH Equity,"China Merchants Expressway Network & Technology Holdings Co., Ltd. Class A",Transportation,10.3,1.08,10.2,15.1,1.0,O,,,중국A
+신고가,OLD,000938 CH Equity,"Unisplendour Co., Ltd. Class A",Electronic Technology,41.46,10.0,15.9,55.8,7.6,O,O,(전일) 쯔광구펀(H3C 서버·네트워크장비): AI연산 수요·H3C 매출급증+상반기 순이익 83~123% 증가 예고로 연속 상한가,중국A
+신고가,OLD,600690 CH Equity,"Haier Smart Home Co., Ltd. Class A",Consumer Durables,21.85,1.82,27.8,10.8,1.6,O,,(전일) 하이얼스마트홈(종합가전): 이구환신(가전 교체보조) 정책 수혜·글로벌 판매 견조로 신고가,중국A
+신고가,OLD,600886 CH Equity,"SDIC Power Holdings Co., Ltd. Class A",Utilities,15.03,0.54,17.7,16.2,1.7,O,,(전일) 야룽장 유역 강수 증가로 수력 발전량 상승 기대,중국A
+신고가,OLD,600025 CH Equity,Huaneng Lancang River Hydropower Co Ltd Class A,Utilities,10.19,0.49,27.9,22.0,2.2,O,,(전일) 화능란창장수전(윈난 수력발전): 상반기 발전량 +4.14%·홍수기 호조로 신고가,중국A
+신고가,OLD,000651 CH Equity,"Gree Electric Appliances, Inc. of Zhuhai Class A",Producer Manufacturing,40.59,0.02,32.0,7.7,1.5,O,,(전일) 그리전기(에어컨 대표주): 1분기 실적 안정·채널개혁 기대로 섹터 수급 신고가,중국A
+신고가,OLD,600018 CH Equity,"Shanghai International Port (Group) Co., Ltd. Class A",Transportation,5.22,0.0,17.9,8.9,0.8,O,,(전일) 상하이항만그룹(상하이항 운영): 7/20 상반기 예증(컨테이너 물동량 +6.2% YoY) 반영 신고가,중국A
+신고가,OLD,600674 CH Equity,"Sichuan Chuantou Energy Co., Ltd. Class A",Utilities,16.15,-0.19,11.7,16.6,1.7,O,O,,중국A
+신고가,OLD,600900 CH Equity,"China Yangtze Power Co., Ltd. Class A",Utilities,28.73,-0.86,104.8,19.5,3.1,O,O,,중국A
+신고가,OLD,601628 CH Equity,China Life Insurance Co. Ltd. Class A,Finance,40.17,-1.06,151.0,7.8,1.9,O,,,중국A
+신고가,OLD,601319 CH Equity,People's Insurance Co. (Group) of China Ltd. Class A,Finance,7.41,-1.72,45.4,7.7,1.0,O,,,중국A
+신고가,OLD,601398 CH Equity,Industrial and Commercial Bank of China Limited Class A,Finance,7.56,-2.33,387.5,,0.7,O,,,중국A

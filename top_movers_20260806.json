@@ -1,0 +1,200 @@
+{
+ "data_dates": {
+  "미국": "2026-08-05",
+  "일본": "2026-08-05",
+  "홍콩": "2026-08-05",
+  "중국A": "2026-08-05"
+ },
+ "note": "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달.",
+ "movers": [
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "SHOP US Equity",
+   "종목명": "Shopify Inc.",
+   "등락률(%)": 16.98,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "BSP US Equity",
+   "종목명": "Bending Spoons S.p.A.",
+   "등락률(%)": 16.82,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "CRL US Equity",
+   "종목명": "Charles River Laboratories International, Inc.",
+   "등락률(%)": 11.36,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "DT US Equity",
+   "종목명": "Dynatrace, Inc.",
+   "등락률(%)": 11.27,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "IFF US Equity",
+   "종목명": "International Flavors & Fragrances, Inc.",
+   "등락률(%)": 8.88,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "TRI US Equity",
+   "종목명": "Thomson Reuters Corp",
+   "등락률(%)": -9.66,
+   "event": "급변"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "SN US Equity",
+   "종목명": "SharkNinja, Inc.",
+   "등락률(%)": 8.28,
+   "event": "급변"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "TDY US Equity",
+   "종목명": "Teledyne Technologies Incorporated",
+   "등락률(%)": -0.15,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "DVA US Equity",
+   "종목명": "DaVita Inc.",
+   "등락률(%)": -17.24,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "RBA US Equity",
+   "종목명": "RB Global, Inc.",
+   "등락률(%)": -13.89,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "NYT US Equity",
+   "종목명": "New York Times Company (The)",
+   "등락률(%)": -13.4,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "FLUT US Equity",
+   "종목명": "Flutter Entertainment plc",
+   "등락률(%)": -11.48,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "DKNG US Equity",
+   "종목명": "DraftKings Inc.",
+   "등락률(%)": -7.84,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "5401 JP Equity",
+   "종목명": "NIPPON STEEL CORP.",
+   "등락률(%)": 4.02,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "6367 JP Equity",
+   "종목명": "DAIKIN INDUSTRIES, LTD.",
+   "등락률(%)": -6.31,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "1812 JP Equity",
+   "종목명": "Kajima Corporation",
+   "등락률(%)": -1.09,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "669 HK Equity",
+   "종목명": "Techtronic Industries Co., Ltd.",
+   "등락률(%)": 8.12,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "293 HK Equity",
+   "종목명": "Cathay Pacific Airways Limited",
+   "등락률(%)": 2.78,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "945 HK Equity",
+   "종목명": "Manulife Financial Corporation",
+   "등락률(%)": 0.52,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "601168 CH Equity",
+   "종목명": "Western Mining Co., Ltd. Class A",
+   "등락률(%)": 7.35,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "002475 CH Equity",
+   "종목명": "Luxshare Precision Industry Co., Ltd. Class A",
+   "등락률(%)": 0.7,
+   "event": "신규"
+  }
+ ]
+}

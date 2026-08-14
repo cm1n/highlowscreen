@@ -1,0 +1,162 @@
+{
+ "data_dates": {
+  "미국": "2026-07-15",
+  "홍콩": "2026-07-16",
+  "중국A": "2026-07-16"
+ },
+ "note": "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달.",
+ "movers": [
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "PYPL US Equity",
+   "종목명": "PayPal Holdings, Inc.",
+   "등락률(%)": 17.2
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "IVZ US Equity",
+   "종목명": "Invesco Ltd",
+   "등락률(%)": 5.46
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "EQH US Equity",
+   "종목명": "Equitable Holdings, Inc.",
+   "등락률(%)": 4.57
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "AAPL US Equity",
+   "종목명": "Apple Inc.",
+   "등락률(%)": 4.01
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "CRBG US Equity",
+   "종목명": "Corebridge Financial Inc.",
+   "등락률(%)": 3.88
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "PNR US Equity",
+   "종목명": "Pentair plc.",
+   "등락률(%)": -15.0
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "CIEN US Equity",
+   "종목명": "Ciena Corporation",
+   "등락률(%)": -6.37
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "IONQ US Equity",
+   "종목명": "IonQ, Inc.",
+   "등락률(%)": -4.53
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "COHR US Equity",
+   "종목명": "Coherent Corp.",
+   "등락률(%)": -3.67
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "ORLY US Equity",
+   "종목명": "O'Reilly Automotive, Inc.",
+   "등락률(%)": -3.52
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "2888 HK Equity",
+   "종목명": "Standard Chartered PLC",
+   "등락률(%)": 2.22
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "2475 HK Equity",
+   "종목명": "Luxshare Precision Industry Co., Ltd. Class H",
+   "등락률(%)": -3.02
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "9696 HK Equity",
+   "종목명": "Tianqi Lithium Corp. Class H",
+   "등락률(%)": 3.07
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "603893 CH Equity",
+   "종목명": "Rockchip Electronics Co., Ltd. Class A",
+   "등락률(%)": 6.55
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "600930 CH Equity",
+   "종목명": "Huadian New Energy Group Corporation Limited Class A",
+   "등락률(%)": -8.51
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "600498 CH Equity",
+   "종목명": "Fiberhome Telecommunication Technologies Co., Ltd. Class A",
+   "등락률(%)": -6.24
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "688818 CH Equity",
+   "종목명": "CETC LANTIAN TECHNOLOGY CO LTD",
+   "등락률(%)": -5.37
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "600118 CH Equity",
+   "종목명": "China Spacesat Co., Ltd. Class A",
+   "등락률(%)": -5.3
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "601698 CH Equity",
+   "종목명": "China Satellite Communications Co. Ltd Class A",
+   "등락률(%)": -1.55
+  }
+ ]
+}
