@@ -1,11 +1,11 @@
 name: 신고신저가 데일리 스캔
 
-# 07:30 KST = 22:30 UTC (전일). GitHub cron은 UTC 기준이라 하루 앞 시각으로 적는다.
+# 08:00 KST = 23:00 UTC (전일). GitHub cron은 UTC 기준이라 하루 앞 시각으로 적는다.
 # 스케줄은 기본 브랜치에서만 돌고, public 리포는 60일간 활동이 없으면 자동 비활성화된다
 # (이 워크플로우가 매일 커밋을 만들므로 활동은 계속 유지된다).
 on:
   schedule:
-    - cron: "30 22 * * *"
+    - cron: "0 23 * * *"
   workflow_dispatch:
 
 concurrency:
@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     env:
-      # 러너는 UTC라 그대로 두면 파일명이 하루 밀린다(22:30 UTC = 익일 07:30 KST).
+      # 러너는 UTC라 그대로 두면 파일명이 하루 밀린다(23:00 UTC = 익일 08:00 KST).
       # 로컬 실행분과 같은 날짜 규칙을 쓰도록 KST로 고정.
       TZ: Asia/Seoul
 
