@@ -1,0 +1,335 @@
+{
+ "data_dates": {
+  "미국": "2026-08-28",
+  "일본": "2026-08-28",
+  "홍콩": "2026-08-28",
+  "중국A": "2026-08-28"
+ },
+ "note": "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달.",
+ "movers": [
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "ESTC US Equity",
+   "종목명": "Elastic N.V.",
+   "등락률(%)": 19.31,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "NOW US Equity",
+   "종목명": "ServiceNow, Inc.",
+   "등락률(%)": 4.54,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "GFL US Equity",
+   "종목명": "GFL Environmental Inc. Subordinate voting shares, no par value",
+   "등락률(%)": 4.39,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "DINO US Equity",
+   "종목명": "HF Sinclair Corporation",
+   "등락률(%)": 2.79,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "GIS US Equity",
+   "종목명": "General Mills, Inc.",
+   "등락률(%)": 2.74,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "TEAM US Equity",
+   "종목명": "Atlassian Corporation",
+   "등락률(%)": 2.58,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "DB US Equity",
+   "종목명": "Deutsche Bank AG",
+   "등락률(%)": 0.72,
+   "event": "52주돌파"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "INIO US Equity",
+   "종목명": "INNIO N.V.",
+   "등락률(%)": -7.59,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "PCG US Equity",
+   "종목명": "Pacific Gas & Electric Co.",
+   "등락률(%)": -7.52,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "STRL US Equity",
+   "종목명": "Sterling Infrastructure, Inc.",
+   "등락률(%)": -7.08,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "GNRC US Equity",
+   "종목명": "Generac Holdings Inc.",
+   "등락률(%)": -6.84,
+   "event": "신규"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "NVMI US Equity",
+   "종목명": "Nova Ltd.",
+   "등락률(%)": -5.89,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "4684 JP Equity",
+   "종목명": "OBIC Co., Ltd.",
+   "등락률(%)": 4.63,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "6702 JP Equity",
+   "종목명": "Fujitsu Limited",
+   "등락률(%)": 4.02,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "7974 JP Equity",
+   "종목명": "Nintendo Co., Ltd.",
+   "등락률(%)": 3.04,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "7550 JP Equity",
+   "종목명": "Zensho Holdings Co., Ltd.",
+   "등락률(%)": 2.43,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "8604 JP Equity",
+   "종목명": "Nomura Holdings, Inc.",
+   "등락률(%)": 1.89,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "6361 JP Equity",
+   "종목명": "Ebara Corporation",
+   "등락률(%)": -2.76,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "5334 JP Equity",
+   "종목명": "Niterra Co.,Ltd.",
+   "등락률(%)": -2.5,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "9983 JP Equity",
+   "종목명": "FAST RETAILING CO., LTD.",
+   "등락률(%)": -0.39,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "2099 HK Equity",
+   "종목명": "China Gold International Resources Corp. Ltd.",
+   "등락률(%)": 7.72,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "386 HK Equity",
+   "종목명": "China Petroleum & Chemical Corporation Class H",
+   "등락률(%)": 1.82,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "998 HK Equity",
+   "종목명": "China CITIC Bank Corporation Ltd Class H",
+   "등락률(%)": 1.65,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "3908 HK Equity",
+   "종목명": "China International Capital Corp. Ltd. Class H",
+   "등락률(%)": 1.06,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "2423 HK Equity",
+   "종목명": "KE Holdings, Inc. Class A",
+   "등락률(%)": 0.89,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "1800 HK Equity",
+   "종목명": "China Communications Construction Co. Ltd. Class H",
+   "등락률(%)": -0.41,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "2727 HK Equity",
+   "종목명": "Shanghai Electric Group Company Limited Class H",
+   "등락률(%)": 0.68,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "2333 HK Equity",
+   "종목명": "Great Wall Motor Co., Ltd. Class H",
+   "등락률(%)": 1.08,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "600346 CH Equity",
+   "종목명": "Hengli Petrochemical Co., Ltd. Class A",
+   "등락률(%)": 4.02,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "002648 CH Equity",
+   "종목명": "Satellite Chemical Co. Ltd. Class A",
+   "등락률(%)": 3.61,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "000301 CH Equity",
+   "종목명": "Jiangsu Eastern Shenghong Co., Ltd. Class A",
+   "등락률(%)": 3.45,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "600028 CH Equity",
+   "종목명": "China Petroleum & Chemical Corporation Class A",
+   "등락률(%)": 3.21,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "600760 CH Equity",
+   "종목명": "AVIC Shenyang Aircraft Co., Ltd. Class A",
+   "등락률(%)": 3.08,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "002028 CH Equity",
+   "종목명": "Sieyuan Electric Co., Ltd. Class A",
+   "등락률(%)": -6.69,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "001289 CH Equity",
+   "종목명": "China Longyuan Power Group Corporation Ltd Class A",
+   "등락률(%)": -2.36,
+   "event": "신규"
+  },
+  {
+   "시장": "중국A",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "300274 CH Equity",
+   "종목명": "Sungrow Power Supply Co., Ltd. Class A",
+   "등락률(%)": -1.16,
+   "event": "신규"
+  }
+ ]
+}
