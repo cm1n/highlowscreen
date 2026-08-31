@@ -1,0 +1,92 @@
+{
+ "data_dates": {
+  "미국": "2026-08-28",
+  "일본": "2026-08-31",
+  "홍콩": "2026-08-28",
+  "중국A": "2026-08-28"
+ },
+ "note": "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달.",
+ "movers": [
+  {
+   "시장": "미국",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "ESTC US Equity",
+   "종목명": "Elastic N.V.",
+   "등락률(%)": 19.31,
+   "event": "급변"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "OLD",
+   "티커": "INIO US Equity",
+   "종목명": "INNIO N.V.",
+   "등락률(%)": -7.59,
+   "event": "급변"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "OLD",
+   "티커": "PCG US Equity",
+   "종목명": "Pacific Gas & Electric Co.",
+   "등락률(%)": -7.52,
+   "event": "급변"
+  },
+  {
+   "시장": "미국",
+   "구분": "신저가",
+   "NEW/OLD": "OLD",
+   "티커": "STRL US Equity",
+   "종목명": "Sterling Infrastructure, Inc.",
+   "등락률(%)": -7.08,
+   "event": "급변"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "9503 JP Equity",
+   "종목명": "Kansai Electric Power Company, Incorporated",
+   "등락률(%)": 6.05,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "7269 JP Equity",
+   "종목명": "Suzuki Motor Corp.",
+   "등락률(%)": 2.14,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신고가",
+   "NEW/OLD": "NEW",
+   "티커": "9432 JP Equity",
+   "종목명": "NTT Inc",
+   "등락률(%)": 1.72,
+   "event": "신규"
+  },
+  {
+   "시장": "일본",
+   "구분": "신저가",
+   "NEW/OLD": "NEW",
+   "티커": "6920 JP Equity",
+   "종목명": "Lasertec Corp.",
+   "등락률(%)": -4.13,
+   "event": "신규"
+  },
+  {
+   "시장": "홍콩",
+   "구분": "신고가",
+   "NEW/OLD": "OLD",
+   "티커": "2099 HK Equity",
+   "종목명": "China Gold International Resources Corp. Ltd.",
+   "등락률(%)": 7.72,
+   "event": "급변"
+  }
+ ]
+}
