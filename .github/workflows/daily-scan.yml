@@ -47,6 +47,8 @@ jobs:
       # github_token을 명시적으로 넘기는 이유: 생략하면 Claude GitHub App OIDC 교환을 타는데
       # cron 트리거에서 401로 실패하는 알려진 이슈가 있다(claude-code-action#814).
       - name: 2~3단계 — 이유 검색 및 코멘트
+        # Claude 인증이 만료돼도 당일 스캔·사이트 발행은 계속한다.
+        continue-on-error: true
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
