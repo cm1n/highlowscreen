@@ -1118,7 +1118,7 @@ border-radius:10px;padding:10px 14px;margin-bottom:12px;font-size:13px;font-weig
 <script>
 const DATA=__DATA__;const DATES=__DATES__;const TAG="__TAG__";
 const SDATA=__SDATA__;const EDATA=__EDATA__;const ETFCOLS=__ETFCOLS__;const CMTS=__CMTS__;
-const IDATA=__IDATA__;
+const IDATA=__IDATA__;const WCOUNTS=__WCOUNTS__;
 let st={date:TAG,mkt:"전체",gb:"전체",nw:false,w52:false,q:"",k:"chg",dir:-1,view:"종목",sec:null};
 const dash=d=>d.replace(/(\d{4})(\d{2})(\d{2})/,"$1-$2-$3");
 const sel=document.getElementById("dateSel");
@@ -1158,16 +1158,30 @@ return`<svg class="spk" width="${ds.length*(W+G)-G}" height="${H}" aria-hidden="
 `<line x1="0" y1="${mid}" x2="${ds.length*(W+G)-G}" y2="${mid}" stroke="#26262c" stroke-width="1"/>`+
 nets.map((v,i)=>{const bh=Math.max(1.5,Math.abs(v)/M*(mid-1));
 return`<rect x="${i*(W+G)}" y="${v>=0?mid-bh:mid}" width="${W}" height="${bh}" rx="1.2" fill="${v>=0?"var(--up)":"var(--dn)"}" opacity="${i===ds.length-1?1:.45}"/>`}).join("")+`</svg>`}
+function prevWeekAvg(m,ref){
+const date=new Date(Date.UTC(+ref.slice(0,4),+ref.slice(4,6)-1,+ref.slice(6,8)));
+const monday=new Date(date);monday.setUTCDate(date.getUTCDate()-((date.getUTCDay()+6)%7)-7);
+const friday=new Date(monday);friday.setUTCDate(monday.getUTCDate()+4);
+const tag=d=>d.toISOString().slice(0,10).replace(/-/g,"");
+const start=tag(monday),end=tag(friday),days=new Map();
+WCOUNTS.filter(x=>x.m===m&&x.dt<=ref&&x.asof>=start&&x.asof<=end)
+.sort((a,b)=>a.dt.localeCompare(b.dt)).forEach(x=>days.set(x.asof,x));
+const rows=[...days.values()],n=rows.length;
+return {n,start,end,h:n?rows.reduce((v,x)=>v+x.h,0)/n:null,l:n?rows.reduce((v,x)=>v+x.l,0)/n:null};
+}
 function cards(){const el=document.getElementById("cards");el.innerHTML="";
 const ref=refDate();
 ["미국","일본","대만","홍콩","중국A"].forEach(m=>{const r=DATA.filter(x=>x.m===m&&x.dt===ref);
 const h=r.filter(x=>x.g==="신고가"),l=r.filter(x=>x.g==="신저가");
 const hn=h.filter(x=>x.n==="NEW").length,ln=l.filter(x=>x.n==="NEW").length;
 const tot=h.length+l.length,p=tot?Math.round(h.length/tot*100):50;
+const avg=prevWeekAvg(m,ref),weekLabel=d=>+d.slice(4,6)+"/"+(+d.slice(6,8));
 const c=document.createElement("div");c.className="card"+(st.mkt===m?" on":"");
 c.innerHTML=`<h3>${m}</h3>${spark(m)}
 <div class="big"><b class="u">${h.length}</b><em>신고</em><b class="d">${l.length}</b><em>신저</em></div>
 <div class="nw">NEW <b>${hn}</b> 신고 · <b>${ln}</b> 신저</div>
+<div class="nw" title="선택일의 직전 달력 주 월~금. 실제 시장 기준일이 확인된 기록만 사용하며 동일 거래일은 한 번만 셉니다. 누락일은 0건으로 넣지 않습니다.">전주 평균 ${avg.n?`신고 <b class="u">${fmt(avg.h,1)}</b> · 신저 <b class="d">${fmt(avg.l,1)}</b>`:"—"}</div>
+<div class="nw">${weekLabel(avg.start)}–${weekLabel(avg.end)} · ${avg.n?`수집 ${avg.n}일 기준`:"기록 없음"}</div>
 <div class="bar" style="background:${tot?"#33333f":"#26262c"}"><i style="width:${p}%${tot?"":";opacity:.25"}"></i></div>`;
 c.onclick=()=>{st.mkt=(st.mkt===m?"전체":m);document.querySelectorAll(".chip.mkt").forEach(x=>
 x.classList.toggle("on",x.dataset.v===st.mkt));render()};el.appendChild(c)})}
@@ -1313,12 +1327,32 @@ def write_html(out_dir, tag, per_market, data_dates, note):
     def num(v):
         return None if pd.isna(v) else float(v)
 
-    rows, dates = [], []
+    rows, dates, weekly_counts = [], [], []
     for p in sorted(out_dir.glob("scan_*.csv"))[-HIST_DATES:]:
         d_tag = p.stem.split("_")[-1]
         if not d_tag.isdigit():
             continue
         df = pd.read_csv(p, encoding="utf-8-sig")
+        meta_path = out_dir / f"top_movers_{d_tag}.json"
+        meta_dates = {}
+        if meta_path.exists():
+            try:
+                meta_dates = json.loads(meta_path.read_text(encoding="utf-8")).get("data_dates", {})
+            except (ValueError, OSError):
+                pass
+        if d_tag == tag:
+            meta_dates.update(data_dates)
+        for market, asof in meta_dates.items():
+            try:
+                asof_date = dt.date.fromisoformat(asof)
+            except (ValueError, TypeError):
+                continue
+            if asof_date.weekday() >= 5 or asof_date.strftime("%Y%m%d") > d_tag:
+                continue
+            sample = df[df["시장"] == market]
+            weekly_counts.append({"dt": d_tag, "asof": asof_date.strftime("%Y%m%d"), "m": market,
+                                  "h": int((sample["구분"] == "신고가").sum()),
+                                  "l": int((sample["구분"] == "신저가").sum())})
         # 2026-07-31 PER을 TTM→12MF로 전환 — 과거 csv는 옛 컬럼명이라 둘 다 받는다.
         pe_col = "PER(12MF)" if "PER(12MF)" in df.columns else "PER(TTM)"
         has_val = pe_col in df.columns
@@ -1379,6 +1413,7 @@ def write_html(out_dir, tag, per_market, data_dates, note):
             .replace("__EDATA__", esc(erows))
             .replace("__ETFCOLS__", esc(etf_cols))
             .replace("__IDATA__", esc(irows))
+            .replace("__WCOUNTS__", esc(weekly_counts))
             .replace("__DATES_LINE__", dates_line)
             .replace("__DATES__", json.dumps(dates))
             .replace("__TAG_DASH__", f"{tag[:4]}-{tag[4:6]}-{tag[6:]}")
