@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-미국·홍콩·중국A 시총 $10B+ 종목의 60일/52주 신고가·신저가 스캔 → xlsx + HTML 대시보드
+미국·일본·대만·홍콩·중국A 시총 $10B+ 종목의 60일/52주 신고가·신저가 스캔 → xlsx + HTML 대시보드
 
 사용법:
   python high_low_scan.py                          # 스캔 실행 → xlsx + scan csv + top_movers json
@@ -38,14 +38,14 @@ sys.stdout.reconfigure(encoding="utf-8")
 MCAP_USD = 10e9
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)", "Accept": "application/json"}
 EM_HEADERS = {"User-Agent": "Mozilla/5.0", "Referer": "https://quote.eastmoney.com/"}
-FX_FALLBACK = {"HKD": 7.8, "CNY": 7.2, "JPY": 145.0}
+FX_FALLBACK = {"HKD": 7.8, "CNY": 7.2, "JPY": 145.0, "TWD": 32.0}
 TOP_N = 5  # 시장·방향별 이유 붙일 신규(NEW) 상위 종목 수
 OLD_EVENT_CHG = 7.0  # OLD여도 당일 |등락률|이 이 값 이상이면 새 이벤트로 보고 이유 재검색
 OLD_TOP_N = 3        # 시장·방향별 OLD 재검색 상한(급변은 드무니 소수만)
 
 COLS = ["구분", "NEW/OLD", "티커", "종목명", "섹터", "종가", "등락률(%)", "시총($B)",
         "PER(12MF)", "PER(TTM)", "PBR", "60일", "52주", "이유"]
-MARKET_ORDER = ["미국", "일본", "홍콩", "중국A"]
+MARKET_ORDER = ["미국", "일본", "대만", "홍콩", "중국A"]
 
 
 def log(msg):
@@ -66,15 +66,15 @@ def get_fx():
     fx = dict(FX_FALLBACK)
     try:
         import yfinance as yf
-        px = yf.download(["HKD=X", "CNY=X", "JPY=X"], period="5d",
+        px = yf.download(["HKD=X", "CNY=X", "JPY=X", "TWD=X"], period="5d",
                          progress=False, auto_adjust=True)["Close"]
-        for cur, tk in (("HKD", "HKD=X"), ("CNY", "CNY=X"), ("JPY", "JPY=X")):
+        for cur, tk in (("HKD", "HKD=X"), ("CNY", "CNY=X"), ("JPY", "JPY=X"), ("TWD", "TWD=X")):
             v = px[tk].dropna()
             if len(v):
                 fx[cur] = float(v.iloc[-1])
     except Exception as e:
         log(f"FX 조회 실패, 기본값 사용: {e}")
-    log(f"환율 USDHKD={fx['HKD']:.3f} USDCNY={fx['CNY']:.3f} USDJPY={fx['JPY']:.1f}")
+    log(f"환율 USDHKD={fx['HKD']:.3f} USDCNY={fx['CNY']:.3f} USDJPY={fx['JPY']:.1f} USDTWD={fx['TWD']:.3f}")
     return fx
 
 
@@ -258,6 +258,7 @@ def fill_us_valuation(d):
 # 거래소+통화로 위안화 카운터(HK)·B주(중국)를 걸러낸다. ADR·듀얼클래스는 포함.
 TV_MARKETS = {"미국": ("america", "USD", ["NASDAQ", "NYSE", "AMEX"]),
               "일본": ("japan", "JPY", ["TSE"]),
+              "대만": ("taiwan", "TWD", ["TWSE", "TPEX"]),
               "홍콩": ("hongkong", "HKD", ["HKEX"]),
               "중국A": ("china", "CNY", ["SSE", "SZSE"])}
 TV_COLS = ["name", "description", "sector", "market_cap_basic", "close", "change",
@@ -290,6 +291,8 @@ def scan_tradingview(fx, out_dir):
     for m, (mk, cur, exchanges) in TV_MARKETS.items():
         rate = 1.0 if cur == "USD" else fx[cur]
         raw = tv_market_scan(mk, MCAP_USD * rate, exchanges, cur)
+        if mk == "taiwan" and not raw:
+            raise RuntimeError("대만 유니버스 수집 결과가 비어 있습니다")
         if mk == "japan":
             # 일본은 legacy 유니버스 소스(나스닥/eastmoney 상당)가 없어 TV 성공분을 캐시 → 폴백용
             cache_dir = out_dir / "_cache"
@@ -328,7 +331,8 @@ def scan_tradingview(fx, out_dir):
             sym = str(d["name"])
             bb = (sym.replace(".", "/") + " US" if mk == "america"
                   else str(int(sym)) + " HK" if mk == "hongkong"
-                  else sym + " JP" if mk == "japan" else sym + " CH") + " Equity"
+                  else sym + " JP" if mk == "japan"
+                  else sym + " TW" if mk == "taiwan" else sym + " CH") + " Equity"
             chg = d.get("change")
             rows.append({"구분": direction, "NEW/OLD": "NEW", "티커": bb,
                          "종목명": d.get("description") or sym, "섹터": s,
@@ -1026,6 +1030,7 @@ border-radius:10px;padding:10px 14px;margin-bottom:12px;font-size:13px;font-weig
  <span class="sep"></span>
  <span class="chip mkt on" data-v="전체">전체 시장</span><span class="chip mkt" data-v="미국">미국</span>
  <span class="chip mkt" data-v="일본">일본</span>
+ <span class="chip mkt" data-v="대만">대만</span>
  <span class="chip mkt" data-v="홍콩">홍콩</span><span class="chip mkt" data-v="중국A">중국A</span>
  <span class="sep"></span>
  <span class="chip gb on" data-v="전체">신고+신저</span><span class="chip gb" data-v="신고가">신고가</span>
@@ -1070,7 +1075,7 @@ addEventListener("resize",setTbh);addEventListener("load",setTbh);
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(setTbh);
 // ---- 코멘트 (■ 라벨: → 배지)
 const CLAB={"결론":"#ffffff","美":"#cfae95","미국":"#cfae95","日":"#c9a3af","일본":"#c9a3af",
-"홍콩":"#aaa2cc","中":"#c2bb9a","중국":"#c2bb9a","中·홍콩":"#c2bb9a","좋은 섹터":"#e25c50",
+"대만":"#9fc9bd","홍콩":"#aaa2cc","中":"#c2bb9a","중국":"#c2bb9a","中·홍콩":"#c2bb9a","좋은 섹터":"#e25c50",
 "나쁜 섹터":"#6d8fd4","이벤트":"#b8b8c0","체크":"#86868f"};
 function updCmt(){const el=document.getElementById("cmt");
 let d=refDate(),t=CMTS[d]||"",carried=false;
@@ -1093,7 +1098,7 @@ nets.map((v,i)=>{const bh=Math.max(1.5,Math.abs(v)/M*(mid-1));
 return`<rect x="${i*(W+G)}" y="${v>=0?mid-bh:mid}" width="${W}" height="${bh}" rx="1.2" fill="${v>=0?"var(--up)":"var(--dn)"}" opacity="${i===ds.length-1?1:.45}"/>`}).join("")+`</svg>`}
 function cards(){const el=document.getElementById("cards");el.innerHTML="";
 const ref=refDate();
-["미국","일본","홍콩","중국A"].forEach(m=>{const r=DATA.filter(x=>x.m===m&&x.dt===ref);
+["미국","일본","대만","홍콩","중국A"].forEach(m=>{const r=DATA.filter(x=>x.m===m&&x.dt===ref);
 const h=r.filter(x=>x.g==="신고가"),l=r.filter(x=>x.g==="신저가");
 const hn=h.filter(x=>x.n==="NEW").length,ln=l.filter(x=>x.n==="NEW").length;
 const tot=h.length+l.length,p=tot?Math.round(h.length/tot*100):50;
@@ -1114,7 +1119,7 @@ return`background:rgb(${r|0},${g|0},${b|0});color:#1c1710`}
 function bump(el){el.classList.remove("anim");void el.offsetWidth;el.classList.add("anim")}
 // ---- 섹터동향 뷰
 function renderSector(){let r=SDATA.filter(x=>x.dt===refDate()&&(st.mkt==="전체"||x.m===st.mkt));
-const MKO=["미국","일본","홍콩","중국A"];
+const MKO=["미국","일본","대만","홍콩","중국A"];
 r=r.slice().sort((a,b)=>{const ma=MKO.indexOf(a.m),mb=MKO.indexOf(b.m);if(ma!==mb)return ma-mb;
 const fa=a.net===0?1:0,fb=b.net===0?1:0;if(fa!==fb)return fa-fb;return b.net-a.net});
 document.getElementById("cnt").textContent=r.length+"섹터";
@@ -1156,7 +1161,7 @@ document.querySelectorAll(".chip.gb").forEach(x=>x.classList.toggle("on",x.datas
 render();window.scrollTo({top:0,behavior:"smooth"})}
 // ---- 섹터ETF 뷰
 function renderEtf(){let r=EDATA.filter(x=>x.dt===refDate()&&(st.mkt==="전체"||x.m===st.mkt));
-const i1d=ETFCOLS.indexOf("1D"),MKO=["미국","일본","홍콩","중국A"];
+const i1d=ETFCOLS.indexOf("1D"),MKO=["미국","일본","대만","홍콩","중국A"];
 const flat=v=>(v==null||isNaN(v))?1:(Math.abs(v)<1?1:0);
 r=r.slice().sort((a,b)=>{const ma=MKO.indexOf(a.m),mb=MKO.indexOf(b.m);if(ma!==mb)return ma-mb;
 const fa=flat(a.v[i1d]),fb=flat(b.v[i1d]);if(fa!==fb)return fa-fb;
@@ -1432,7 +1437,7 @@ def run_scan(out_dir, source="tv"):
             log(f"TradingView 실패 → eastmoney/yfinance 폴백: {type(e).__name__} {e}")
     if per_market is None:
         per_market, data_dates, uni_sect = scan_legacy(fx, out_dir)
-        note = LEGACY_NOTE
+        note = LEGACY_NOTE + " ⚠️ 대만 수집 실패 — legacy 경로는 대만을 지원하지 않습니다."
     for m, d in per_market.items():
         log(f"{m}: 신고가 {(d['구분'] == '신고가').sum()} / 신저가 {(d['구분'] == '신저가').sum()}"
             f" (기준일 {data_dates[m]})")
