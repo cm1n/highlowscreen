@@ -459,6 +459,7 @@ SECTOR_ETFS = {
             ("1626.T", "정보통신·서비스"), ("1627.T", "전력·가스"), ("1628.T", "운수·물류"),
             ("1629.T", "상사·도매"), ("1630.T", "소매"), ("1631.T", "은행"),
             ("1632.T", "금융(은행외)"), ("1633.T", "부동산")],
+    "대만": [("00891.TW", "반도체(ESG)"), ("00881.TW", "기술·통신"), ("0055.TW", "금융")],
     "홍콩": [("2800.HK", "항셍지수"), ("2828.HK", "H주(중국기업)"), ("3033.HK", "항셍테크")],
     "중국A": [("512480.SS", "반도체"), ("515000.SS", "테크(科技)"), ("515050.SS", "5G통신"),
              ("515030.SS", "신에너지차"), ("512660.SS", "방산(军工)"), ("515790.SS", "태양광"),
@@ -469,7 +470,7 @@ SECTOR_ETFS = {
 ETF_NOTE = ("미국=SPDR 섹터 ETF, 일본=TOPIX-17 섹터 ETF(1617~1633), 중국A=주요 섹터 ETF(상해·심천)"
             " · 홍콩은 섹터 ETF가 얇아 시장·테크 대표만"
             " · 수익률은 배당 포함 총수익 기준(미국=야후 수정주가, 중·홍=eastmoney 전복권)"
-            " — 블룸버그 가격수익률과 고배당 섹터에서 연 1~2%p 차이 가능 · 정렬=시장·섹터 고정순(대시보드는 1D 등락순으로 표시)")
+            " — 블룸버그 가격수익률과 고배당 섹터에서 연 1~2%p 차이 가능 · 정렬=시장·섹터 고정순(대시보드는 1D 등락순으로 표시) · 대만=반도체(00891), 기술·통신(00881), 금융(0055); 반도체·기술 구성 중복 가능")
 
 
 def etf_bb(sym):
@@ -477,6 +478,8 @@ def etf_bb(sym):
         return f"{int(sym[:-3])} HK"
     if sym.endswith((".SS", ".SZ")):
         return sym[:-3] + " CH"
+    if sym.endswith(".TW"):
+        return sym[:-3] + " TW"
     if sym.endswith(".T"):
         return sym[:-2] + " JP"
     return sym + " US"
@@ -566,6 +569,59 @@ def etf_secid(sym):
     return None  # 미국은 야후
 
 
+def taiwan_regular_close(c, now=None):
+    """대만은 14:00 현지시각 이전 당일 일봉을 제외해 장중·확정종가 혼합 방지."""
+    now = now or dt.datetime.now(dt.timezone.utc)
+    local = now.astimezone(dt.timezone(dt.timedelta(hours=8)))
+    c = c.copy()
+    if c.index.tz is not None:
+        c.index = c.index.tz_convert("Asia/Taipei").tz_localize(None)
+    c.index = c.index.normalize()
+    dates = c.index
+    cutoff = pd.Timestamp(local.date())
+    return c[dates < cutoff] if local.hour < 14 else c[dates <= cutoff]
+
+
+def taiwan_etf_close(sym, c):
+    """Yahoo 최근 누락 일봉은 TWSE 공식 종가로 보완. 기업행사 구간은 추정 보정하지 않음."""
+    c = taiwan_regular_close(c)
+    if not len(c):
+        return c
+    try:
+        r = requests.get(f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}",
+                         params={"range": "1mo", "interval": "1d", "events": "div,splits"},
+                         headers=UA, timeout=20)
+        r.raise_for_status()
+        node = r.json()["chart"]["result"][0]
+        local_date = lambda ts: dt.datetime.fromtimestamp(ts, dt.timezone.utc).astimezone(
+            dt.timezone(dt.timedelta(hours=8))).date()
+        last_date = c.index[-1].date()
+        events = [v for group in node.get("events", {}).values() for v in group.values()]
+        if any(local_date(e["date"]) > last_date for e in events):
+            log(f"대만 ETF {sym}: 누락 구간 기업행사 — TWSE 가격 보완 생략")
+            return c
+        quote = node["indicators"]["quote"][0]["close"]
+        previous_raw = next(v for t, v in zip(node["timestamp"], quote)
+                            if local_date(t) == last_date and v is not None)
+        factor = float(c.iloc[-1]) / previous_raw
+        now = dt.datetime.now(dt.timezone.utc).astimezone(dt.timezone(dt.timedelta(hours=8)))
+        end = now.date() if now.hour >= 14 else now.date() - dt.timedelta(days=1)
+        r = requests.get("https://www.twse.com.tw/exchangeReport/STOCK_DAY",
+                         params={"response": "json", "date": end.strftime("%Y%m01"),
+                                 "stockNo": sym[:-3]}, headers=UA, timeout=20)
+        r.raise_for_status()
+        for row in r.json().get("data", []):
+            y, month, day = map(int, row[0].split("/"))
+            date = dt.date(y + 1911, month, day)
+            if last_date < date <= end:
+                close = float(row[6].replace(",", ""))
+                c.loc[pd.Timestamp(date)] = close * factor
+        return c.sort_index()
+    except Exception as e:
+        log(f"대만 ETF {sym}: TWSE 보완 실패, 기준일 {c.index[-1]:%Y-%m-%d} 유지 ({type(e).__name__})")
+        return c
+
+
 def build_etf_table():
     """섹터별 대표 ETF의 단기(1D/1주/1M/3M) + 연도별 YTD 수익률·순위 테이블.
     미국·일본=야후(신뢰 OK), 홍콩·중국A=eastmoney(야후는 A주 ETF 折算 왜곡)."""
@@ -574,7 +630,7 @@ def build_etf_table():
     px = yf.download(yahoo_syms, start="2019-12-01", interval="1d", auto_adjust=True,
                      group_by="ticker", threads=True, progress=False)
     years = list(range(dt.date.today().year, 2019, -1))
-    cols = ["시장", "티커", "섹터", "1D", "1주", "1M", "3M"]
+    cols = ["시장", "티커", "섹터", "기준일", "1D", "1주", "1M", "3M"]
     for y in years:
         cols += [f"YTD{y % 100}", f"순위{y % 100}"]
     recs = []
@@ -588,10 +644,13 @@ def build_etf_table():
                     c = cn_close_series(sid)
                     time.sleep(0.8)  # 순차 간격 — eastmoney 차단 예방
                 c = c[c.index >= "2019-12-01"]
+                if m == "대만":
+                    c = taiwan_etf_close(sym, c)
             except Exception as e:
                 log(f"ETF {sym} 시세 실패(빈칸): {type(e).__name__}")
                 c = pd.Series(dtype=float, index=pd.DatetimeIndex([]))
-            r = {"시장": m, "티커": etf_bb(sym), "섹터": name}
+            r = {"시장": m, "티커": etf_bb(sym), "섹터": name,
+                 "기준일": c.index[-1].strftime("%Y-%m-%d") if len(c) else ""}
             ret = lambda n: round(float(c.iloc[-1] / c.iloc[-1 - n] - 1) * 100, 1) if len(c) > n else None
             r["1D"], r["1주"], r["1M"], r["3M"] = ret(1), ret(5), ret(21), ret(63)
             for y in years:
@@ -618,10 +677,11 @@ INDEX_DEFS = [
     ("미국", "S&P500", "y", "^GSPC"), ("미국", "나스닥종합", "y", "^IXIC"),
     ("한국", "KOSPI", "y", "^KS11"),
     ("일본", "닛케이225", "y", "^N225"),
+    ("대만", "TAIEX", "y", "^TWII"),
     ("중국", "상해종합", "e", "1.000001"), ("중국", "CSI300", "e", "1.000300"),
     ("홍콩", "항셍", "e", "100.HSI"), ("홍콩", "항셍테크", "e", "124.HSTECH"),
 ]
-INDEX_ORDER = ["미국", "한국", "일본", "중국", "홍콩"]
+INDEX_ORDER = ["미국", "한국", "일본", "대만", "중국", "홍콩"]
 INDEX_COLS = ["국가", "지수", "지수레벨", "1D", "1주", "1M", "3M", "YTD", "52주위치%", "기준일"]
 
 
@@ -637,6 +697,8 @@ def build_index_table():
         try:
             if src == "y":
                 c = px[code]["Close"].dropna()
+                if country == "대만":
+                    c = taiwan_regular_close(c)
             else:
                 c = cn_close_series(code)
                 time.sleep(0.8)
@@ -1013,7 +1075,7 @@ td{font-size:12.5px;padding:7.5px 8px}
 padding:13px 17px;margin-bottom:12px;font-size:13px;line-height:1.85">
  <b style="color:var(--acc)">📖 사용법</b>
  <div>· <b>섹터동향</b> 탭에서 섹터를 클릭하면 그 섹터의 <b>신고·신저 종목</b>이 종목 탭에 뜹니다. (필터칩 ✕로 해제)</div>
- <div>· <b>지수</b> 탭 = 한·미·일·중·홍콩 주요지수 등락, <b>섹터ETF</b> 탭 = 섹터별 상대강도 히트맵.</div>
+ <div>· <b>지수</b> 탭 = 한·미·일·대만·중·홍콩 주요지수 등락, <b>섹터ETF</b> 탭 = 섹터별 상대강도 히트맵.</div>
  <div>· 티커 클릭 → 블룸버그 티커 복사 · 표 머리글 클릭 → 정렬 · 검색창 → 티커·종목·섹터·이유 검색.</div>
  <div>· 상단 필터: 시장 / 신고·신저 / NEW만(당일 신규 진입) / 52주만. 우상단 날짜로 과거 스캔·전체기간 조회.</div>
  <div>· 태그: <b style="color:#ededf0">NEW</b> 오늘 신규 진입 · <span style="color:var(--dim)">OLD</span> 연속 등재 · <b style="color:#ffb867">OLD⚡</b> 연속이지만 오늘 새 이벤트(±7%↑ 또는 52주 돌파)로 이유 갱신됨.</div>
@@ -1134,10 +1196,10 @@ el.innerHTML='<table><thead><tr><th>시장</th><th>섹터</th>'+
 <td class="${x.j==="강세"?"up":x.j==="약세"?"dn":""}">${x.j}</td>
 <td class="num">${fmt(x.pe,1)}</td><td class="num">${fmt(x.pb,1)}</td></tr>`).join("")
 :'<tr><td colspan="9" class="empty">해당 날짜 데이터 없음</td></tr>')+
-'</tbody></table><footer>※ 행 클릭 → 그 섹터의 신고·신저 종목 · 순강도순(강세→약세)·순강도 0 무신호 섹터는 아래로 · PER=TTM·PBR=최근분기 — 섹터 유니버스($10B+) 중앙값, 적자 제외</footer>';bump(el)}
+'</tbody></table><footer>※ 행 클릭 → 그 섹터의 신고·신저 종목 · 순강도순(강세→약세)·순강도 0 무신호 섹터는 아래로 · PER=TTM·PBR=최근분기 — 섹터 유니버스($10B+) 중앙값, 적자 제외 · 대만도 대형주 표본의 신고·신저 집계이며 전체 시장 수급을 뜻하지 않음</footer>';bump(el)}
 // ---- 주요 지수 뷰
-function renderIndex(){const CO=["미국","한국","일본","중국","홍콩"];
-let r=IDATA.filter(x=>x.dt===refDate());
+function renderIndex(){const CO=["미국","한국","일본","대만","중국","홍콩"];
+let r=IDATA.filter(x=>x.dt===refDate()&&(st.mkt==="전체"||x.c===(st.mkt==="중국A"?"중국":st.mkt)));
 r=r.slice().sort((a,b)=>CO.indexOf(a.c)-CO.indexOf(b.c));
 document.getElementById("cnt").textContent=r.length+"개 지수";
 const ICOL=["1D","1주","1M","3M","YTD"];
@@ -1152,7 +1214,7 @@ ICOL.map(c=>`<th class="num">${c}</th>`).join("")+
 x.v.map((v,i)=>`<td class="num" style="${heat(v,mm[i][0],mm[i][1])}">${v==null?"-":(v>=0?"+":"")+fmt(v,2)+"%"}</td>`).join("")+
 `<td class="num hm">${x.w52==null?"-":x.w52+"%"}</td><td class="hm" style="color:var(--dim)">${x.asof||"-"}</td></tr>`).join("")
 :'<tr><td colspan="10" class="empty">해당 날짜 데이터 없음</td></tr>')+
-'</tbody></table><footer>※ 부호 히트맵(파랑=하락·빨강=상승) · 52주위치=52주 레인지 내 현재가 위치(0=최저,100=최고) · 미·한·일=지수, 중·홍=eastmoney · 기준일은 시장별 최근 정규장</footer>';bump(el)}
+'</tbody></table><footer>※ 부호 히트맵(파랑=하락·빨강=상승) · 52주위치=52주 레인지 내 현재가 위치(0=최저,100=최고) · 미·한·일·대만=지수, 중·홍=eastmoney · 기준일은 시장별 최근 정규장</footer>';bump(el)}
 // ---- 섹터 드릴다운: 섹터동향 행 클릭 → 그 섹터의 신고·신저 종목
 function drillSector(m,s){st.sec={m:m,s:s};st.mkt=m;st.gb="전체";st.view="종목";
 document.querySelectorAll(".chip.vw").forEach(x=>x.classList.toggle("on",x.dataset.v==="종목"));
@@ -1171,12 +1233,12 @@ const mm=ETFCOLS.map((_,i)=>{const vs=r.map(x=>x.v[i]).filter(v=>v!=null&&!isNaN
 return vs.length?[Math.min(...vs),Math.max(...vs)]:[0,0]});
 const el=document.getElementById("vEtf");
 el.innerHTML='<table><thead><tr><th>시장</th><th>티커</th><th>섹터</th>'+
-ETFCOLS.map(c=>`<th class="num">${c}</th>`).join("")+'</tr></thead><tbody>'+
+ETFCOLS.map(c=>`<th class="num">${c}</th>`).join("")+'<th>기준일</th></tr></thead><tbody>'+
 (r.length?r.map(x=>`<tr><td>${x.m}</td><td class="tk" onclick="cp('${x.t}')">${x.t}</td><td>${x.s}</td>`+
 x.v.map((v,i)=>`<td class="num" style="${heat(v,mm[i][0],mm[i][1])}">${v==null?"-":fmt(v,1)+"%"}</td>`).join("")+
-"</tr>").join("")
-:'<tr><td colspan="'+(ETFCOLS.length+3)+'" class="empty">해당 날짜 데이터 없음</td></tr>')+
-'</tbody></table><footer>※ 0=흰색 기준 부호 히트맵(파랑=하락·빨강=상승) · 배당 포함 총수익 · 시장별 1D 변동 1%↑는 위(상승→하락순)·1% 미만 보합은 아래로</footer>';bump(el)}
+`<td style="color:var(--dim)">${x.asof||"-"}</td></tr>`).join("")
+:'<tr><td colspan="'+(ETFCOLS.length+4)+'" class="empty">해당 날짜 데이터 없음</td></tr>')+
+'</tbody></table><footer>※ 0=흰색 기준 부호 히트맵(파랑=하락·빨강=상승) · 배당 포함 총수익 · 시장별 1D 변동 1%↑는 위(상승→하락순)·1% 미만 보합은 아래로 · 대만: 배당·분할 반영 수정주가, 최근 확정종가(현지 14시 전은 당일 제외), Yahoo 누락 최근 일봉은 TWSE 공식 종가 보완. 반도체와 기술·통신은 구성 중복 가능. <a href="https://www.twse.com.tw/en/ETFortune-institute/etfInfo/00891" target="_blank" rel="noopener">00891 반도체</a> · <a href="https://www.twse.com.tw/en/ETFortune-institute/etfInfo/00881" target="_blank" rel="noopener">00881 기술·통신</a> · <a href="https://www.twse.com.tw/en/ETFortune-institute/etfInfo/0055" target="_blank" rel="noopener">0055 금융</a></footer>';bump(el)}
 // ---- 종목 뷰 + 라우팅
 function render(){cards();updCmt();setTbh();
 document.getElementById("vStock").style.display=st.view==="종목"?"":"none";
@@ -1291,7 +1353,8 @@ def write_html(out_dir, tag, per_market, data_dates, note):
                     if c in ("1D", "1주", "1M", "3M") or c.startswith("YTD")]
         for _, r in edf.iterrows():
             erows.append({"dt": d_tag, "m": r["시장"], "t": r["티커"], "s": r["섹터"],
-                          "v": [num(r[c]) for c in etf_cols]})
+                          "v": [num(r[c]) for c in etf_cols],
+                          "asof": r.get("기준일") if isinstance(r.get("기준일"), str) else ""})
     irows, idx_cols = [], ["1D", "1주", "1M", "3M", "YTD"]
     for p in sorted(out_dir.glob("index_*.csv"))[-HIST_DATES:]:
         d_tag = p.stem.split("_")[-1]
