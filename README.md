@@ -1,6 +1,8 @@
 # High-Low Screen
 
-An autonomous, company-use daily market scanner. It identifies large-cap stocks making 60-day or 52-week highs and lows across the US, Japan, Hong Kong, and China A-share markets.
+An autonomous, company-use daily market scanner. It identifies large-cap stocks making three-month or 52-week highs and lows across the US, Japan, Taiwan, Hong Kong, and China A-share markets. The legacy fallback retains its 60-trading-session screening rule and labels it separately.
+
+New-low rows show sortable declines from the three-month and 52-week intraday highs: `(as-of close / period high - 1) * 100`. Each new scan stores the reference highs, percentages, price date, and source. Historical rows without a stored price snapshot display an em dash; current highs are never substituted into earlier dates.
 
 ## Scope
 

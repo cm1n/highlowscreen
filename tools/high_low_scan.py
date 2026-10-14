@@ -43,8 +43,9 @@ TOP_N = 5  # 시장·방향별 이유 붙일 신규(NEW) 상위 종목 수
 OLD_EVENT_CHG = 7.0  # OLD여도 당일 |등락률|이 이 값 이상이면 새 이벤트로 보고 이유 재검색
 OLD_TOP_N = 3        # 시장·방향별 OLD 재검색 상한(급변은 드무니 소수만)
 
+DRAW_COLS = ["3개월고점", "52주고점", "3개월고점대비(%)", "52주고점대비(%)", "낙폭기준일", "가격소스"]
 COLS = ["구분", "NEW/OLD", "티커", "종목명", "섹터", "종가", "등락률(%)", "시총($B)",
-        "PER(12MF)", "PER(TTM)", "PBR", "60일", "52주", "이유"]
+        "PER(12MF)", "PER(TTM)", "PBR", "60일", "52주", *DRAW_COLS, "이유"]
 MARKET_ORDER = ["미국", "일본", "대만", "홍콩", "중국A"]
 
 
@@ -59,6 +60,17 @@ def fmt_val(x):
     except (TypeError, ValueError):
         return None
     return round(x, 1) if x > 0 else None
+
+
+def drawdown_pct(close, high):
+    """동일 기준 시세의 종가/기간 내 장중 최고가. 결측·모순은 계산하지 않는다."""
+    try:
+        close, high = float(close), float(high)
+    except (TypeError, ValueError):
+        return np.nan
+    if not (np.isfinite(close) and np.isfinite(high)) or close <= 0 or high < close:
+        return np.nan
+    return round((close / high - 1) * 100, 2)
 
 
 # ---------------------------------------------------------------- FX
@@ -264,8 +276,8 @@ TV_MARKETS = {"미국": ("america", "USD", ["NASDAQ", "NYSE", "AMEX"]),
 TV_COLS = ["name", "description", "sector", "market_cap_basic", "close", "change",
            "high", "low", "price_52_week_high", "price_52_week_low", "High.3M", "Low.3M",
            "time", "currency", "price_earnings_fwd", "price_earnings_ttm", "price_book_fq"]
-TV_NOTE = "60일 컬럼은 TradingView 3개월(약 63거래일) 고저가 기준. 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)가 도달."
-LEGACY_NOTE = ("60일 컬럼은 정확한 60거래일 고저가 기준 (eastmoney/yfinance 폴백 경로). "
+TV_NOTE = "3개월/52주 고저가 기준(TradingView). 신고/신저 판정: 당일 고가(저가)가 해당 기간 최고(최저)에 도달."
+LEGACY_NOTE = ("신고/신저 판정은 정확한 60거래일 고저가 기준 (eastmoney/yfinance 폴백 경로). "
                "주의: 폴백 경로의 PER은 12MF가 아니라 TTM 기준(소스가 선행 컨센서스를 주지 않음).")
 
 
@@ -334,6 +346,8 @@ def scan_tradingview(fx, out_dir):
                   else sym + " JP" if mk == "japan"
                   else sym + " TW" if mk == "taiwan" else sym + " CH") + " Equity"
             chg = d.get("change")
+            asof = (dt.datetime.fromtimestamp(int(d["time"]), dt.timezone.utc).date().isoformat()
+                    if d.get("time") else "")
             rows.append({"구분": direction, "NEW/OLD": "NEW", "티커": bb,
                          "종목명": d.get("description") or sym, "섹터": s,
                          "종가": round(float(d["close"]), 2) if d.get("close") is not None else np.nan,
@@ -345,6 +359,10 @@ def scan_tradingview(fx, out_dir):
                          "60일": "O",
                          "52주": "O" if ((h52 is not None and hi >= h52) or
                                          (l52 is not None and lo <= l52)) else "",
+                          "3개월고점": h3, "52주고점": h52,
+                          "3개월고점대비(%)": drawdown_pct(d.get("close"), h3) if asof else np.nan,
+                          "52주고점대비(%)": drawdown_pct(d.get("close"), h52) if asof else np.nan,
+                          "낙폭기준일": asof, "가격소스": "TradingView",
                          "이유": ""})
         per_market[m] = pd.DataFrame(rows, columns=COLS)
         data_dates[m] = (dt.datetime.fromtimestamp(last_ts, dt.timezone.utc).strftime("%Y-%m-%d")
@@ -368,8 +386,17 @@ def judge(df, market_last_date):
     nl52 = full52 and today["low"] <= prior["low"].tail(252).min()
     if not (nh60 or nl60):
         return None
+    # 화면의 3개월 열은 달력 3개월로 계산한다. 기존 폴백의 60거래일 판정은 유지.
+    dates = pd.to_datetime(df["date"])
+    start3 = pd.Timestamp(today["date"]) - pd.DateOffset(months=3)
+    h3 = df.loc[dates >= start3, "high"].max() if dates.min() <= start3 else np.nan
+    h52 = df["high"].tail(252).max() if len(df) >= 252 else np.nan
     return {"종가": round(float(today["close"]), 2), "등락률(%)": round(float(chg), 2),
-            "nh60": bool(nh60), "nl60": bool(nl60), "nh52": bool(nh52), "nl52": bool(nl52)}
+            "nh60": bool(nh60), "nl60": bool(nl60), "nh52": bool(nh52), "nl52": bool(nl52),
+            "3개월고점": h3, "52주고점": h52,
+            "3개월고점대비(%)": drawdown_pct(today["close"], h3),
+            "52주고점대비(%)": drawdown_pct(today["close"], h52),
+            "낙폭기준일": str(today["date"]), "가격소스": "yfinance(분할·배당조정)"}
 
 
 def build_rows(univ, hists):
@@ -393,7 +420,8 @@ def build_rows(univ, hists):
                      "PER(TTM)": fmt_val(u.get("pe_ttm")),
                      "PBR": fmt_val(u.get("pbr")),
                      "60일": "O" if (j["nh60"] or j["nl60"]) else "",
-                     "52주": "O" if (j["nh52"] or j["nl52"]) else "", "이유": ""})
+                      "52주": "O" if (j["nh52"] or j["nl52"]) else "",
+                      **{k: j[k] for k in DRAW_COLS}, "이유": ""})
     out = pd.DataFrame(rows, columns=COLS)
     if len(out):
         out["_s"] = np.where(out["구분"] == "신고가", -out["등락률(%)"], out["등락률(%)"])
@@ -814,6 +842,11 @@ def write_xlsx(path, per_market, data_dates, note=None, sector_df=None, etf_df=N
             # 엑셀 반출은 시총($B) 내림차순 정렬 (2026-07-30 사용자 확정)
             d_x = (d.sort_values("시총($B)", ascending=False, na_position="last")
                    if len(d) and "시총($B)" in d.columns else d)
+            d_x = d_x.drop(columns=["3개월고점", "52주고점", "낙폭기준일", "가격소스"], errors="ignore").copy()
+            for col in ("3개월고점대비(%)", "52주고점대비(%)"):
+                if col in d_x:
+                    d_x.loc[d_x["구분"] != "신저가", col] = np.nan
+            d_x = d_x.rename(columns={"60일": "60거래일" if note and "폴백 경로" in note else "3개월"})
             d_x.to_excel(w, sheet_name=m, index=False)
         wb = w.book
         r0 = len(per_market) + 3
@@ -828,7 +861,8 @@ def write_xlsx(path, per_market, data_dates, note=None, sector_df=None, etf_df=N
             wb["요약"].cell(row=r0, column=1, value="※ " + note)
         widths = {"구분": 8, "NEW/OLD": 9, "티커": 19, "종목명": 34, "섹터": 18, "종가": 10,
                   "등락률(%)": 10, "시총($B)": 9, "PER(12MF)": 10, "PER(TTM)": 9, "PBR": 7,
-                  "60일": 6, "52주": 6, "이유": 80, "코멘트": 95,
+                  "3개월": 6, "60거래일": 9, "52주": 6, "이유": 80, "코멘트": 95,
+                  "3개월고점대비(%)": 19, "52주고점대비(%)": 19,
                   "유니버스종목수": 13, "신고가": 8, "신저가": 8, "순강도(신고-신저)": 15, "판정": 8,
                   "PER(12MF중앙값)": 14, "12MF표본수": 10, "PER(TTM중앙값)": 13, "PBR(중앙값)": 10,
                   "국가": 8, "지수": 12, "지수레벨": 12, "YTD": 9, "52주위치%": 10, "기준일": 12}
@@ -896,6 +930,11 @@ def write_xlsx(path, per_market, data_dates, note=None, sector_df=None, etf_df=N
                     row[ri].alignment = Alignment(wrap_text=True)
                     if ni is not None and row[ni].value == "NEW":
                         row[ni].font = Font(bold=True)
+                for ci, h in enumerate(hdr, 1):
+                    if h in ("3개월고점대비(%)", "52주고점대비(%)"):
+                        for row in ws.iter_rows(min_row=2, min_col=ci, max_col=ci):
+                            row[0].number_format = '0.0"%"'
+                            row[0].font = down
             if "판정" in hdr:
                 pi = hdr.index("판정")
                 for row in ws.iter_rows(min_row=2):
@@ -1041,6 +1080,7 @@ tr:hover td{background:#1c1c22}
 .why{color:#b8b8c0;font-size:12.5px}.why .py{color:var(--dim)}
 .num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .empty{text-align:center;color:var(--dim);padding:30px 0 !important}
+@media(max-width:1150px){#vStock .hm{display:none}}
 footer{color:var(--dim);font-size:11.5px;margin-top:14px}
 #toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--acc);
 color:#101013;font-weight:700;padding:10px 20px;border-radius:999px;opacity:0;transition:.25s;pointer-events:none;z-index:99}
@@ -1064,7 +1104,7 @@ td{font-size:12.5px;padding:7.5px 8px}
 </style></head><body>
 <header>
  <div><h1><span class="gr">신고·신저가 스캔</span> <span style="color:var(--dim);font-weight:500;font-size:14px">__TAG_DASH__</span></h1>
- <div class="sub">기준일 __DATES_LINE__ · 시총 $10B+ · 60일/52주</div></div>
+  <div class="sub">기준일 __DATES_LINE__ · 시총 $10B+ · __SCREEN_PERIOD__/52주</div></div>
  <div class="actions">
   <span class="chip" id="helpBtn" style="cursor:pointer">ⓘ 도움말</span>
   <select id="dateSel"></select>
@@ -1078,6 +1118,8 @@ padding:13px 17px;margin-bottom:12px;font-size:13px;line-height:1.85">
  <div>· <b>지수</b> 탭 = 한·미·일·대만·중·홍콩 주요지수 등락, <b>섹터ETF</b> 탭 = 섹터별 상대강도 히트맵.</div>
  <div>· 티커 클릭 → 블룸버그 티커 복사 · 표 머리글 클릭 → 정렬 · 검색창 → 티커·종목·섹터·이유 검색.</div>
  <div>· 상단 필터: 시장 / 신고·신저 / NEW만(당일 신규 진입) / 52주만. 우상단 날짜로 과거 스캔·전체기간 조회.</div>
+  <div>· 신저 종목의 <b>3개월·52주 고점 대비</b> = (기준일 종가 ÷ 기간 내 장중 최고가 − 1) × 100. 머리글 클릭으로 낙폭 정렬.</div>
+  <div>· <b>—</b>는 당시 고점 기록이 없어 계산하지 않은 값입니다. 과거 날짜에 현재 고점을 적용하지 않습니다.</div>
  <div>· 태그: <b style="color:#ededf0">NEW</b> 오늘 신규 진입 · <span style="color:var(--dim)">OLD</span> 연속 등재 · <b style="color:#ffb867">OLD⚡</b> 연속이지만 오늘 새 이벤트(±7%↑ 또는 52주 돌파)로 이유 갱신됨.</div>
  <div>· 💬 코멘트는 개조식 국가별 요약(당일 미작성 시 최근 코멘트 자동 표시). 헤더의 시장별 기준일로 데이터 날짜 확인.</div>
 </div>
@@ -1107,13 +1149,16 @@ border-radius:10px;padding:10px 14px;margin-bottom:12px;font-size:13px;font-weig
 <th data-k="dt" id="thDt" style="display:none">날짜</th>
 <th data-k="m">시장</th><th data-k="g">구분</th><th data-k="n">NEW</th><th data-k="t">티커</th>
 <th data-k="nm">종목명</th><th data-k="s" class="hm">섹터</th><th class="num" data-k="c">종가</th>
-<th class="num" data-k="chg">등락률%</th><th class="num hm" data-k="mc">시총$B</th>
+<th class="num" data-k="chg">등락률%</th>
+<th class="num" data-k="dd3" title="기준일 종가 / 최근 3개월 장중 최고가 − 1. 더 많이 하락한 순으로 정렬">3개월 고점 대비</th>
+<th class="num" data-k="dd52" title="기준일 종가 / 최근 52주 장중 최고가 − 1. 더 많이 하락한 순으로 정렬">52주 고점 대비</th>
+<th class="num hm" data-k="mc">시총$B</th>
 <th class="num hm" data-k="pe">PER</th><th class="num hm" data-k="pb">PBR</th><th data-k="why">이유</th>
 </tr></thead><tbody id="tb"></tbody></table></div>
 <div id="vSector" class="view" style="display:none"></div>
 <div id="vEtf" class="view" style="display:none"></div>
 <div id="vIndex" class="view" style="display:none"></div>
-<footer>__NOTE__ · PER=TTM · 티커 클릭 = 블룸버그 티커 복사 · 생성 __TAG_DASH__</footer>
+<footer>__NOTE__ · __PER_NOTE__ · 티커 클릭 = 블룸버그 티커 복사 · 생성 __TAG_DASH__</footer>
 <div id="toast">복사됨</div>
 <script>
 const DATA=__DATA__;const DATES=__DATES__;const TAG="__TAG__";
@@ -1130,6 +1175,9 @@ sel.onchange=()=>{st.date=sel.value;
 document.getElementById("xlsxBtn").href="신고신저가_"+(st.date==="ALL"?TAG:st.date)+".xlsx";render()};
 function refDate(){return st.date==="ALL"?TAG:st.date}
 function fmt(v,d){return v==null||isNaN(v)?"-":Number(v).toLocaleString("en-US",{minimumFractionDigits:d,maximumFractionDigits:d})}
+function drawdownCell(x,key,high){const v=x[key];
+const tip=x.g!=="신저가"?"신저 종목에만 표시":v==null?"당시 고점 기록 없음":`${x.asof} · ${x.ps} · 기간 내 장중 고점 ${fmt(x[high],2)}`;
+return `<td class="num ${v==null?"":"dn"}" title="${tip}">${v==null?"—":fmt(v,1)+"%"}</td>`}
 const esc2=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 function setTbh(){document.documentElement.style.setProperty("--tbh",
 (document.querySelector(".toolbar").offsetHeight)+"px")}
@@ -1271,8 +1319,10 @@ let r=DATA.filter(x=>
 (st.mkt==="전체"||x.m===st.mkt)&&(st.gb==="전체"||x.g===st.gb)&&(!st.nw||x.n==="NEW")&&(!st.w52||x.d52)&&
 (!st.sec||(x.m===st.sec.m&&x.s===st.sec.s)));
 if(st.q){const q=st.q.toLowerCase();r=r.filter(x=>(x.t+x.nm+x.s+x.why).toLowerCase().includes(q))}
-r.sort((a,b)=>{if(st.date==="ALL"&&a.dt!==b.dt)return b.dt.localeCompare(a.dt);
-let A=a[st.k],B=b[st.k];if(A==null)return 1;if(B==null)return -1;
+r.sort((a,b)=>{const ddSort=st.k==="dd3"||st.k==="dd52";
+if(!ddSort&&st.date==="ALL"&&a.dt!==b.dt)return b.dt.localeCompare(a.dt);
+let A=a[st.k],B=b[st.k];if(A===B)return st.date==="ALL"?b.dt.localeCompare(a.dt):0;
+if(A==null)return 1;if(B==null)return -1;
 if(typeof A==="string")return st.dir*A.localeCompare(B);return st.dir*(A-B)});
 const total=r.length,CAP=1500;if(r.length>CAP)r=r.slice(0,CAP);
 document.getElementById("thDt").style.display=st.date==="ALL"?"":"none";
@@ -1286,10 +1336,11 @@ ${st.date==="ALL"?`<td style="color:var(--dim)">${dash(x.dt)}</td>`:""}
 <td class="tk" onclick="cp('${x.t}')">${x.t}${x.d52?'<span class="b52">52W</span>':''}</td>
 <td class="nm">${x.nm}</td><td class="hm">${x.s}</td><td class="num">${fmt(x.c,2)}</td>
 <td class="num ${x.chg>=0?"up":"dn"}">${x.chg==null?"-":(x.chg>=0?"+":"")+fmt(x.chg,2)}</td>
+${drawdownCell(x,"dd3","h3")}${drawdownCell(x,"dd52","h52")}
 <td class="num hm">${fmt(x.mc,1)}</td>
 <td class="num hm">${fmt(x.pe,1)}</td><td class="num hm">${fmt(x.pb,1)}</td>
 <td class="why">${x.why&&x.why.startsWith("(전일)")?'<span class="py">'+x.why+"</span>":x.why||""}</td></tr>`).join("")
-:'<tr><td colspan="13" class="empty">조건에 맞는 종목이 없습니다</td></tr>';
+:`<tr><td colspan="${st.date==="ALL"?15:14}" class="empty">조건에 맞는 종목이 없습니다</td></tr>`;
 bump(document.getElementById("vStock"))}
 function cp(t){const f=()=>{const a=document.createElement("textarea");a.value=t;document.body.appendChild(a);
 a.select();document.execCommand("copy");a.remove()};
@@ -1325,7 +1376,7 @@ def write_html(out_dir, tag, per_market, data_dates, note):
     """최근 HIST_DATES개 scan CSV를 전부 내장한 단일 대시보드(index.html) 생성 —
     링크 하나로 날짜 전환·전체기간 통합검색."""
     def num(v):
-        return None if pd.isna(v) else float(v)
+        return None if pd.isna(v) or not np.isfinite(float(v)) else float(v)
 
     rows, dates, weekly_counts = [], [], []
     for p in sorted(out_dir.glob("scan_*.csv"))[-HIST_DATES:]:
@@ -1365,6 +1416,11 @@ def write_html(out_dir, tag, per_market, data_dates, note):
                          "pe": num(r[pe_col]) if has_val else None,
                          "pb": num(r["PBR"]) if has_val else None,
                          "d52": r["52주"] == "O",
+                          "dd3": num(r.get("3개월고점대비(%)")) if r["구분"] == "신저가" else None,
+                          "dd52": num(r.get("52주고점대비(%)")) if r["구분"] == "신저가" else None,
+                          "h3": num(r.get("3개월고점")), "h52": num(r.get("52주고점")),
+                          "asof": r.get("낙폭기준일") if isinstance(r.get("낙폭기준일"), str) else None,
+                          "ps": r.get("가격소스") if isinstance(r.get("가격소스"), str) else None,
                          "why": r["이유"] if isinstance(r["이유"], str) else ""})
     srows = []
     for p in sorted(out_dir.glob("sector_*.csv"))[-HIST_DATES:]:
@@ -1415,6 +1471,9 @@ def write_html(out_dir, tag, per_market, data_dates, note):
             .replace("__IDATA__", esc(irows))
             .replace("__WCOUNTS__", esc(weekly_counts))
             .replace("__DATES_LINE__", dates_line)
+            .replace("__SCREEN_PERIOD__", "60거래일" if note and "폴백 경로" in note else "3개월")
+            .replace("__PER_NOTE__", "PER=TTM" if note and "폴백 경로" in note
+                     else "PER=12MF(TradingView 선행 추정, 회계연도 기반)")
             .replace("__DATES__", json.dumps(dates))
             .replace("__TAG_DASH__", f"{tag[:4]}-{tag[4:6]}-{tag[6:]}")
             .replace("__TAG__", tag)
