@@ -282,13 +282,15 @@ LEGACY_NOTE = ("신고/신저 판정은 정확한 60거래일 고저가 기준 (
 
 
 def tv_market_scan(market, floor_local, exchanges, cur):
+    # TradingView classifies US ADRs as "dr", not "stock".
+    security_types = ["stock", "dr"] if market == "america" else ["stock"]
     body = {"filter": [
                 {"left": "market_cap_basic", "operation": "egreater", "right": floor_local},
                 {"left": "exchange", "operation": "in_range", "right": exchanges},
                 {"left": "currency", "operation": "in_range", "right": [cur]},
                 {"left": "typespecs", "operation": "has_none_of", "right": ["preferred"]}],
             "options": {"lang": "en"}, "markets": [market],
-            "symbols": {"query": {"types": ["stock"]}, "tickers": []},
+            "symbols": {"query": {"types": security_types}, "tickers": []},
             "columns": TV_COLS,
             "sort": {"sortBy": "market_cap_basic", "sortOrder": "desc"},
             "range": [0, 6000]}
